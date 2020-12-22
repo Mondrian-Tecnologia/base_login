@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    attributes:
+      log_boleto:
+        id: "#"
+        boleto_financeira_id: Boleto
+        namespace: WS utilizado
+        metodo: Método
+        envio: Envio
+        header: Header
+        retorno: Retorno
+        code: Código do Retorno
+        mensagem_erro: Descrição do Retorno
+        status: Situação
+        motivo: Motivo
+        created_at: Data de Cadastro
+        updated_at: Data de Atualização
+    errors:
+      models:
+        log_boleto:
+          attributes:
+          validate:

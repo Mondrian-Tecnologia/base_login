@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    pagamentos_financeiras:
+      index:  
+        title: Relatório de Pagamentos de Faturas
+      new:
+        title: Novo Pagamento

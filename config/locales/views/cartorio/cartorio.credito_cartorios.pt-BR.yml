@@ -1,0 +1,7 @@
+pt-BR:
+  cartorio:
+    credito_cartorios:
+      index:
+        title: Listagem de Crédito Administrativos
+      show:
+        title: "Visualizar Crédito #%{id}"

@@ -1,0 +1,99 @@
+- model_class = Usuario
+- msg = resource.errors.full_messages.join('. </br>') || notice || alert || flash[:error] || flash[:notice]
+- if msg&.present? and msg != "Sua sessão expirou, por favor, efetue portal novamente para continuar."
+  #message_modal.modal.fade
+    .modal-dialog{:role => "document"}
+      .modal-content
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+          %h3 Aviso !
+        .modal-body
+          %br
+            %p=raw msg
+        .modal-footer
+          %a.btn.btn-primary{href: "#", :'data-dismiss' => "modal"} Fechar
+  :javascript
+    $( document ).ready(function() {
+      $('#message_modal').modal();
+    });
+
+.signin_wrapper.registrations
+  .row
+    .right_block
+      .row
+        .col-sm-3.col-xs-12
+          = link_to new_usuario_session_path do 
+            = image_tag 'logo-mono.png', class: 'logo-portal'
+      .row
+        .col-lg-3.col-md-4.col-sm-12.col-xs-12.title-registration
+          Cadastre-se
+          %br
+          %br
+      = form_for resource, as: resource_name, url: registration_path(resource_name), html: { autocomplete: :off } do |f|
+        .row 
+          .col-xs-12
+            .contato Informações de Contato
+        .row 
+          .col-lg-4.col-md-4.col-sm-6
+            .title-field= model_class.human_attribute_name(:username)
+            = f.text_field :username, class: 'form_fields col-xs-12 col-sm-12 col-md-12 col-lg-12', required: true
+          .col-lg-4.col-md-4.col-sm-6
+            .title-field= model_class.human_attribute_name(:email)
+            = f.email_field :email, class: 'form_fields col-xs-12 col-sm-12 col-md-12 col-lg-12', required: true
+        .row 
+          .col-lg-4.col-md-4.col-sm-6
+            .title-field Senha
+            = f.password_field :password, required: true, class: 'form_fields col-md-12 col-lg-12', placeholder: "Insira sua Senha *"
+          .col-lg-4.col-md-4.col-sm-6
+            .title-field Repita a senha
+            = f.password_field :password_confirmation, required: true, class: 'form_fields col-md-12 col-lg-12', placeholder: "Insira a Confirmação de sua Senha *"
+
+        .row
+          .col-md-3.col-sd-4.col-xs-6
+            = link_to 'Já possuo conta', new_usuario_session_path, class: 'btn btn-default btn-block btn-certisign col-xs-12 col-sm-12 col-md-12 col-lg-12'
+          .col-md-6.col-sd-4.hidden-xs
+          .col-md-3.col-sd-4.col-xs-6
+            = f.submit 'Salvar' , class: 'submitBnt col-xs-12 col-sm-12 col-md-12 col-lg-12'
+        .row{style: 'padding: 30px 0'}
+
+
+:javascript
+  $(".name_search").select2({
+    placeholder: "Selecione sua profissão"
+  });
+
+  let cpf_cnpj = $('#usuario_cpf_cnpj');
+  $(".tipo_pessoa").change(function(){
+    if ( $(this).val() == '1' ){
+      $(".title-field.cpf_cnpj").html('CPF * (Será seu portal)');
+      $(".title-field.nome_completo").html('Nome Completo *');
+      $(".pessoa_fisica").show();
+      cpf_cnpj.prop('maxlength', '14');
+      cpf_cnpj.unmask();
+      cpf_cnpj.mask('000.000.000-00');
+    } else { 
+      $(".title-field.cpf_cnpj").html('CNPJ * (Será seu portal)');
+      $(".title-field.nome_completo").html('Razão Social *');
+      $(".pessoa_fisica").hide();
+      cpf_cnpj.prop('maxlength', '18');
+      cpf_cnpj.unmask();
+      cpf_cnpj.mask('00.000.000/0000-00');
+    }
+  })
+
+  if ( #{params[:radio]} == '1' ){
+    $(".title-field.cpf_cnpj").html('CPF * (Será seu portal)');
+    $(".title-field.nome_completo").html('Nome Completo *');
+    $(".pessoa_fisica").show();
+    cpf_cnpj.prop('maxlength', '14');
+    cpf_cnpj.mask('000.000.000-00');
+    $(".tipo_pessoa").first().attr("checked", 'checked')
+  } else { 
+    $(".title-field.cpf_cnpj").html('CNPJ * (Será seu portal)');
+    $(".title-field.nome_completo").html('Razão Social *');
+    $(".pessoa_fisica").hide();
+    cpf_cnpj.prop('maxlength', '18');
+    cpf_cnpj.unmask();
+    cpf_cnpj.mask('00.000.000/0000-00');
+    $(".tipo_pessoa").last().attr("checked", 'checked')
+  }

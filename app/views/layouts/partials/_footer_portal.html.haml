@@ -1,0 +1,11 @@
+
+.footer-menu.d-md-block.d-none
+  .container
+    .row
+      .col-xl-8.col-lg-8.col-md-12
+        .d-flex.justify-content-between
+          - portal_menus.each do |title, link, hash|
+            - next if controller_name.eql?(hash[:controller]) && action_name.eql?(hash[:action].to_s)
+            - next if hash[:action].to_s.eql?('sobre_nos')
+            .opts-page
+              = link_to title, link, class: 'menu-item'

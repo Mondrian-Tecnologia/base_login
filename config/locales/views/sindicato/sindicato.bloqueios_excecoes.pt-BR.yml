@@ -1,0 +1,8 @@
+pt-BR:
+  sindicato:
+    bloqueios_excecoes:
+      index:  
+        title: "Listagem de Exceções de Bloqueio"
+        new: Nova Exceção de Bloqueio
+      new:
+        title: Cadastro de Exceção de Bloqueio

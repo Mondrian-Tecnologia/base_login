@@ -1,0 +1,10 @@
+pt-BR:
+  cartorio:
+    faturas:
+      index:
+        title: Listagem de Faturas
+        filter: Consulte pela data do Vencimento
+      show:
+        title: "Detalhes da Fatura #%{id}- Período %{data_inicial} ~ %{data_final}"
+      print_dutes:
+        title: "Lista de DUTes da Fatura #%{id} - Período %{data_inicial} ~ %{data_final}"

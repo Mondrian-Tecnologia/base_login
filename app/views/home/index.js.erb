@@ -1,0 +1,12 @@
+exibirLogoBranca();
+alterarBgElipse();
+$('.bg-elipse').fadeIn();
+
+let body = $('#body-render');
+body.hide();
+body.empty()
+body.append('<%= escape_javascript(render partial: 'index') %>')
+body.fadeIn('slow');
+
+$('.top-menu-item.secondary').removeClass('secondary');
+$(".top-menu-item.active").removeClass('active');

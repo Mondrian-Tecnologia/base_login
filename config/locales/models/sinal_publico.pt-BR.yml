@@ -1,0 +1,28 @@
+pt-BR:
+  activerecord:
+    models:
+      sinal_publico:
+        one: 'Sinal Público'
+        other: 'Sinal Públicos'
+
+    attributes:
+      sinal_publico:
+        id: '#'
+        id_desc: 'ID da Procuração'
+        dute: 'Dute'
+        dute_id: 'Dute'
+        tipo: 'Tipo'
+        oficio: 'Ofício'
+        tabeliao: 'Tabelião'
+        origem: 'Origem'
+        selo: 'Selo'
+        data_selo: 'Data do Selo'
+        observacao: 'Observação'
+        created_at: 'Data de Cadastro'
+        updated_at: 'Data de Atualização'
+
+    errors:
+      models:
+        sinal_publico:
+          attributes:
+          validate:

@@ -1,0 +1,28 @@
+pt-BR:
+  activerecord:
+    models:
+      procuracao:
+        one: "Procuração"
+        other: "Procurações"
+
+    attributes:
+      procuracao:
+        id: "#"
+        id_desc: "ID da Procuração"
+        dute: "Dute"
+        dute_id: "Dute"
+        tipo: "Tipo"
+        numero_procuracao: "Número da Procuração"
+        nome_procurador: "Nome do Procurador"
+        cpf_procurador: "CPF do Procurador"
+        rg_procurador: "RG do Procurador"
+        data_procuracao: "Data da Procuração"
+        observacao_procuracao: "Observação da Procuração"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+
+    errors:
+      models:
+        procuracao:
+          attributes:
+          validate:

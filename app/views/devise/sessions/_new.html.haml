@@ -1,0 +1,26 @@
+- msg = notice || alert || flash[:error] || flash[:notice]
+
+.container
+  .row.top-body
+    .col-lg-10.col-md-12
+      .title-page.pb-1 Acesso ao sistema
+      #message
+        .message-body= msg
+  = form_for resource, as: resource_name, url: session_path(resource_name), html: { class: 'mt-2 ajax', remote: true } do |f|
+    .row
+      .form-group.col-lg-5.col-md-8
+        = f.text_field :username, autofocus: true, class: 'form-control', placeholder: "Usuário", required: true
+    .row
+      .form-group.col-lg-5.col-md-8
+        = f.password_field :password, class: 'form-control', placeholder: "Senha", required: true
+    .row
+      .col-lg-5.col-md-8.mt-1
+        = f.submit 'Entrar', class: 'd-none'
+        .float-right
+          = link_to 'Entrar', '#', class: 'submit-form'
+        .float-left
+          = link_to 'Esqueceu sua senha ?', new_usuario_password_path, class: 'link-form', remote: true
+  .row
+    .col-lg-5.col-md-8
+      #certisign
+        = certisign_form(6271, "CHAVE DUTE_RJ", "http://www.rj.duteletronico.com.br/usuarios/certisign")

@@ -1,0 +1,25 @@
+# Configure Using Gemfile
+# gem 'pg'
+#
+default: &default
+  adapter:  postgresql
+  database: erp_web
+  username: dute
+  password: dute*&098
+
+primary: &primary
+  <<: *default
+replica: &replica
+  <<: *default
+
+development: *default
+#  <<: *primary
+#  <<: *replica
+
+test:
+  <<: *primary
+  <<: *replica
+
+production: *default
+#  <<: *primary
+#  <<: *replica

@@ -1,0 +1,23 @@
+pt-BR:
+  activerecord:
+    models:
+      repasse_parceiro: 
+        one: Repasse de Parceiro
+        other: Repasses de Parceiros
+    attributes:
+      repasse_parceiro:
+        id: '#'
+        data: 'Data'
+        usuario_id: Usuário
+        status: Situação
+        quantidade: Qtd. de DUTes 
+        registro: Valor DUTes
+        convenio: IRTDPJ-RJ
+        sistema: Sistema
+        created_at: 'Data de Cadastro'
+        updated_at: 'Data de Atualização'
+    errors:
+      models:
+        repasse_parceiro:
+          attributes:
+          validate:

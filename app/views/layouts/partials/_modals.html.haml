@@ -1,0 +1,30 @@
+/ Modal
+#geralModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "geralModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %h5#geralModalLabel.modal-title
+        %button.close{aria: { label: 'Fechar' }, data: { dismiss: 'modal' }, type: 'button'}
+          %span{aria: { hidden: 'true' } } ×
+      .modal-body 
+        - if @mensagem
+          = mensagem_exibir(@mensagem)
+      .modal-footer
+        %button.btn.btn-secondary{ data: { dismiss: 'modal' }, type: 'button'} Fechar
+        %button.btn.btn-primary{:type => "button"} Confirmar
+
+-#/ Modal confirmarRepasse
+-##confirmarRepasse.modal.fade{aria: { hidden: true, labelledby: 'confirmarRepasse' }, role: 'dialog', tabindex: '-1' }
+-#  .modal-dialog
+-#    .modal-content
+-#      .modal-header
+-#        %h5#confirmarRepasseLabel.modal-title Atenção !
+-#        %button.close{aria: { label: 'Fechar' }, data: { dismiss: 'modal' }, type: 'button'}
+-#          %span{aria: { hidden: 'true' } } ×
+-#      .modal-body
+-#        Ao clicar em 'CONFIRMAR', o repasse parceiros será iniciado, não podendo ser desfeito esse processo.</br></br>
+-#        Caso deseje fazer uma verificação parcial dos valores, você deverá clicar em 'Relatório Parcial de Repasses'.</br></br>
+-#        Você deseja de fato executar essa ação ?
+-#      .modal-footer
+-#        %button.btn.btn-secondary{ data: { dismiss: 'modal' }, type: 'button'} Fechar
+-#        = link_to 'Confirmar', sindicato_repasse_parceiros_path, method: :post, class: 'btn btn-primary', onclick: "$('.loader').fadeIn('fast');"

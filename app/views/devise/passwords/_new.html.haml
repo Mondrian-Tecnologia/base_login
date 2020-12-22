@@ -1,0 +1,18 @@
+- msg = notice || alert || flash[:error] || flash[:notice]
+
+.container
+  .row.top-body
+    .col-lg-10.col-md-12
+      .title-page.pb-1 Esqueceu sua senha?
+      #msg= msg
+  = form_for resource, as: resource_name, url: password_path(resource_name), html: { class: 'mt-2 ajax', remote: true } do |f|
+    .row
+      .form-group.col-lg-5.col-md-8
+        = f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Email", autocomplete: "email", required: true
+    .row
+      .col-lg-5.col-md-8.mt-1
+        = f.submit 'Entrar', class: 'd-none'
+        .float-right
+          = link_to 'Enviar instruções por email', '#', class: 'submit-form'
+        .float-left
+          = link_to 'Acesso ao sistema', new_usuario_session_path, class: 'link-form', remote: true

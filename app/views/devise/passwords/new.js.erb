@@ -1,0 +1,28 @@
+exibirLogoColorida();
+alterarBgSkew();
+$('.bg-skew').fadeIn();
+// Altera cor do menu para preto
+$('.top-menu-item').addClass('secondary');
+
+let message = $("#message .message-body");
+message.html(' ');
+
+<% if resource.errors.any? %>
+  message.fadeOut('slow', function() {
+    message.html("<%= resource.try(:errors).try(:full_messages).try(:first) %>");
+  })
+  message.promise().done(function(){
+    message.fadeIn('slow');
+  })
+  <% flash = nil %>
+<% else %>
+  let body = $('#body-render');
+  body.hide();
+  body.empty()
+  body.append('<%= escape_javascript(render partial: 'new') %>')
+  body.fadeIn('slow');
+<% end %>
+
+if ( $('.skew.secondary').length === 0 ){ $('.skew').addClass('secondary'); }
+
+portal_init('Enviar instruções por email');

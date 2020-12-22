@@ -1,0 +1,44 @@
+pt-BR:
+  activerecord:
+    models:
+      dado_cartorario: 
+        one: Dado Cartorário
+        other: Dados Cartorários
+    attributes:
+      dado_cartorario:
+        id: "#"
+        cartorio_oficio: "Ofício"
+        cartorio_cnpj: "CNPJ/CPF Cartório"
+        cartorio_endereco: "Endereço"
+        cartorio_numero: "Número"
+        cartorio_complemento: "Complemento"
+        cartorio_cidade_id: "Cidade"
+        cartorio_cep: "CEP"
+        cartorio_telefone: "Telefone"
+        cartorio_fax: "FAX"
+        cartorio_email: "Email"
+        titular_nome: "Nome"
+        titular_cpf: "CPF"
+        titular_rg: "RG"
+        titular_telefone: "Telefone"
+        titular_celular: "Celular"
+        login: "Login"
+        cpf_cnpj: "CPF/CNPJ"
+        nome: "Nome"
+        endereco: "Endereço"
+        cep: "CEP"
+        banco_id: "Banco"
+        codigo_agencia: "Agência"
+        digito_agencia: "Dígito Agência"
+        conta_corrente: "Conta"
+        digito_conta_corrente: "Dígito Conta"
+        tipo_conta: "Tipo de Conta"
+        agencia_full: "Agência / Dígito"
+        conta_full: "Conta / Dígito"
+        created_at: Data de Criação
+        updated_at: Data de Atualização
+    errors:
+      models:
+        dado_cartorario:
+          attributes:
+          validate:

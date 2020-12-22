@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    attributes:
+      veiculo:
+        id: "#"
+        cpf_vendedor: 'CPF/CNPJ do Vendedor'
+        placa: 'Placa'
+        crv: 'CRV'
+        data_crv: "Data de Emissão do CRV"
+        renavam: 'RENAVAM'
+        created_at: "Data de Cadastro"
+    errors:
+      models:
+        veiculo:
+          validate:
+            uniqueness: " :: Já existe uma '%{attribute}' cadastrada que aguarda execução."

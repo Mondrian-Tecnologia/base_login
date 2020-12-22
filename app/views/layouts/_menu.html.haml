@@ -1,0 +1,21 @@
+%li.nav-item
+  = link_to root_path, class: 'nav-link' do
+    = svg_sidebar :home
+    %span Página Inicial
+
+%hr.sidebar-divider.my-0
+
+-# - if policy([:cartorio, :home]).index?
+-#   = render 'layouts/menus/cartorio'
+-# - if policy([:sindicato, :home]).index?
+-#   = render 'layouts/menus/sindicato'
+
+%li.nav-item
+  = link_to edit_usuario_registration_path, class: 'nav-link' do
+    = svg_sidebar :usuario
+    %span Meu Usuário
+
+%hr.sidebar-divider.d-none.d-md-block
+
+.text-center.d-none.d-md-inline
+  %button#sidebarToggle.rounded-circle.border-0

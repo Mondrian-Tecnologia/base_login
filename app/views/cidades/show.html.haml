@@ -1,0 +1,51 @@
+- model_class = Cidade
+
+.d-sm-flex.align-items-center.justify-content-between.mb-4
+  .h3.mb-0.mt-4.title-gray
+    = t('.title')
+
+.row
+  .col-md
+    = flash_message(@cidade)
+
+.row
+  .col-md.mb-4
+    .card.shadow.overflow-inherit
+      .card-body
+        %ul.nav.nav-pills.mb-4{role: 'tablist', id: 'tab-dutes'}
+          %li.cidade
+            = link_to "Cidade", "#cidade", data: { toggle: 'tab' }, class: 'nav-link active'
+          %li.acoes
+            = link_to "Ações", "#acoes", data: { toggle: 'tab' }, class: 'nav-link'
+
+        .tab-content.piluku-tab-content.anchor-tabs
+          #cidade.tab-pane.fade{role: 'tabpanel', class: 'active show'}
+            .form-group.row
+              = label_tag :cod, model_class.human_attribute_name(:cod), class: 'col-md-3 col-lg-3 col-xl-3  text-right'
+              .col-md-9.col-lg-8.col-xl-5
+                = @cidade.cod
+            .form-group.row
+              = label_tag :descricao, model_class.human_attribute_name(:descricao), class: 'col-md-3 col-lg-3 col-xl-3  text-right'
+              .col-md-9.col-lg-8.col-xl-5
+                = @cidade.descricao
+            .form-group.row
+              = label_tag :estado, model_class.human_attribute_name(:estado), class: 'col-md-3 col-lg-3 col-xl-3  text-right'
+              .col-md-9.col-lg-8.col-xl-5
+                = @cidade.estado.try(:descricao)
+
+          #acoes.tab-pane.fade
+            .row
+              .form-group.col-xs-12.col-md-4.col-lg-4.col-xl-3
+                = link_to '#', class: 'a-card' do
+                  .card.border-primary.shadow.h-auto.w-100
+                    .card-body.mt-4.mb-4
+                      .row.no-gutters.align-items-center
+                        .col.mr-2
+                          .h6.mb-0.font-weight-bold.text-gray-800= t('.opcao')
+                        .col-auto
+                          = svg_icon :x, { class: 'icon-acoes' }
+
+.d-flex.justify-content-between.hidden_print
+  #left.bd-highlight
+    = link_to t('.clear', default: t("helpers.links.back")), cidades_path, class: btn_class(:light)
+

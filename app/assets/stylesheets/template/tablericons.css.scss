@@ -1,0 +1,56 @@
+
+svg { display: inline; }
+
+.icon.icon-tabler {
+  stroke: #000;
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.0;
+  stroke: #1586ed;
+  margin: -5px auto;
+  // stroke-width: 1.5;
+  // fill: none;
+  // stroke-linecap: round;
+  // stroke-linejoin: round;
+  transition: 0.5s stroke;
+
+  &:hover {
+    stroke: #0e5ca2;
+  }
+  // SEARCH
+  &.icon-tabler-search {
+    width: 22px;
+    height: 22px;
+  }
+  // CHECK
+  &.icon-tabler-check { }
+  // X
+  &.icon-tabler-x { }
+
+  &.icon-acoes {
+    width: 40px;
+    height: 40px;
+  }
+  &.svg-menu-x {
+    margin-top: 1.5rem;
+  }
+  &.svg-white {
+    rect{
+      fill: black;
+      transition: 1s all;
+    }
+    &:hover {
+      rect{
+        fill: #2F7BEC;
+        transition: 1s all;
+      }
+    }
+  }
+  &.icon-tabler-wifi-off {
+    stroke: #b91616;
+  }
+}
+.menu .icon.icon-tabler {
+  width: 48px;
+  height: 48px;
+}

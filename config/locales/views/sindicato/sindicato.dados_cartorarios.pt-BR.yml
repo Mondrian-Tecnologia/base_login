@@ -1,0 +1,24 @@
+pt-BR:
+  sindicato:
+    dados_cartorarios:
+      index:
+        title: Pré-Cadastro de Cartórios
+        new: Realizar Pré-Cadastro
+      edit:
+        title: "Edição de dados do Pré-Cadastro do Cartório #%{id}"
+      new:
+        title: Novo Pré-Cadastro de Cartório
+      show:
+        title: "Visualizar Pré-Cadastro do Cartório #%{id}"
+      partials:
+        acoes:
+          show_cartorio: Ver Cartório
+          edit: Editar
+          rejeitar: Rejeitar
+          aceitar: Aceitar
+      list:
+        show: Ver Cartório
+        show_cartorio: Ver Cartório
+        edit: Editar
+        rejeitar: Rejeitar
+        aceitar: Aceitar

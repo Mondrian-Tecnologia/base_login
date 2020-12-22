@@ -1,0 +1,52 @@
+pt-BR:
+  activerecord:
+    models:
+      dado_cartorario: 
+        one: Dado Cartorário
+        other: Dados Cartorários
+    attributes:
+      dado_cartorario:
+        id: "#"
+        cartorio_oficio: "Ofício"
+        cartorio_cnpj: "CNPJ/CPF Cartório"
+        cartorio_endereco: "Endereço"
+        cartorio_numero: "Número"
+        cartorio_complemento: "Complemento"
+        cartorio_cidade_id: "Cidade"
+        cartorio_cep: "CEP"
+        cartorio_telefone: "Telefone"
+        cartorio_fax: "FAX"
+        cartorio_email: "Email"
+        rtd: "RTD"
+        titular_nome: "Nome"
+        titular_cpf: "CPF"
+        titular_rg: "RG"
+        titular_endereco: "Endereço"
+        titular_numero: "Número"
+        titular_complemento: "Complemento"
+        titular_cidade_id: "Cidade"
+        titular_cep: "CEP"
+        titular_telefone: "Telefone"
+        titular_celular: "Celular"
+        cpf_cnpj: "CPF/CNPJ"
+        nome: "Nome"
+        endereco: "Endereço"
+        cep: "CEP"
+        codigo_banco: "Banco"
+        codigo_agencia: "Agência"
+        digito_agencia: "Dígito Agência"
+        conta_corrente: "Conta"
+        digito_conta_corrente: "Dígito Conta"
+        tipo_conta: "Tipo de Conta"
+        login: "Login"
+        senha: "Senha"
+    errors:
+      models:
+        dado_cartorario:
+          attributes:
+            titular_cpf:
+              cpf: "O CPF informado não é válido."
+            # cpf_cnpj:
+          validate:
+            not_created_cartorio: "Não foi possível criar cartório."
+            cannot_remove: "Os Dados Cartorário não podem ser removidos."

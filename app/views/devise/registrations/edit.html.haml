@@ -1,0 +1,34 @@
+- model_class = Usuario
+.d-sm-flex.align-items-center.justify-content-between.mb-4
+  .h3.mb-0.mt-4.title-gray
+    Meu Usuário
+.row
+  .col-md
+    = flash_message(resource)
+.row
+  .col-xl-8.col-lg-10.col-md-12
+    .card.shadow.overflow-inherit
+      = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, autocomplete: "off" }) do |f|
+        .card-header.text-white.bg-primary.mb-2.radius
+          .h6.text-center.mt-2
+            Alterar Senha
+        .card-body
+          .form-group.row
+            = f.label :current_password, {}, class: 'col-md-3 col-form-label text-right'
+            .col-md-9
+              = f.password_field :current_password, class: "form-control", required: true
+              %span (Precisamos de sua senha atual para confirmar as alterações)
+          .form-group.row
+            = f.label :password, {}, class: 'col-md-3 col-form-label text-right'
+            .col-md-9
+              = f.password_field :password, class: "form-control", required: true, placeholder: @minimum_password_length ? "(Mínimo de #{@minimum_password_length} caracteres)" : ""
+          .form-group.row
+            = f.label :password_confirmation, {}, class: 'col-md-3 col-form-label text-right'
+            .col-md-9
+              = f.password_field :password_confirmation, class: "form-control", required: true
+              
+        .card-footer.bg-transparent.border-0
+          .row.justify-content-between
+            .col
+              .float-right
+                = f.submit t('.confirm', default: t("helpers.submit.confirm")), class: btn_class(:primary)

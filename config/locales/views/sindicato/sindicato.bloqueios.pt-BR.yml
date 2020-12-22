@@ -1,0 +1,10 @@
+pt-BR:
+  sindicato:
+    bloqueios:
+      index:  
+        title: "Histórico de Bloqueios do %{oficio}"
+        new: Novo Bloqueio
+      new:
+        title: Cadastrar Bloqueio
+      cartorios:
+        title: Listagem de Cartórios Bloqueados

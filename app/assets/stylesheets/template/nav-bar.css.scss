@@ -1,0 +1,64 @@
+.d-none.d-lg-inline {
+  max-width: 120px;
+  display: inline-block;
+  white-space: nowrap !important;
+  font-family: Oxygen;
+  overflow: hidden;
+  color: #1586ed;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: .7rem;
+}
+
+.sidebar .nav-item .nav-link .img-profile, .topbar .nav-item .nav-link .img-profile{
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.dropdown-menu.dropdown-menu-right.shadow.animated--grow-in.show {
+  border-top: 0;
+  // background: rgba(0,0,0,0.7);
+  // box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+  // backdrop-filter: blur(7px) !important;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+
+  & .dropdown-item {
+    font-family: 'Source Sans Pro';
+    // color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    padding: .5rem 3rem .5rem 2rem;
+    & svg {
+      width: 22px;
+      height: 22px;
+      padding-right: 5px;
+    }
+    & i {
+      padding: 0.5rem;
+      font-size: .875em;
+    }
+    &:hover { 
+      color: #eaab00;
+    }
+  }
+}
+
+.nav.nav-pills {
+  background: #f3f3f3;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10px;
+  // font-weight: bold;
+}
+
+.arrow-down {
+  height: 30px;
+  width: 20px;
+  background: asset_url('seta.webp') no-repeat;
+  background-position: center center;
+  margin-right: .7rem;
+}
+
+
+

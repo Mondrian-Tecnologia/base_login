@@ -1,0 +1,5 @@
+pt-BR:
+  devise: 
+    registrations:
+      update:
+        invalid_password: 'Senha não pode ser igual a anterior.'

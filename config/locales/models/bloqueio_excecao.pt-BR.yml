@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    models:
+      bloqueio_excecao:
+        one: Exceção de Bloqueio
+        other: Exceções de Bloqueios
+    attributes:
+      bloqueio_excecao:
+        id: "#"
+        cartorio_id: Cartório
+        motivo_bloqueio_id: Motivo do Bloqueio
+        status: Ativo ?
+        created_at: Data de Cadastro
+        updated_at: Data de Atualização 
+        usuario_cadastro_id: Usuário de Cadastro
+        usuario_liberacao_id: Usuário de Exclusão
+        observacao: Observação
+    errors:
+      models:
+        bloqueio_excecao:
+          attributes:
+          validate:

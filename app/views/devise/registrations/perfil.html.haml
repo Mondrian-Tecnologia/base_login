@@ -1,0 +1,42 @@
+- model_class = Usuario
+.d-sm-flex.align-items-center.justify-content-between.mb-4
+  .h3.mb-0.mt-4.title-gray.mx-auto.d-block
+    Meu Perfil
+.row
+  .col-md
+    = flash_message(resource)
+.row
+  .col-xl-8.col-lg-10.col-md-12.mx-auto.d-block
+    .card.shadow.overflow-inherit
+      .card-body
+        .form-group.row
+          = image_tag usuario_avatar(current_usuario), class: "rounded-circle mx-auto d-block", style: "margin-bottom: 25px"
+        .form-group.row
+          = label_tag :login, model_class.human_attribute_name(:login), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :login, current_usuario.login, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+        .form-group.row
+          = label_tag :name, model_class.human_attribute_name(:name), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :name, current_usuario.name, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+        .form-group.row
+          = label_tag :email, model_class.human_attribute_name(:email), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :email, current_usuario.email, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+        .form-group.row
+          = label_tag :cpf, model_class.human_attribute_name(:cpf), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :cpf, current_usuario.cpf, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+        .form-group.row
+          = label_tag :telefone, model_class.human_attribute_name(:telefone), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :telefone, current_usuario.telefone, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+        .form-group.row
+          = label_tag :celular, model_class.human_attribute_name(:celular), class: 'col-md-3 col-form-label text-right'
+          .col-md-9
+            = text_field_tag :celular, current_usuario.celular, class: 'form-control', readonly: true, type: "text", disabled: "disabled"
+      .card-footer.bg-transparent.border-0
+        .row.justify-content-between
+          .col
+            .float-right
+              = link_to 'Editar Meu Perfil', edit_usuario_registration_path, class: btn_class(:primary)

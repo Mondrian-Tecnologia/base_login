@@ -1,0 +1,12 @@
+pt-BR:
+  sindicato:
+    empresas:
+      index:
+        title: Listagem de Empresas
+        new: Cadastrar Empresa
+      edit:
+        title: 'Editar Empresa #%{id}'
+      new:
+        title: Cadastrar Empresa
+      show:
+        title: 'Cartórios Filiado à %{descricao}'

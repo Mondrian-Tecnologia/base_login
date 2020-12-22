@@ -1,0 +1,18 @@
+pt-BR:
+  activerecord:
+    models:
+      ocorrencia: 
+        one: Ocorrência
+        other: Ocorrências
+    attributes:
+      ocorrencia:
+        id:           "#"
+        descricao:    "Descrição"
+        codigo:       "Código Oc."
+        created_at:   "Data de Cadastro"
+        updated_at:   "Data de Atualização"
+    errors:
+      models:
+        ocorrencia:
+          attributes:
+          validate:

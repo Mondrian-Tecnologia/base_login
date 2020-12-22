@@ -1,0 +1,10 @@
+pt-BR:
+  sindicato:
+    bancos:
+      index:
+        title: Listagem de Bancos
+        new: Cadastrar Banco
+      edit:
+        title: 'Editar Banco #%{id} - %{descricao}'
+      new:
+        title: Cadastrar Banco

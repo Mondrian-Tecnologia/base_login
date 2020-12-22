@@ -1,0 +1,45 @@
+pt-BR:
+  activerecord:
+    models:
+      cartorio:
+        one: Cartório
+        other: Cartórios
+    attributes:
+      cartorio:
+        id: "#"
+        cnpj: CNPJ
+        fone: "Telefone"
+        fax: FAX
+        tabeliao: "Tabelião"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+        endereco: Endereço
+        bairro:  Bairro
+        cep: CEP
+        telefone: "Telefone"
+        oficio: "Ofício"
+        domicilio_id: "Cidade"
+        numero: Número
+        email: Email
+        banco: Banco
+        agencia: Agência
+        conta: Conta
+        favorecido: Favorecido
+        bloqueado: Bloqueado
+        titular_cpf: CPF do Titular
+        titular_rg: RG do Titular
+        titular_telefone: Telefone do Titular
+        titular_celular: Celular do Titular
+        complemento: Complemento
+        rtd: RTD
+        favorecido_cpf_cnpj: "CPF/CNPJ"
+        favorecido_endereco: "Endereço"
+        favorecido_cep: "CEP"
+        favorecido_tipo_conta: "Tipo de Conta"
+        empresa_ws_id: 'Empresa'
+    errors:
+      models:
+        cartorio:
+          attributes:
+          validate:
+

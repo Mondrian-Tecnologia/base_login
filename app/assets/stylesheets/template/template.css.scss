@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('/fonts/roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+#dute_placa,
+#dute_chassi,
+#dute_endereco,
+#dute_nome,
+#dute_bairro,
+#dute_numend,
+#dute_compend,
+#dute_selo,
+#dute_selo_comprador,
+#dute_numero_procuracao,
+#dute_rg_procurador,
+#dute_nome_procurador,
+#dute_observacao_procuracao,
+#dute_numero_procuracao_comprador,
+#dute_rg_procurador_comprador,
+#dute_nome_procurador_comprador,
+#dute_observacao_procuracao_comprador,
+#dute_oficio_abonado,
+#dute_tabeliao_abonado,
+#dute_origem_abonado,
+#dute_selo_abonado,
+#dute_observacao_abonado,
+#dute_oficio_abonado_comprador,
+#dute_tabeliao_abonado_comprador,
+#dute_origem_abonado_comprador,
+#dute_selo_abonado_comprador,
+#dute_observacao_abonado_comprador,
+#dute_alvara_comarca,
+#dute_alvara_juiz,
+#dute_alvara_requerente,
+#dute_curatela_rg,
+#dute_curatela_nome,
+#dute_curatela_poderes_observacoes,
+#dute_tutela_nome,
+#dute_tutela_cpf,
+#dute_tutela_rg,
+#dute_tutela_observacoes {
+  text-transform: uppercase;
+}
+
+.btn.mr-0.btn-light.btn-block.btn-sm.border-left-none.text-left.font-weight-bold,
+.btn.mr-0.btn-light.btn-block.btn-sm.border-left-danger.text-left.font-weight-bold {
+  background: #fff;
+  //font-size: 0.9rem;
+  color: #007bff;
+  font-family: RobotoLight;
+  transition: 0.3s all;
+  letter-spacing: 0.05rem;
+  &:hover {
+    color: #224abe;
+    background: #efefef;
+    transition: 0.5s all;
+  }
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+  background: #fefefe;
+}
+.home-modal-link {
+  color: #007bff;
+  &:hover {
+    color: #0097f0;
+  }
+}
+.home-modal:hover { text-decoration: none; }
+.home-modal .card.bg-button{
+  background: #1586ed;
+  transition: 1s all;
+
+  &:hover {
+    background: #0097f0;
+    box-shadow: 0 0 13px 0px rgba(0,0,0,0.4) !important;
+    transition: 1s all;
+  }
+}
+
+table tr th.center {
+  text-align: center;
+}
+
+.rb-2 {
+  border-right: 2px solid #efefef;
+}
+
+#ferramentas a.btn.w-100.mb-3 {
+  color: #666;
+  transition: 0.5s color;
+  &:focus {
+    box-shadow: none;
+  }
+  &.danger {
+    color: #a20000;
+    &:hover {
+      color: #6d0000;
+    }
+  }
+  &:hover {
+    color: #1586ed;
+  }
+}
+
+.table .thead-light tr th {
+  &.bg-col1 {
+    background: #f1f1f1
+  }
+
+  &.bg-col2 {
+    background: #e8e8e8
+  }
+
+  &.bg-col3 {
+    background: #e0e0e0
+  }
+
+  &.bg-col4 {
+    background: #dadada
+  }
+}
+.table-responsive table.table-borderless.border-no-round thead {
+  tr th:first-child { border-radius: 0px }
+  tr th:last-child {  border-radius: 0px }
+
+  tr:first-child {
+    th:first-child { border-radius: 10px 0 0 0 }
+    th:last-child { border-radius: 0 10px 0 0 }
+  }
+  tr:last-child {
+    th:first-child { border-radius: 0 0 0 10px }
+    th:last-child { border-radius: 0 0 10px 0 }
+  }
+}
+
+.dropdown-menu.inner.show, .filter-option-inner-inner { text-transform: uppercase }
+iframe { border: 0px; }

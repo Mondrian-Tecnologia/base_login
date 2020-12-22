@@ -1,0 +1,20 @@
+.container
+  .row.top-body
+    .col-lg-10.col-md-12
+      .title-page.pb-1 Atualize sua Senha
+      #msg
+  = form_for resource, as: resource_name, url: password_path(resource_name), html: { method: :put },
+             class: "mt-2 ajax", remote: true do |f|
+    = f.hidden_field :reset_password_token
+    .row
+      .form-group.col-lg-5.col-md-8
+        = f.password_field :password, class: 'form-control', placeholder: "Insira sua nova Senha",
+                                      autofocus: true, required: true
+    .row
+      .form-group.col-lg-5.col-md-8
+        = f.password_field :password_confirmation, class: 'form-control', required: true,
+                                                   placeholder: "Insira a Confirmação de sua nova Senha *"
+    .row
+      .col-lg-5.col-md-8.mt-1
+        .float-right
+          = link_to 'Recuperar Senha', '#', class: 'submit-form'

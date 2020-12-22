@@ -1,0 +1,85 @@
+!!!
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", name: "viewport"}
+    %meta{name: "apple-mobile-web-app-capable", content: 'yes'}
+    %title
+      - if Rails.env.development?
+        DEV -
+      ERP WEB ::
+      #{t(title_page)}
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    - if action_cable?
+      = javascript_include_tag 'cable'
+    - else
+      = javascript_include_tag 'pace'
+    = javascript_pack_tag 'application'
+    = action_cable_meta_tag
+    = csrf_meta_tags
+
+    %link{rel: 'manifest', href: '/manifest.json'}
+    %link{href: '/assets/favicon.png', rel: 'shortcut icon', type: 'image/x-icon'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap', rel: 'stylesheet'}
+    -#%script{:async => "", :src => "https://cdn.onesignal.com/sdks/OneSignalSDK.js"}
+    -#:javascript
+    -#  var OneSignal = window.OneSignal || [];
+    -#  OneSignal.push(function () {
+    -#    OneSignal.init({
+    -#      appId: "048dae72-43c7-4648-ab57-5ff421be3c92",
+    -#    });
+    -#  });
+    -#  // await OneSignal.getUserId()  // 23372570-aae7-4ba8-89a8-ba9ee6ee3153 // onesignal_id
+  %body#page-top
+    -# Page Wrapper
+    #wrapper
+      -# Sidebar
+      #bg-gradient-template.sidebar
+      %ul#accordionSidebar.navbar-nav.bg-gradient-template.sidebar.sidebar-dark.accordion
+        -# Sidebar - Brand
+        = link_to root_path, class: 'sidebar-brand d-flex.align-items-center justify-content-center' do
+          .sidebar-logo
+            .large
+              = image_tag asset_path('logos/logo-branca@2x.webp'), width: '80%'
+            .small
+              = image_tag asset_path('logos/logo-branca-small@2x.webp'), width: '50%'
+        -# Divider
+        %hr.sidebar-divider.my-0/
+        -# Nav Itens - Menu
+        = render '/layouts/menu'
+
+      -# Content Wrapper
+      #content-wrapper.d-flex.flex-column
+        #content
+          = render '/layouts/nav_bar'
+          .container-fluid
+            = yield
+
+        %footer.sticky-footer.bg-white.mt-5
+          .container.my-auto
+            .copyright.text-center.my-auto
+              %span Mondrian Tecnologia 
+
+    = link_to '#page-top', class: 'scroll-to-top rounded', style: 'display: inline;' do
+      %i.fas.fa-angle-up
+
+    -#// = javascript_include_tag 'administrador'
+    = javascript_include_tag 'template'
+
+    = render partial: '/layouts/partials/modals'
+    :javascript
+      $(document).ready(function(){
+        $('.field_with_errors input:first').addClass('is-invalid')
+        $('.field_with_errors select:first').addClass('is-invalid')
+        $('.field_with_errors textarea:first').addClass('is-invalid')
+        // // REDIRECT SEARCH PRODUTO
+        $("form.form-search").submit(function( event ) {
+          let id = $("form.form-search #id");
+          let action = $(this).attr('action') + '/' + id.val();
+          $(this).attr('action', action);
+        })
+      });

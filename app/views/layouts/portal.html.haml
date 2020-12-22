@@ -1,0 +1,46 @@
+!!!
+%html.no-js{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{:'http-equiv' => "X-UA-Compatible", content: "IE=Edge,chrome=1"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %meta{name: "author",   content: "Mondrian Tecnologia" }
+    %title
+      - if Rails.env.development?
+        DEV -
+      ERP WEB
+      #{t(title_page)}
+    = stylesheet_link_tag 'portal', media: 'all'
+    = javascript_include_tag 'portal', 'data-turbolinks-trak' => true
+    = javascript_include_tag 'pace', 'data-turbolinks-trak' => true
+    = csrf_meta_tags
+    %link{href: '/assets/favicon.png', rel: 'shortcut icon', type: 'image/x-icon'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap', rel: 'stylesheet'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap', rel: 'stylesheet'}
+  %body{ onresize: 'adaptarBgSkew()' }
+    = render partial: '/layouts/partials/menu_portal'
+    -#.skew.d-md-block.d-none{ class: bg_min_skew? }
+    .container
+      %header.blog-header.py-4
+        .row.flex-nowrap.justify-content-between.align-items-center.pt-2
+          .col-lg-2.col-md-3.col-4.pt-1
+            = link_to root_path, remote: true do
+              #logo-dute{class: (home_page? ? 'branca' : 'colorida')}
+          .col-xl-6.col-lg-7.col-md-9.col-8.justify-content-between.align-items-center.d-md-none.d-lg-flex
+            - portal_menus.each do |title, link, hash|
+              - next if hash[:action].to_s.eql?('sobre_nos')
+              = link_to title, link, class: top_menu_item_class, id: title.downcase.parameterize, remote: true
+          .col-xl-6.col-lg-2.col-md-9.col-8.justify-content-end.align-items-center.d-lg-none.d-md-flex
+            = link_to '#', onclick: 'abrirMenuMobile()', class: 'menu' do
+              = svg_icon :'menu-portal', class: 'svg-menu svg-white'
+          -#  .dropdown.dropleft.d-none.d-md-block
+          -#    = link_to '#', onclick: 'console.log(1);', class: 'menu', "data-toggle" => "dropdown" do
+          -#      = svg_icon :'menu-portal', class: 'svg-menu'
+          -#    .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+          -#      - portal_menus.each do |title, link|
+          -#        = link_to title, link, class: 'dropdown-item mb-3'
+    %div{class: (home_page? ? 'bg-elipse' : 'bg-skew') }
+    #body-render
+      = yield

@@ -1,0 +1,2471 @@
+  [1m[35m (386.5ms)[0m  [1m[35mCREATE DATABASE "erp_web" ENCODING = 'utf8'[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE DATABASE "erp_web" ENCODING = 'utf8'[0m
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for ::1 at 2020-12-11 10:27:36 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 458)
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3636)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-12-11 10:27:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for ::1 at 2020-12-11 10:31:22 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 352)
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2656)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-12-11 10:31:24 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-12-11 10:31:25 -0300
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from migration_template at (erb):6)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from migration_template at (erb):6)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from <main> at bin/rails:4)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from <main> at bin/rails:4)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from <main> at bin/rails:4)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from <main> at bin/rails:4)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from <main> at bin/rails:4)
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-11 10:45:07 -0300
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+        bin/rails db:migrate RAILS_ENV=development
+You have 1 pending migration:
+20201211134206_devise_create_usuarios.rb:
+
+Started POST "/__better_errors/3efe25cc236b000c/variables" for 127.0.0.1 at 2020-12-11 10:45:08 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 10:45:09 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+        bin/rails db:migrate RAILS_ENV=development
+You have 1 pending migration:
+20201211134206_devise_create_usuarios.rb:
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4486762856473293270)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsuarios (20201211134206)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "usuarios" ("id" bigserial primary key, "username" character varying DEFAULT '' NOT NULL, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_usuarios_on_reset_password_token" ON "usuarios" ("reset_password_token")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_usuarios_on_confirmation_token" ON "usuarios" ("confirmation_token")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_usuarios_on_unlock_token" ON "usuarios" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201211134206"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-11 13:45:14.412603"], ["updated_at", "2020-12-11 13:45:14.412603"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4486762856473293270)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-12-11 10:45:15 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dev01/.rvm/gems/ruby-2.7.2/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 351)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2648)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 10:45:17 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4486762856473293270)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEstados (20201211172256)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "estados" ("id" bigserial primary key, "uf" character varying, "descricao" character varying, "cod" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201211172256"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCidades (20201211172341)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "cidades" ("id" bigserial primary key, "cod" character varying, "descricao" character varying, "estado_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_d51899ba78"
+FOREIGN KEY ("estado_id")
+  REFERENCES "estados" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_cidades_on_estado_id" ON "cidades" ("estado_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201211172341"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4486762856473293270)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsuario Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "usuarios" WHERE "usuarios"."email" = $1 LIMIT $2[0m  [["email", "teste@asdsad.com"], ["LIMIT", 1]]
+  [1m[36mUsuario Create (1.7ms)[0m  [1m[32mINSERT INTO "usuarios" ("username", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "admin"], ["email", "teste@asdsad.com"], ["encrypted_password", "$2a$10$Gw3DVFU4DGHOcOscpCzT.eQIJit0z73cq6.tZ5nCuYMc4FWDKb5qO"], ["created_at", "2020-12-11 17:24:18.844416"], ["updated_at", "2020-12-11 17:24:18.844416"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:24:22 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+
+ActionController::MissingExactTemplate - HomeController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/6df41d5cc2ba1592/variables" for 127.0.0.1 at 2020-12-11 14:24:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:24:24 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:24:43 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 9.7ms | Allocations: 13887)
+  Rendered home/index.html.haml within layouts/portal (Duration: 13.7ms | Allocations: 18433)
+  Rendered layout layouts/portal.html.haml (Duration: 13.9ms | Allocations: 18535)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 19381)
+
+
+
+NameError - uninitialized constant Configuracao:
+  app/views/home/_index.html.haml:1
+  app/views/home/index.html.haml:1
+
+Started POST "/__better_errors/d02137a3ff7ebe28/variables" for 127.0.0.1 at 2020-12-11 14:24:44 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:24:44 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 6.9ms | Allocations: 9266)
+  Rendered home/index.html.haml within layouts/portal (Duration: 7.2ms | Allocations: 9406)
+  Rendered layout layouts/portal.html.haml (Duration: 7.5ms | Allocations: 9507)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 9861)
+
+
+
+NameError - uninitialized constant Configuracao:
+  app/views/home/_index.html.haml:1
+  app/views/home/index.html.haml:1
+
+Started POST "/__better_errors/ed35c5d576a09813/variables" for 127.0.0.1 at 2020-12-11 14:24:45 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:24:45 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:24:46 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:24:57 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 30.5ms | Allocations: 11902)
+  Rendered home/index.html.haml within layouts/portal (Duration: 34.5ms | Allocations: 14877)
+  Rendered layout layouts/portal.html.haml (Duration: 34.9ms | Allocations: 14973)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 15785)
+
+
+
+NameError - undefined local variable or method `sobre_nos_path' for #<ActionView::Base:0x000000000292e8>:
+  app/views/home/_index.html.haml:10
+  app/views/home/index.html.haml:1
+
+Started POST "/__better_errors/39dfd209c4bae0b8/variables" for 127.0.0.1 at 2020-12-11 14:24:57 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:24:59 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:25:03 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 3820.9ms | Allocations: 4398779)
+  Rendered home/index.html.haml within layouts/portal (Duration: 3825.6ms | Allocations: 4401701)
+  Rendered layout layouts/portal.html.haml (Duration: 3842.1ms | Allocations: 4428002)
+Completed 500 Internal Server Error in 3846ms (ActiveRecord: 0.0ms | Allocations: 4428828)
+
+
+
+NameError - uninitialized constant Configuracao:
+  app/views/layouts/portal.html.haml:11
+
+Started POST "/__better_errors/9742f1586f1f2699/variables" for 127.0.0.1 at 2020-12-11 14:25:07 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:25:08 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:25:33 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 6.8ms | Allocations: 5404)
+  Rendered home/index.html.haml within layouts/portal (Duration: 11.4ms | Allocations: 8345)
+  Rendered layout layouts/portal.html.haml (Duration: 30.6ms | Allocations: 30825)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 31641)
+
+
+
+NameError - uninitialized constant Configuracao:
+  app/views/layouts/portal.html.haml:11
+
+Started POST "/__better_errors/d4ff38696f8bd9bd/variables" for 127.0.0.1 at 2020-12-11 14:25:33 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:25:35 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:25:46 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 4.3ms | Allocations: 5367)
+  Rendered home/index.html.haml within layouts/portal (Duration: 6.7ms | Allocations: 8307)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 48.0ms | Allocations: 15410)
+  Rendered layout layouts/portal.html.haml (Duration: 384.6ms | Allocations: 224377)
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 0.0ms | Allocations: 225188)
+
+
+
+NameError - undefined local variable or method `dutes_path' for #<ActionView::Base:0x00000000029950>:
+  app/helpers/layouts_helper.rb:149:in `portal_menus'
+  app/views/layouts/partials/_menu_portal.html.haml:11
+  app/views/layouts/portal.html.haml:23
+
+Started POST "/__better_errors/e20bf83b54720b4c/variables" for 127.0.0.1 at 2020-12-11 14:25:47 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:25:48 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:26:12 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 1.3ms | Allocations: 1048)
+  Rendered home/index.html.haml within layouts/portal (Duration: 1.6ms | Allocations: 1159)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 3.3ms | Allocations: 2560)
+  Rendered layout layouts/portal.html.haml (Duration: 36.1ms | Allocations: 50592)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms | Allocations: 51742)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2020-12-11 14:26:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/roboto/Roboto-Regular.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf" for 127.0.0.1 at 2020-12-11 14:26:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf" for 127.0.0.1 at 2020-12-11 14:26:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf"):
+  
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:26:14 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:26:15 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 1.8ms | Allocations: 1047)
+  Rendered home/index.html.haml within layouts/portal (Duration: 2.1ms | Allocations: 1158)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 3.0ms | Allocations: 2561)
+  Rendered layout layouts/portal.html.haml (Duration: 26.3ms | Allocations: 28732)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 29882)
+
+
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf" for 127.0.0.1 at 2020-12-11 14:26:16 -0300
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2020-12-11 14:26:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/roboto/Roboto-Regular.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf" for 127.0.0.1 at 2020-12-11 14:26:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf"):
+  
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:26:17 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 17.6ms | Allocations: 15782)
+  Rendered devise/sessions/new.js.erb (Duration: 18.8ms | Allocations: 16301)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 4.3ms | Allocations: 30603)
+
+
+
+NoMethodError - undefined method `login' for #<Usuario:0x00007fbd8a286fa0>:
+  app/views/devise/sessions/_new.html.haml:12
+  app/views/devise/sessions/_new.html.haml:9
+  app/views/devise/sessions/new.js.erb:23
+  app/controllers/devise/sessions_controller.rb:18:in `new'
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:26:17 -0300
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:26:19 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 53.3ms | Allocations: 8245)
+  Rendered devise/sessions/new.js.erb (Duration: 55.0ms | Allocations: 8392)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 10952)
+
+
+
+NoMethodError - undefined method `login' for #<Usuario:0x00007fbd89acb338>:
+  app/views/devise/sessions/_new.html.haml:12
+  app/views/devise/sessions/_new.html.haml:9
+  app/views/devise/sessions/new.js.erb:23
+  app/controllers/devise/sessions_controller.rb:18:in `new'
+
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:26:23 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 1.5ms | Allocations: 1045)
+  Rendered home/index.html.haml within layouts/portal (Duration: 2.1ms | Allocations: 1284)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 2.1ms | Allocations: 2559)
+  Rendered layout layouts/portal.html.haml (Duration: 30.3ms | Allocations: 28986)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 29551)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:26:24 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 3.1ms | Allocations: 1038)
+  Rendered home/index.html.haml within layouts/portal (Duration: 4.2ms | Allocations: 1149)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 2.4ms | Allocations: 2559)
+  Rendered layout layouts/portal.html.haml (Duration: 42.1ms | Allocations: 28710)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 29086)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2020-12-11 14:26:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/roboto/Roboto-Regular.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf" for 127.0.0.1 at 2020-12-11 14:26:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf" for 127.0.0.1 at 2020-12-11 14:26:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf"):
+  
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:26:25 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 14.2ms | Allocations: 8248)
+  Rendered devise/sessions/new.js.erb (Duration: 14.6ms | Allocations: 8395)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 10957)
+
+
+
+NoMethodError - undefined method `login' for #<Usuario:0x00007fbd88c073d8>:
+  app/views/devise/sessions/_new.html.haml:12
+  app/views/devise/sessions/_new.html.haml:9
+  app/views/devise/sessions/new.js.erb:23
+  app/controllers/devise/sessions_controller.rb:18:in `new'
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:26:25 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:26:41 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 6.4ms | Allocations: 5380)
+  Rendered home/index.html.haml within layouts/portal (Duration: 12.3ms | Allocations: 8324)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 7.2ms | Allocations: 7938)
+  Rendered layout layouts/portal.html.haml (Duration: 69.9ms | Allocations: 55581)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.0ms | Allocations: 56423)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2020-12-11 14:26:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/roboto/Roboto-Regular.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf" for 127.0.0.1 at 2020-12-11 14:26:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Black-Condensed_32739.ttf"):
+  
+Started GET "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf" for 127.0.0.1 at 2020-12-11 14:26:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nimbus/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf"):
+  
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:26:43 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:27:07 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 3.0ms | Allocations: 1040)
+  Rendered home/index.html.haml within layouts/portal (Duration: 3.6ms | Allocations: 1151)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 2.9ms | Allocations: 2558)
+  Rendered layout layouts/portal.html.haml (Duration: 35.3ms | Allocations: 28708)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 29085)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:27:09 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 49.4ms | Allocations: 15226)
+  Rendered devise/sessions/new.js.erb (Duration: 50.9ms | Allocations: 15735)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms | Allocations: 19237)
+
+
+
+NoMethodError - undefined method `login' for #<Usuario:0x0000564c147f6410>:
+  app/views/devise/sessions/_new.html.haml:12
+  app/views/devise/sessions/_new.html.haml:9
+  app/views/devise/sessions/new.js.erb:23
+  app/controllers/devise/sessions_controller.rb:18:in `new'
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:27:09 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:27:23 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 5.3ms | Allocations: 5374)
+  Rendered home/index.html.haml within layouts/portal (Duration: 9.4ms | Allocations: 8315)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 5.8ms | Allocations: 7938)
+  Rendered layout layouts/portal.html.haml (Duration: 90.2ms | Allocations: 55573)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.0ms | Allocations: 56415)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:27:25 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:28:34 -0300
+
+NoMethodError - undefined method `rememberable_options' for #<Class:0x0000564c1505a200>:
+
+Started POST "/__better_errors/594cd2f42d73deba/variables" for 127.0.0.1 at 2020-12-11 14:28:34 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:28:36 -0300
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:28:43 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 278.9ms | Allocations: 287937)
+  Rendered home/index.html.haml within layouts/portal (Duration: 282.1ms | Allocations: 292510)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 5.0ms | Allocations: 8024)
+  Rendered layout layouts/portal.html.haml (Duration: 352.2ms | Allocations: 384130)
+Completed 200 OK in 357ms (Views: 353.3ms | ActiveRecord: 0.0ms | Allocations: 387103)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:28:45 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 15.7ms | Allocations: 8132)
+  Rendered devise/sessions/new.js.erb (Duration: 18.4ms | Allocations: 8828)
+Completed 200 OK in 108ms (Views: 28.7ms | ActiveRecord: 10.7ms | Allocations: 23123)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:28:45 -0300
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:28:50 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 6850)
+
+
+
+NameError - undefined local variable or method `username' for #<Class:0x0000557cfcff56d0>:
+  app/models/usuario.rb:14:in `find_for_database_authentication'
+  app/controllers/application_controller.rb:21:in `set_current_entidade'
+
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:29:28 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 2.6ms | Allocations: 1047)
+  Rendered home/index.html.haml within layouts/portal (Duration: 3.2ms | Allocations: 1158)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 5.0ms | Allocations: 2561)
+  Rendered layout layouts/portal.html.haml (Duration: 64.6ms | Allocations: 28916)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 29285)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:29:29 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 1.4ms | Allocations: 580)
+  Rendered devise/sessions/new.js.erb (Duration: 2.1ms | Allocations: 901)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3472)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:29:30 -0300
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:29:36 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 6794)
+
+
+
+NameError - undefined local variable or method `username' for #<Class:0x0000557cfcff56d0>:
+  app/models/usuario.rb:14:in `find_for_database_authentication'
+  app/controllers/application_controller.rb:21:in `set_current_entidade'
+
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:30:18 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE (lower(username) = 'admin') ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/usuario.rb:14:in `find_for_database_authentication'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 3.7ms | Allocations: 19174)
+
+
+
+NoMethodError - undefined method `password_salt' for #<Usuario:0x000055d272e90bc0>
+Did you mean?  password:
+  app/controllers/application_controller.rb:21:in `set_current_entidade'
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:30:33 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE (lower(username) = 'admin') ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/usuario.rb:14:in `find_for_database_authentication'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 3.4ms | Allocations: 16352)
+
+
+
+NoMethodError - undefined method `password_salt' for #<Usuario:0x000055d27347a068>
+Did you mean?  password:
+  app/controllers/devise/sessions_controller.rb:22:in `create'
+
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsuario Update (1.1ms)[0m  [1m[33mUPDATE "usuarios" SET "encrypted_password" = $1, "updated_at" = $2 WHERE "usuarios"."id" = $3[0m  [["encrypted_password", "$2a$10$CIAf3ZSgMnheWcZfI.q30.z6qYvomo5fEtyl57TCyuw8fHufFxIWi"], ["updated_at", "2020-12-11 17:31:34.279625"], ["id", 1]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-11 14:31:36 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE (lower(username) = 'admin') ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/usuario.rb:13:in `find_for_database_authentication'
+  Rendering devise/sessions/create.js.haml
+  Rendered devise/sessions/create.js.haml (Duration: 3.4ms | Allocations: 4243)
+Completed 200 OK in 89ms (Views: 7.6ms | ActiveRecord: 3.6ms | Allocations: 19322)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:31:36 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 934)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/dev01/.rvm/rubies/ruby-2.7.2/bin/ruby: No such file or directory -- ./bin/webpack (LoadError)
+
+  Rendered layout layouts/application.html.haml (Duration: 755.1ms | Allocations: 502704)
+Completed 500 Internal Server Error in 763ms (ActiveRecord: 0.5ms | Allocations: 506197)
+
+
+
+Webpacker::Manifest::MissingEntryError - Webpacker can't find application in /home/dev01/workspace/erp/erp_web/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}:
+  app/views/layouts/application.html.haml:18
+
+Started POST "/__better_errors/46765b9eaa5fd40c/variables" for 127.0.0.1 at 2020-12-11 14:31:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:31:38 -0300
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:32:01 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1058)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/dev01/.rvm/rubies/ruby-2.7.2/bin/ruby: No such file or directory -- ./bin/webpack (LoadError)
+
+  Rendered layout layouts/application.html.haml (Duration: 1183.6ms | Allocations: 841025)
+Completed 500 Internal Server Error in 1192ms (ActiveRecord: 0.5ms | Allocations: 846299)
+
+
+
+Webpacker::Manifest::MissingEntryError - Webpacker can't find application in /home/dev01/workspace/erp/erp_web/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}:
+  app/views/layouts/application.html.haml:18
+
+Started POST "/__better_errors/bdefc776e16f14b0/variables" for 127.0.0.1 at 2020-12-11 14:32:03 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:32:04 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:32:05 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 643)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/dev01/.rvm/rubies/ruby-2.7.2/bin/ruby: No such file or directory -- ./bin/webpack (LoadError)
+
+  Rendered layout layouts/application.html.haml (Duration: 86.7ms | Allocations: 34753)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.4ms | Allocations: 35104)
+
+
+
+Webpacker::Manifest::MissingEntryError - Webpacker can't find application in /home/dev01/workspace/erp/erp_web/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}:
+  app/views/layouts/application.html.haml:18
+
+Started POST "/__better_errors/0dbbde7545801b9e/variables" for 127.0.0.1 at 2020-12-11 14:32:05 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:32:07 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:35:02 -0300
+  [1m[36mUsuario Load (3.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 635)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+  Rendered layout layouts/application.html.haml (Duration: 4346.0ms | Allocations: 221646)
+Completed 500 Internal Server Error in 4347ms (ActiveRecord: 0.3ms | Allocations: 221996)
+
+
+
+Webpacker::Manifest::MissingEntryError - Webpacker can't find application in /home/dev01/workspace/erp/erp_web/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}:
+  app/views/layouts/application.html.haml:18
+
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:35:13 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1058)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 8e0905257f7bf97704bb
+Version: webpack 4.44.2
+Time: 777ms
+Built at: 11/12/2020 14:35:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-884a859d8af8628836a7.js   16.5 KiB  application  [emitted] [immutable]  application
+js/application-884a859d8af8628836a7.js.map   13.8 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-884a859d8af8628836a7.js js/application-884a859d8af8628836a7.js.map
+[./app/javascript/packs/application.js] 864 bytes {application} [built]
+[./app/javascript/richtext.js] 10.2 KiB {application} [built]
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/actiontext' in '/home/dev01/workspace/erp/erp_web/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-28
+
+ERROR in ./app/javascript/richtext.js
+Module not found: Error: Can't resolve 'trix' in '/home/dev01/workspace/erp/erp_web/app/javascript'
+ @ ./app/javascript/richtext.js 7:0-24 22:15-19 144:4-8 155:4-8 169:4-8
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'trix' in '/home/dev01/workspace/erp/erp_web/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 9:25-40 13:0-15
+
+  Rendered layouts/_menu.html.haml (Duration: 15.5ms | Allocations: 12606)
+  Rendered layout layouts/application.html.haml (Duration: 3799.5ms | Allocations: 727227)
+Completed 500 Internal Server Error in 3808ms (ActiveRecord: 0.5ms | Allocations: 732502)
+
+
+
+NameError - undefined local variable or method `home_path' for #<ActionView::Base:0x00000000027970>
+Did you mean?  home_page?:
+  app/views/layouts/_menu.html.haml:2
+  app/views/layouts/application.html.haml:53
+
+Started POST "/__better_errors/a025c84afc056479/variables" for 127.0.0.1 at 2020-12-11 14:35:17 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:35:19 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:37:02 -0300
+  [1m[36mUsuario Load (1.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.9ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.5ms | Allocations: 6793)
+  Rendered layouts/_nav_bar.html.haml (Duration: 20.6ms | Allocations: 14515)
+  Rendered layout layouts/application.html.haml (Duration: 136.5ms | Allocations: 67285)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.9ms | Allocations: 68577)
+
+
+
+NoMethodError - undefined method `entidade_type' for #<Usuario:0x00007f83600581e8>:
+  app/views/layouts/_nav_bar.html.haml:6
+  app/views/layouts/application.html.haml:58
+
+Started POST "/__better_errors/e3701d4abc7eb60e/variables" for 127.0.0.1 at 2020-12-11 14:37:02 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:37:04 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:37:38 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.7ms | Allocations: 6694)
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.8ms | Allocations: 15466)
+  Rendered layout layouts/application.html.haml (Duration: 60.7ms | Allocations: 67117)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.5ms | Allocations: 68409)
+
+
+
+NoMethodError - undefined method `login' for #<Usuario:0x00007f836066b350>:
+  app/views/layouts/_nav_bar.html.haml:25
+  app/views/layouts/_nav_bar.html.haml:21
+  app/views/layouts/application.html.haml:58
+
+Started POST "/__better_errors/91692ec5d8bda1db/variables" for 127.0.0.1 at 2020-12-11 14:37:38 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:37:40 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:37:45 -0300
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.3ms | Allocations: 6684)
+undefined method `avatar' for #<Usuario:0x00007f8364e779a0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 27.5ms | Allocations: 21284)
+  Rendered layout layouts/application.html.haml (Duration: 73.9ms | Allocations: 72894)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.4ms | Allocations: 74178)
+
+
+
+NameError - undefined local variable or method `perfil_path' for #<ActionView::Base:0x00000000028118>:
+  app/views/layouts/_nav_bar.html.haml:31
+  app/views/layouts/application.html.haml:58
+
+Started POST "/__better_errors/2c6b5c76e504d8de/variables" for 127.0.0.1 at 2020-12-11 14:37:45 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:37:47 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:37:52 -0300
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.6ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.2ms | Allocations: 6692)
+undefined method `avatar' for #<Usuario:0x00007f83605cbc88>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.9ms | Allocations: 18786)
+  Rendered layouts/partials/_modals.html.haml (Duration: 31.8ms | Allocations: 22545)
+  Rendered layout layouts/application.html.haml (Duration: 105.4ms | Allocations: 102461)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.6ms | Allocations: 103747)
+
+
+
+NameError - undefined local variable or method `sindicato_repasse_parceiros_path' for #<ActionView::Base:0x00000000028500>:
+  app/views/layouts/partials/_modals.html.haml:30
+  app/views/layouts/application.html.haml:73
+
+Started POST "/__better_errors/5f2be5e2ffa2000a/variables" for 127.0.0.1 at 2020-12-11 14:37:52 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:37:54 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:38:02 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 11.2ms | Allocations: 6698)
+undefined method `avatar' for #<Usuario:0x00007f837800dd88>
+  Rendered layouts/_nav_bar.html.haml (Duration: 21.8ms | Allocations: 18730)
+  Rendered layouts/partials/_modals.html.haml (Duration: 5.9ms | Allocations: 9475)
+  Rendered layout layouts/application.html.haml (Duration: 90.8ms | Allocations: 82090)
+Completed 500 Internal Server Error in 95ms (Views: 92.7ms | ActiveRecord: 0.4ms | Allocations: 84592)
+
+
+
+Pundit::PolicyScopingNotPerformedError - CidadesController:
+
+Started POST "/__better_errors/bdba5d440633bb4f/variables" for 127.0.0.1 at 2020-12-11 14:38:03 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:38:04 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:39:24 -0300
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 645)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.7ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x00007f8364ed4d08>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.5ms | Allocations: 13128)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.haml (Duration: 46.7ms | Allocations: 46550)
+Completed 500 Internal Server Error in 51ms (Views: 47.1ms | ActiveRecord: 0.4ms | Allocations: 50392)
+
+
+
+Pundit::PolicyScopingNotPerformedError - CidadesController:
+
+Started POST "/__better_errors/4b264566c9823e70/variables" for 127.0.0.1 at 2020-12-11 14:39:24 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:39:26 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:39:37 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.7ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 645)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.0ms | Allocations: 1967)
+undefined method `avatar' for #<Usuario:0x00007f83601576c0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.8ms | Allocations: 13129)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 52.1ms | Allocations: 46556)
+Completed 500 Internal Server Error in 57ms (Views: 52.4ms | ActiveRecord: 0.7ms | Allocations: 50400)
+
+
+
+Pundit::PolicyScopingNotPerformedError - CidadesController:
+
+Started POST "/__better_errors/e733f7597c371e85/variables" for 127.0.0.1 at 2020-12-11 14:39:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:39:39 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:40:02 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 9025)
+
+
+
+NameError - uninitialized constant CidadesController::CidadePolicy:
+  app/controllers/concerns/pundit_methods.rb:32:in `authorize'
+  app/controllers/cidades_controller.rb:7:in `index'
+
+Started POST "/__better_errors/b9e5e44e3bef88c8/variables" for 127.0.0.1 at 2020-12-11 14:40:02 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:40:04 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:09 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 645)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.4ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x00007f8365909d50>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.4ms | Allocations: 13118)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 47.6ms | Allocations: 46532)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 0.3ms | Allocations: 49550)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:10 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:41:11 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.erb within layouts/application
+  Rendered cidades/_form.html.erb (Duration: 16.4ms | Allocations: 2336)
+  Rendered cidades/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2700)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.4ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f83580cca50>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.4ms | Allocations: 13074)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 104.1ms | Allocations: 48610)
+Completed 500 Internal Server Error in 142ms (Views: 105.3ms | ActiveRecord: 8.9ms | Allocations: 54521)
+
+
+
+Pundit::AuthorizationNotPerformedError - CidadesController:
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:11 -0300
+Started POST "/__better_errors/24f00d692d05a5ec/variables" for 127.0.0.1 at 2020-12-11 14:41:12 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:14 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:16 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 639)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1964)
+undefined method `avatar' for #<Usuario:0x000055f67e502790>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.7ms | Allocations: 13078)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 59.6ms | Allocations: 46568)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.5ms | Allocations: 46995)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:16 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:18 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:25 -0300
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 645)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x000055f67d210588>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.7ms | Allocations: 13119)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 43.2ms | Allocations: 46529)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 0.3ms | Allocations: 49542)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:25 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:41:27 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.erb within layouts/application
+  Rendered cidades/_form.html.erb (Duration: 8.1ms | Allocations: 1243)
+  Rendered cidades/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.4ms | Allocations: 1963)
+undefined method `avatar' for #<Usuario:0x000055f67e12ceb8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.6ms | Allocations: 13060)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 106.3ms | Allocations: 47251)
+Completed 500 Internal Server Error in 152ms (Views: 107.8ms | ActiveRecord: 10.7ms | Allocations: 52932)
+
+
+
+Pundit::AuthorizationNotPerformedError - CidadesController:
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:27 -0300
+Started POST "/__better_errors/9ef74991acd5f533/variables" for 127.0.0.1 at 2020-12-11 14:41:27 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:29 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:30 -0300
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1963)
+undefined method `avatar' for #<Usuario:0x00007f8340081658>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.8ms | Allocations: 13078)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 51.9ms | Allocations: 46563)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.4ms | Allocations: 46986)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:30 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:32 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:34 -0300
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.5ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x00007f8365168a10>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.8ms | Allocations: 13118)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 46.3ms | Allocations: 46526)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.3ms | Allocations: 49539)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:35 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:41:35 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.erb within layouts/application
+  Rendered cidades/_form.html.erb (Duration: 2.4ms | Allocations: 1243)
+  Rendered cidades/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.6ms | Allocations: 1963)
+undefined method `avatar' for #<Usuario:0x00007f836516fe00>
+  Rendered layouts/_nav_bar.html.haml (Duration: 18.6ms | Allocations: 13075)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 54.1ms | Allocations: 47254)
+Completed 200 OK in 67ms (Views: 55.0ms | ActiveRecord: 2.7ms | Allocations: 51790)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:35 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:36 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:36 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:41:37 -0300
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.erb within layouts/application
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/index.html.erb:16
+  Rendered cidades/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 4.7ms | Allocations: 1964)
+undefined method `avatar' for #<Usuario:0x000055f67e282d08>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.0ms | Allocations: 13079)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 72.2ms | Allocations: 46566)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.3ms | Allocations: 46989)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:41:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:41:39 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:42:12 -0300
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  Rendered cidades/index.html.haml within layouts/application (Duration: 13.1ms | Allocations: 22813)
+  Rendered layout layouts/application.html.haml (Duration: 13.3ms | Allocations: 22909)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 24242)
+
+
+
+Pundit::NotDefinedError - unable to find policy `Sindicato::CidadePolicy` for `[:sindicato, Cidade(id: integer, cod: string, descricao: string, estado_id: integer, created_at: datetime, updated_at: datetime)]`:
+  app/views/cidades/index.html.haml:5
+
+Started POST "/__better_errors/fe65529e5d8705c4/variables" for 127.0.0.1 at 2020-12-11 14:42:12 -0300
+  [1m[36mCidade Load (4.2ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Cidade Load (0.0ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:42:14 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:42:21 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  Rendered cidades/index.html.haml within layouts/application (Duration: 33.0ms | Allocations: 15861)
+  Rendered layout layouts/application.html.haml (Duration: 33.3ms | Allocations: 15957)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 17280)
+
+
+
+NameError - undefined local variable or method `new_sindicato_cidade_path' for #<ActionView::Base:0x00000000033db0>
+Did you mean?  new_estado_path:
+  app/views/cidades/index.html.haml:6
+
+Started POST "/__better_errors/41a7adfee1be6f72/variables" for 127.0.0.1 at 2020-12-11 14:42:21 -0300
+  [1m[36mCidade Load (0.7ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Cidade Load (0.0ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:42:23 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:42:26 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  Rendered cidades/index.html.haml within layouts/application (Duration: 28.1ms | Allocations: 19705)
+  Rendered layout layouts/application.html.haml (Duration: 28.4ms | Allocations: 19800)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 21122)
+
+
+
+NameError - undefined local variable or method `options_estados' for #<ActionView::Base:0x00000000033fe0>
+Did you mean?  options_months:
+  app/views/cidades/index.html.haml:22
+  app/views/cidades/index.html.haml:15
+
+Started POST "/__better_errors/7a330b2215c99dce/variables" for 127.0.0.1 at 2020-12-11 14:42:26 -0300
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Cidade Load (0.0ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:42:28 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:43:23 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades"[0m
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 12.2ms | Allocations: 13574)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 23.4ms | Allocations: 21639)
+  Rendered layout layouts/application.html.haml (Duration: 23.7ms | Allocations: 21735)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.9ms | Allocations: 24716)
+
+
+
+NoMethodError - undefined method `total_pages' for #<ActiveRecord::Relation []>:
+  app/views/cidades/_list.html.haml:30
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/6491182fca4c893b/variables" for 127.0.0.1 at 2020-12-11 14:43:24 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:43:25 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-11 14:43:39 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 6.6ms | Allocations: 5409)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 18.1ms | Allocations: 13227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.2ms | Allocations: 6695)
+undefined method `avatar' for #<Usuario:0x00007f836546dee0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.8ms | Allocations: 18755)
+  Rendered layouts/partials/_modals.html.haml (Duration: 13.3ms | Allocations: 9477)
+  Rendered layout layouts/application.html.haml (Duration: 92.8ms | Allocations: 94460)
+Completed 200 OK in 100ms (Views: 91.5ms | ActiveRecord: 3.2ms | Allocations: 97957)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:43:40 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:43:41 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:43:49 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  Rendered cidades/_form.html.haml (Duration: 25.3ms | Allocations: 13959)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 32.3ms | Allocations: 22223)
+  Rendered layout layouts/application.html.haml (Duration: 32.6ms | Allocations: 22319)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 2.1ms | Allocations: 26574)
+
+
+
+NameError - undefined local variable or method `sindicato_cidades_path' for #<ActionView::Base:0x00000000038248>:
+  app/views/cidades/_form.html.haml:3
+  app/views/cidades/new.html.haml:12
+
+Started POST "/__better_errors/0cf589a6297eb8dc/variables" for 127.0.0.1 at 2020-12-11 14:43:49 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:43:51 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:44:00 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 38.2ms | Allocations: 32656)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 44.6ms | Allocations: 40870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.9ms | Allocations: 6678)
+undefined method `avatar' for #<Usuario:0x000055f67d559168>
+  Rendered layouts/_nav_bar.html.haml (Duration: 18.8ms | Allocations: 18686)
+  Rendered layouts/partials/_modals.html.haml (Duration: 6.4ms | Allocations: 9452)
+  Rendered layout layouts/application.html.haml (Duration: 111.5ms | Allocations: 122123)
+Completed 200 OK in 117ms (Views: 112.2ms | ActiveRecord: 0.9ms | Allocations: 125096)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:44:01 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:44:02 -0300
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("uf", "descricao", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["uf", "CE"], ["descricao", "CEARÁ"], ["created_at", "2020-12-11 17:44:30.314468"], ["updated_at", "2020-12-11 17:44:30.314468"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-11 14:44:32 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 5.5ms | Allocations: 2665)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 9.2ms | Allocations: 6499)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.0ms | Allocations: 1957)
+undefined method `avatar' for #<Usuario:0x00007f836544b0e8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.2ms | Allocations: 13054)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 58.9ms | Allocations: 52225)
+Completed 200 OK in 66ms (Views: 59.1ms | ActiveRecord: 0.6ms | Allocations: 54224)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:44:32 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:44:34 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:44:36 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"KfSLY3MZ3XFfWM4CHdu8gA1f62W3iNb0jJguysJu6I2PK1JrYJswGrr5Vny0BHuroO2EGNttoSStr2p2IYsZUQ==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "uf"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameters: :nome, :uf[0m
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 13.5ms | Allocations: 2665)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 20.1ms | Allocations: 7714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x000055f67cfae2b8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.4ms | Allocations: 13067)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 69.2ms | Allocations: 53805)
+Completed 500 Internal Server Error in 75ms (Views: 69.3ms | ActiveRecord: 0.7ms | Allocations: 58678)
+
+
+
+Pundit::AuthorizationNotPerformedError - CidadesController:
+
+Started POST "/__better_errors/22d368ad9e4a38f1/variables" for 127.0.0.1 at 2020-12-11 14:44:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:44:39 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:45:19 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"KfSLY3MZ3XFfWM4CHdu8gA1f62W3iNb0jJguysJu6I2PK1JrYJswGrr5Vny0BHuroO2EGNttoSStr2p2IYsZUQ==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "uf"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameters: :nome, :uf[0m
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 9.2ms | Allocations: 3264)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 14.2ms | Allocations: 8315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.6ms | Allocations: 1969)
+undefined method `avatar' for #<Usuario:0x00007f8370018560>
+  Rendered layouts/_nav_bar.html.haml (Duration: 18.5ms | Allocations: 13106)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 67.3ms | Allocations: 54449)
+Completed 200 OK in 103ms (Views: 66.1ms | ActiveRecord: 8.2ms | Allocations: 77182)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:45:19 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:45:21 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:45:39 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"KfSLY3MZ3XFfWM4CHdu8gA1f62W3iNb0jJguysJu6I2PK1JrYJswGrr5Vny0BHuroO2EGNttoSStr2p2IYsZUQ==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "uf"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameters: :nome, :uf[0m
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 10.0ms | Allocations: 9222)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 19.6ms | Allocations: 18662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.5ms | Allocations: 6678)
+undefined method `avatar' for #<Usuario:0x00007f83606e34b8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 22.1ms | Allocations: 18688)
+  Rendered layouts/partials/_modals.html.haml (Duration: 6.4ms | Allocations: 9454)
+  Rendered layout layouts/application.html.haml (Duration: 93.6ms | Allocations: 99927)
+Completed 200 OK in 104ms (Views: 95.7ms | ActiveRecord: 0.9ms | Allocations: 104497)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:45:39 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:45:41 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:45:43 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"pyY1LwVoLMCLW3m4DdYFVv3ADDxbC9TXi9Lac8GzTFEB+ewnFurBq2764cakCcJ9UHJjQTfuoweq5Z7PIla9jQ==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "estado_id"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameter: :nome[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 4.5ms | Allocations: 2773)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 9.9ms | Allocations: 7821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.3ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x00007f837812ba80>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.9ms | Allocations: 13071)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 56.9ms | Allocations: 53893)
+Completed 200 OK in 72ms (Views: 56.9ms | ActiveRecord: 3.2ms | Allocations: 60623)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:45:44 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:45:45 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:45:51 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"rdLQzpyKncN5LrWLTwjZxp4ec2njtZhWlAoeDepqqNoLDQnGjwhwqJyPLfXm1x7tM6wcFI9Q74a1PVqxCY9ZBg==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "estado_id"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameter: :nome[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."uf" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 5.1ms | Allocations: 2768)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 11.6ms | Allocations: 7815)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.5ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f8360652f30>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.8ms | Allocations: 13066)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 60.2ms | Allocations: 53729)
+Completed 200 OK in 71ms (Views: 60.3ms | ActiveRecord: 1.6ms | Allocations: 59411)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:45:51 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:45:53 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:46:09 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"rdLQzpyKncN5LrWLTwjZxp4ec2njtZhWlAoeDepqqNoLDQnGjwhwqJyPLfXm1x7tM6wcFI9Q74a1PVqxCY9ZBg==", "cidade"=>{"cod"=>"1234", "nome"=>"Fortaleza", "estado_id"=>"CE"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameter: :nome[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 5.9ms | Allocations: 2889)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 11.6ms | Allocations: 7940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.5ms | Allocations: 1970)
+undefined method `avatar' for #<Usuario:0x00007f83780345f0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.9ms | Allocations: 13107)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.3ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 68.6ms | Allocations: 54083)
+Completed 200 OK in 113ms (Views: 69.0ms | ActiveRecord: 9.8ms | Allocations: 79518)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:46:10 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:46:11 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-11 14:46:17 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"/MRPdissHZ+GqlIgVFl5/FRKDqwYsXhaIRRG+oXbF2xaG5Z+OK7w9GMLyl79hr7X+fhh0XRUD4oAIwJGZj7msA==", "cidade"=>{"cod"=>"1234", "nome"=>"fortaleza", "estado_id"=>"1"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+[31mUnpermitted parameter: :nome[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mCidade Create (0.8ms)[0m  [1m[32mINSERT INTO "cidades" ("cod", "estado_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cod", "1234"], ["estado_id", 1], ["created_at", "2020-12-11 17:46:17.851948"], ["updated_at", "2020-12-11 17:46:17.851948"]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+Redirected to http://localhost:3000/cidades/1
+Completed 302 Found in 15ms (ActiveRecord: 2.9ms | Allocations: 7127)
+
+
+Started GET "/cidades/1" for 127.0.0.1 at 2020-12-11 14:46:17 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+Completed 406 Not Acceptable in 9ms (ActiveRecord: 0.7ms | Allocations: 5877)
+
+
+
+ActionController::MissingExactTemplate - CidadesController#show is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/5c5758cefefbe331/variables" for 127.0.0.1 at 2020-12-11 14:46:18 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:46:20 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:46:20 -0300
+Started GET "/cidades/1" for 127.0.0.1 at 2020-12-11 14:49:54 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/show.html.haml:36
+  Rendered cidades/show.html.haml within layouts/application (Duration: 32.5ms | Allocations: 22030)
+  Rendered layout layouts/application.html.haml (Duration: 32.7ms | Allocations: 22126)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.9ms | Allocations: 25543)
+
+
+
+NoMethodError - undefined method `acoes_link_card' for #<ActionView::Base:0x0000000003cbb8>:
+  app/views/cidades/show.html.haml:42
+  app/views/cidades/show.html.haml:41
+
+Started POST "/__better_errors/fe67bcbd5a45fc00/variables" for 127.0.0.1 at 2020-12-11 14:49:54 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:49:56 -0300
+Started GET "/cidades/1" for 127.0.0.1 at 2020-12-11 14:50:30 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (0.3ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/show.html.haml:36
+  Rendered cidades/show.html.haml within layouts/application (Duration: 18.9ms | Allocations: 19278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.9ms | Allocations: 6678)
+undefined method `avatar' for #<Usuario:0x00007f835805a130>
+  Rendered layouts/_nav_bar.html.haml (Duration: 20.3ms | Allocations: 18717)
+  Rendered layouts/partials/_modals.html.haml (Duration: 5.1ms | Allocations: 9459)
+  Rendered layout layouts/application.html.haml (Duration: 85.7ms | Allocations: 100567)
+Completed 200 OK in 116ms (Views: 83.9ms | ActiveRecord: 8.1ms | Allocations: 117186)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:50:31 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:32 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:50:37 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 12.9ms | Allocations: 13982)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 24.5ms | Allocations: 28283)
+  Rendered layout layouts/application.html.haml (Duration: 24.6ms | Allocations: 28379)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.1ms | Allocations: 30582)
+
+
+
+NoMethodError - undefined method `uf' for #<Cidade:0x00007f8360234f20>:
+  app/views/cidades/_list.html.haml:20
+  app/views/cidades/_list.html.haml:16
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/517e612349bfefa2/variables" for 127.0.0.1 at 2020-12-11 14:50:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:39 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:50:41 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 6.7ms | Allocations: 6537)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 11.9ms | Allocations: 11761)
+  Rendered layout layouts/application.html.haml (Duration: 12.1ms | Allocations: 11857)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.9ms | Allocations: 13901)
+
+
+
+NoMethodError - undefined method `uf' for #<Cidade:0x00007f83651eda58>:
+  app/views/cidades/_list.html.haml:20
+  app/views/cidades/_list.html.haml:16
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/8ed54c886efa21d2/variables" for 127.0.0.1 at 2020-12-11 14:50:41 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:43 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:50:47 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 11.8ms | Allocations: 13945)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 27.4ms | Allocations: 27606)
+  Rendered layout layouts/application.html.haml (Duration: 27.7ms | Allocations: 27701)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.4ms | Allocations: 30683)
+
+
+
+NoMethodError - undefined method `uf' for #<Cidade:0x000055f67e08c968>:
+  app/views/cidades/_list.html.haml:20
+  app/views/cidades/_list.html.haml:16
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/9fe924ab17a85a2b/variables" for 127.0.0.1 at 2020-12-11 14:50:47 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:50:48 -0300
+Started GET "/cidades/1" for 127.0.0.1 at 2020-12-11 14:50:49 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (1.1ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (1.9ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:49 -0300
+  ↳ app/views/cidades/show.html.haml:36
+  Rendered cidades/show.html.haml within layouts/application (Duration: 37.6ms | Allocations: 23248)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.4ms | Allocations: 6680)
+undefined method `avatar' for #<Usuario:0x00007f83606c2560>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.6ms | Allocations: 18684)
+  Rendered layouts/partials/_modals.html.haml (Duration: 6.2ms | Allocations: 9453)
+  Rendered layout layouts/application.html.haml (Duration: 124.6ms | Allocations: 117115)
+Completed 200 OK in 141ms (Views: 124.2ms | ActiveRecord: 3.8ms | Allocations: 119753)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:50:49 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:50 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:50:50 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 8.1ms | Allocations: 6541)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 16.7ms | Allocations: 11770)
+  Rendered layout layouts/application.html.haml (Duration: 17.0ms | Allocations: 11865)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.3ms | Allocations: 13909)
+
+
+
+NoMethodError - undefined method `uf' for #<Cidade:0x000055f67d383708>:
+  app/views/cidades/_list.html.haml:20
+  app/views/cidades/_list.html.haml:16
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/5db3283a302c616c/variables" for 127.0.0.1 at 2020-12-11 14:50:50 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:51 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:50:53 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:51:44 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.9ms | Allocations: 14348)
+
+
+
+ArgumentError - Delegation needs a target. Supply a keyword argument 'to' (e.g. delegate :hello, to: :greeter).:
+  app/models/cidade.rb:7:in `<class:Cidade>'
+  app/models/cidade.rb:1:in `<main>'
+  app/controllers/cidades_controller.rb:9:in `index'
+
+Started POST "/__better_errors/748cc25007ec1c58/variables" for 127.0.0.1 at 2020-12-11 14:51:44 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:51:46 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:52:18 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/cidade.rb:7:in `uf'
+  Rendered cidades/_list.html.haml (Duration: 40.1ms | Allocations: 24987)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 54.4ms | Allocations: 41313)
+  Rendered layout layouts/application.html.haml (Duration: 54.6ms | Allocations: 41409)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 8.4ms | Allocations: 56326)
+
+
+
+NoMethodError - undefined method `edit_sindicato_cidade_path' for #<ActionView::Base:0x00000000042d88>
+Did you mean?  edit_estado_path:
+  app/views/cidades/_list.html.haml:25
+  app/views/cidades/_list.html.haml:16
+  app/views/cidades/index.html.haml:40
+
+Started POST "/__better_errors/1fd230a6830c1c2e/variables" for 127.0.0.1 at 2020-12-11 14:52:18 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:21 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:52:25 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/cidade.rb:7:in `uf'
+  Rendered cidades/_list.html.haml (Duration: 14.9ms | Allocations: 16134)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 27.2ms | Allocations: 29765)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.6ms | Allocations: 6685)
+undefined method `avatar' for #<Usuario:0x000055f67ee69b30>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.2ms | Allocations: 18715)
+  Rendered layouts/partials/_modals.html.haml (Duration: 5.7ms | Allocations: 9459)
+  Rendered layout layouts/application.html.haml (Duration: 103.4ms | Allocations: 111082)
+Completed 200 OK in 109ms (Views: 103.6ms | ActiveRecord: 1.5ms | Allocations: 114096)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:52:25 -0300
+Started GET "/cidades/1/edit" for 127.0.0.1 at 2020-12-11 14:52:26 -0300
+Processing by CidadesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (1.1ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/edit.html.haml within layouts/application
+  Rendered cidades/edit.html.haml within layouts/application (Duration: 32.7ms | Allocations: 9579)
+  Rendered layout layouts/application.html.haml (Duration: 33.7ms | Allocations: 9674)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.9ms | Allocations: 12359)
+
+
+
+NoMethodError - undefined method `nome' for #<Cidade:0x00007f836587b370>:
+  app/views/cidades/edit.html.haml:5
+
+Started POST "/__better_errors/1c965b59000d0f36/variables" for 127.0.0.1 at 2020-12-11 14:52:26 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:27 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:29 -0300
+Started GET "/cidades/1/edit" for 127.0.0.1 at 2020-12-11 14:52:33 -0300
+Processing by CidadesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.6ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/edit.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mEstado Load (0.7ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/_form.html.haml:3
+  Rendered cidades/_form.html.haml (Duration: 22.4ms | Allocations: 11584)
+  Rendered cidades/edit.html.haml within layouts/application (Duration: 28.9ms | Allocations: 19664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.6ms | Allocations: 6681)
+undefined method `avatar' for #<Usuario:0x000055f67e4086f0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.2ms | Allocations: 18687)
+  Rendered layouts/partials/_modals.html.haml (Duration: 7.4ms | Allocations: 9453)
+  Rendered layout layouts/application.html.haml (Duration: 107.6ms | Allocations: 100912)
+Completed 200 OK in 115ms (Views: 108.3ms | ActiveRecord: 2.1ms | Allocations: 104340)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:33 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:33 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:52:34 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:35 -0300
+Started GET "/cidades/1/edit" for 127.0.0.1 at 2020-12-11 14:52:50 -0300
+Processing by CidadesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/edit.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mEstado Load (1.0ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/_form.html.haml:3
+  Rendered cidades/_form.html.haml (Duration: 23.7ms | Allocations: 11439)
+  Rendered cidades/edit.html.haml within layouts/application (Duration: 44.6ms | Allocations: 19518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 6.3ms | Allocations: 6679)
+undefined method `avatar' for #<Usuario:0x00007f835808f358>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.0ms | Allocations: 18684)
+  Rendered layouts/partials/_modals.html.haml (Duration: 6.2ms | Allocations: 9452)
+  Rendered layout layouts/application.html.haml (Duration: 118.6ms | Allocations: 100776)
+Completed 200 OK in 138ms (Views: 120.8ms | ActiveRecord: 2.5ms | Allocations: 104211)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:52:50 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:52 -0300
+Started PATCH "/cidades/1" for 127.0.0.1 at 2020-12-11 14:52:53 -0300
+Processing by CidadesController#update as HTML
+  Parameters: {"authenticity_token"=>"HQFZZwWXpQir0lIx1+WpY5F8b+ZjnLZaPmtBD/pW7gq73oBvFhVIY05zyk9+Om5IPM4Amw95wYofXAWzGbMf1g==", "cidade"=>{"cod"=>"1234", "descricao"=>"FORTALEZA", "estado_id"=>"1"}, "commit"=>"Confirmar", "id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.8ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:49:in `block in update'
+  [1m[36mEstado Load (0.8ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:49:in `block in update'
+  [1m[36mCidade Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "cidades" WHERE "cidades"."cod" = $1 AND "cidades"."id" != $2 LIMIT $3[0m  [["cod", "1234"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:49:in `block in update'
+  [1m[36mCidade Update (1.8ms)[0m  [1m[33mUPDATE "cidades" SET "descricao" = $1, "updated_at" = $2 WHERE "cidades"."id" = $3[0m  [["descricao", "FORTALEZA"], ["updated_at", "2020-12-11 17:52:53.847042"], ["id", 1]]
+  ↳ app/controllers/cidades_controller.rb:49:in `block in update'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cidades_controller.rb:49:in `block in update'
+Redirected to http://localhost:3000/cidades/1
+Completed 302 Found in 54ms (ActiveRecord: 9.4ms | Allocations: 6360)
+
+
+Started GET "/cidades/1" for 127.0.0.1 at 2020-12-11 14:52:53 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.8ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (0.5ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/show.html.haml:36
+  Rendered cidades/show.html.haml within layouts/application (Duration: 38.8ms | Allocations: 21573)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.8ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x00007f83650d3b90>
+  Rendered layouts/_nav_bar.html.haml (Duration: 19.1ms | Allocations: 13068)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 97.1ms | Allocations: 67492)
+Completed 200 OK in 117ms (Views: 97.8ms | ActiveRecord: 2.4ms | Allocations: 70166)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:52:54 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:52:55 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/cidade.rb:7:in `uf'
+  Rendered cidades/_list.html.haml (Duration: 16.8ms | Allocations: 16062)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 32.1ms | Allocations: 29714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x000055f67e295e30>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.8ms | Allocations: 13070)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 86.7ms | Allocations: 75676)
+Completed 200 OK in 94ms (Views: 86.3ms | ActiveRecord: 1.7ms | Allocations: 77883)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:52:55 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:55 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:52:57 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-11 14:53:21 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.6ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.3ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 22.3ms | Allocations: 14416)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 31.5ms | Allocations: 22240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.1ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x00007f83648ca048>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.2ms | Allocations: 13103)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 77.9ms | Allocations: 68203)
+Completed 200 OK in 117ms (Views: 74.1ms | ActiveRecord: 10.6ms | Allocations: 82355)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-11 14:53:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-11 14:53:23 -0300
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:18:32 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:18:32 -0300
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUsuario Load (4.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:18:33 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 1318.5ms | Allocations: 290728)
+  Rendered home/index.html.haml within layouts/portal (Duration: 1333.8ms | Allocations: 295380)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 81.1ms | Allocations: 8085)
+  Rendered layout layouts/portal.html.haml (Duration: 1901.2ms | Allocations: 485432)
+Completed 200 OK in 1927ms (Views: 1903.3ms | ActiveRecord: 0.0ms | Allocations: 488368)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-16 11:18:37 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 64.9ms | Allocations: 8083)
+  Rendered devise/sessions/new.js.erb (Duration: 72.1ms | Allocations: 8804)
+Completed 200 OK in 106ms (Views: 100.8ms | ActiveRecord: 0.0ms | Allocations: 12824)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-16 11:18:40 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUsuario Load (1.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE (lower(username) = 'admin') ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/usuario.rb:13:in `find_for_database_authentication'
+  Rendering devise/sessions/create.js.haml
+  Rendered devise/sessions/create.js.haml (Duration: 1.6ms | Allocations: 2585)
+Completed 200 OK in 131ms (Views: 2.8ms | ActiveRecord: 1.6ms | Allocations: 6583)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:18:40 -0300
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (1.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 122.0ms | Allocations: 26297)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 157.9ms | Allocations: 42771)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 14.1ms | Allocations: 6760)
+undefined method `avatar' for #<Usuario:0x00007f2b71500ea8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 61.9ms | Allocations: 18876)
+  Rendered layouts/partials/_modals.html.haml (Duration: 17.2ms | Allocations: 9486)
+  Rendered layout layouts/application.html.haml (Duration: 382.1ms | Allocations: 127538)
+Completed 200 OK in 408ms (Views: 376.0ms | ActiveRecord: 10.1ms | Allocations: 131842)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:18:41 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:18:41 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:18:41 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-16 11:19:36 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 101.2ms | Allocations: 21751)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 137.0ms | Allocations: 29991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 5.3ms | Allocations: 1967)
+undefined method `avatar' for #<Usuario:0x00007f2b785c9658>
+  Rendered layouts/_nav_bar.html.haml (Duration: 21.4ms | Allocations: 13070)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 229.3ms | Allocations: 75812)
+Completed 500 Internal Server Error in 245ms (Views: 229.5ms | ActiveRecord: 2.2ms | Allocations: 79122)
+
+
+
+Pundit::AuthorizationNotPerformedError - CidadesController:
+
+Started POST "/__better_errors/d14a2863a6906a9d/variables" for 127.0.0.1 at 2020-12-16 11:19:37 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:19:39 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:19:40 -0300
+Started POST "/__better_errors/d14a2863a6906a9d/variables" for 127.0.0.1 at 2020-12-16 11:19:41 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:19:42 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:19:43 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:22:28 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 6461)
+
+
+
+NoMethodError - undefined method `authorize' for #<CidadesController:0x0000000002a058>:
+  app/controllers/cidades_controller.rb:9:in `index'
+
+Started POST "/__better_errors/2cc319d6c3aa885e/variables" for 127.0.0.1 at 2020-12-16 11:22:28 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:22:30 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:22:51 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 5652)
+
+
+
+NoMethodError - undefined method `entidade' for #<Usuario:0x000055d3644b42a8>:
+  app/controllers/application_controller.rb:21:in `set_current_entidade'
+
+Started POST "/__better_errors/fab4d5064a81304b/variables" for 127.0.0.1 at 2020-12-16 11:22:51 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:22:53 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:22:58 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+
+NoMethodError - undefined method `entidade' for #<Usuario:0x000055d363520a08>:
+  app/controllers/application_controller.rb:21:in `set_current_entidade'
+
+Started POST "/__better_errors/ad26b8187f50c57f/variables" for 127.0.0.1 at 2020-12-16 11:22:59 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:01 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:23:10 -0300
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4845)
+
+
+
+NoMethodError - undefined method `set_current_entidade' for #<CidadesController:0x0000000002da78>:
+
+Started POST "/__better_errors/2f20c410ff357554/variables" for 127.0.0.1 at 2020-12-16 11:23:10 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:12 -0300
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "usuarios"[0m
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:23:27 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.3ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.3ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 25.4ms | Allocations: 13352)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 41.5ms | Allocations: 21213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.5ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x000055d364335df0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 23.0ms | Allocations: 13123)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.haml (Duration: 97.6ms | Allocations: 67143)
+Completed 200 OK in 104ms (Views: 87.7ms | ActiveRecord: 11.7ms | Allocations: 70772)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:23:28 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-16 11:23:29 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 10.0ms | Allocations: 4164)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 13.1ms | Allocations: 8002)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.7ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f2b71c53f70>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.5ms | Allocations: 13057)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 60.6ms | Allocations: 53876)
+Completed 200 OK in 66ms (Views: 60.5ms | ActiveRecord: 1.0ms | Allocations: 55872)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:29 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:29 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:23:29 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:29 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:31 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-16 11:23:51 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 9.5ms | Allocations: 4153)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 13.8ms | Allocations: 7979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.7ms | Allocations: 1955)
+undefined method `avatar' for #<Usuario:0x000055d364336020>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.0ms | Allocations: 13052)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 61.1ms | Allocations: 53693)
+Completed 200 OK in 68ms (Views: 62.0ms | ActiveRecord: 0.8ms | Allocations: 55711)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:23:52 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:23:53 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-16 11:24:19 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"pWWftUiRpgiyH9kl82wpcSw88ONXJ+VfiEdiSRSKJmZKknAxvMaNkSTsomyIgG5rnpQZ1aEya6s6yRU4aPKotg==", "cidade"=>{"cod"=>"1321", "descricao"=>"Fortaleza", "estado_id"=>"1"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.7ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mCidade Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "cidades" WHERE "cidades"."cod" = $1 LIMIT $2[0m  [["cod", "1321"], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mCidade Create (4.2ms)[0m  [1m[32mINSERT INTO "cidades" ("cod", "descricao", "estado_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cod", "1321"], ["descricao", "Fortaleza"], ["estado_id", 1], ["created_at", "2020-12-16 14:24:19.111931"], ["updated_at", "2020-12-16 14:24:19.111931"]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+Redirected to http://localhost:4000/cidades/2
+Completed 302 Found in 66ms (ActiveRecord: 7.9ms | Allocations: 18065)
+
+
+Started GET "/cidades/2" for 127.0.0.1 at 2020-12-16 11:24:19 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (0.6ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/show.html.haml:34
+  Rendered cidades/show.html.haml within layouts/application (Duration: 58.3ms | Allocations: 19106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1968)
+undefined method `avatar' for #<Usuario:0x00007f2b7090ec30>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.2ms | Allocations: 13065)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 106.6ms | Allocations: 65023)
+Completed 200 OK in 117ms (Views: 106.7ms | ActiveRecord: 1.4ms | Allocations: 67768)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:24:19 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:24:21 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:24:21 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:30:33 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 10.9ms | Allocations: 7386)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 17.6ms | Allocations: 12589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1955)
+undefined method `avatar' for #<Usuario:0x000055d3643ceeb0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.4ms | Allocations: 13070)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 62.8ms | Allocations: 58330)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 1.4ms | Allocations: 58806)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:30:34 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:30:35 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:30:42 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as */*
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:30:42 -0300
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 12.0ms | Allocations: 7516)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 32.8ms | Allocations: 18845)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f2b71cd63f8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 26.3ms | Allocations: 20596)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 105.7ms | Allocations: 87820)
+Completed 200 OK in 109ms (Views: 95.3ms | ActiveRecord: 11.5ms | Allocations: 88482)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:31:00 -0300
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.3ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 10.1ms | Allocations: 7370)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 17.9ms | Allocations: 12574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1966)
+undefined method `avatar' for #<Usuario:0x000055d36421d760>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.8ms | Allocations: 13075)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 63.8ms | Allocations: 58350)
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.4ms | Allocations: 58824)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:31:01 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:31:03 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:39:41 -0300
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.7ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 11.7ms | Allocations: 7383)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 19.2ms | Allocations: 12595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.4ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f2b71335038>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.8ms | Allocations: 13079)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.3ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 68.2ms | Allocations: 58451)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 1.9ms | Allocations: 58925)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:39:42 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:44 -0300
+Started GET "/usuarios/edit" for 127.0.0.1 at 2020-12-16 11:39:51 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/devise/registrations_controller.rb:123:in `authenticate_scope!'
+  Rendering layout layouts/application.html.haml
+  Rendering devise/registrations/edit.html.haml within layouts/application
+  Rendered devise/registrations/edit.html.haml within layouts/application (Duration: 15.4ms | Allocations: 12422)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 2.9ms | Allocations: 1969)
+undefined method `avatar' for #<Usuario:0x00007f2b71c28fa0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.8ms | Allocations: 13071)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 60.7ms | Allocations: 58311)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.3ms | Allocations: 61119)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:51 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:51 -0300
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:39:51 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:39:51 -0300
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (1.1ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.7ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 26.7ms | Allocations: 7383)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 46.7ms | Allocations: 12595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1959)
+undefined method `avatar' for #<Usuario:0x00007f2b71339250>
+  Rendered layouts/_nav_bar.html.haml (Duration: 15.7ms | Allocations: 13071)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 98.4ms | Allocations: 58396)
+Completed 200 OK in 103ms (Views: 96.2ms | ActiveRecord: 3.2ms | Allocations: 58871)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:39:52 -0300
+Started GET "/usuarios/edit" for 127.0.0.1 at 2020-12-16 11:39:53 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/devise/registrations_controller.rb:123:in `authenticate_scope!'
+  Rendering layout layouts/application.html.haml
+  Rendering devise/registrations/edit.html.haml within layouts/application
+  Rendered devise/registrations/edit.html.haml within layouts/application (Duration: 9.5ms | Allocations: 4617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.3ms | Allocations: 1967)
+undefined method `avatar' for #<Usuario:0x000055d3627e43d0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.0ms | Allocations: 13067)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 83.2ms | Allocations: 50400)
+Completed 200 OK in 90ms (Views: 84.1ms | ActiveRecord: 0.6ms | Allocations: 51934)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:39:53 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:54 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-16 11:39:54 -0300
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.8ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.6ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 20.6ms | Allocations: 7379)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 37.7ms | Allocations: 12587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f2b716266c0>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.7ms | Allocations: 13079)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 87.8ms | Allocations: 58402)
+Completed 200 OK in 90ms (Views: 86.2ms | ActiveRecord: 2.4ms | Allocations: 58876)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:39:54 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:55 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:39:56 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-16 11:41:33 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 8.2ms | Allocations: 4160)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 11.7ms | Allocations: 7990)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 7.9ms | Allocations: 1962)
+undefined method `avatar' for #<Usuario:0x000055d363a28848>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.0ms | Allocations: 13066)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 65.9ms | Allocations: 53732)
+Completed 200 OK in 70ms (Views: 65.9ms | ActiveRecord: 0.8ms | Allocations: 55741)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:41:33 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:41:35 -0300
+Started GET "/cidades" for 127.0.0.1 at 2020-12-16 11:41:49 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.5ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.5ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 10.0ms | Allocations: 7374)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 16.6ms | Allocations: 12560)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f2b710cb090>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.6ms | Allocations: 13064)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 64.1ms | Allocations: 58417)
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 1.6ms | Allocations: 60473)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-16 11:41:49 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-16 11:41:51 -0300
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:44:23 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: [] is deprecated and will be removed from Rails 6.2 (Use configs_for) (called from rescue in block in <class:EnvironmentReport> at /home/dev01/.rvm/gems/ruby-2.7.2/gems/newrelic_rpm-6.14.0/lib/new_relic/environment_report.rb:82)
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:44:44 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUsuario Load (3.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:44:44 -0300
+  [1m[36mUsuario Load (1.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:44:44 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 3266.3ms | Allocations: 294041)
+  Rendered home/index.html.haml within layouts/portal (Duration: 3292.6ms | Allocations: 298693)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 62.4ms | Allocations: 8019)
+  Rendered layout layouts/portal.html.haml (Duration: 3583.2ms | Allocations: 372189)
+Completed 200 OK in 3618ms (Views: 3586.6ms | ActiveRecord: 0.0ms | Allocations: 375123)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:44:48 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/portal.html.haml
+  Rendering home/index.html.haml within layouts/portal
+  Rendered home/_index.html.haml (Duration: 1.8ms | Allocations: 1069)
+  Rendered home/index.html.haml within layouts/portal (Duration: 2.1ms | Allocations: 1180)
+  Rendered layouts/partials/_menu_portal.html.haml (Duration: 2.4ms | Allocations: 2558)
+  Rendered layout layouts/portal.html.haml (Duration: 30.9ms | Allocations: 29026)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 29381)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:44:51 -0300
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2020-12-22 14:45:01 -0300
+Processing by Devise::SessionsController#new as JS
+  Rendering devise/sessions/new.js.erb
+  Rendered devise/sessions/_new.html.haml (Duration: 62.5ms | Allocations: 8084)
+  Rendered devise/sessions/new.js.erb (Duration: 82.0ms | Allocations: 8799)
+Completed 200 OK in 180ms (Views: 129.9ms | ActiveRecord: 0.0ms | Allocations: 12871)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2020-12-22 14:45:05 -0300
+Processing by Devise::SessionsController#create as JS
+  Parameters: {"usuario"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUsuario Load (1.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE (lower(username) = 'admin') ORDER BY "usuarios"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/usuario.rb:13:in `find_for_database_authentication'
+  Rendering devise/sessions/create.js.haml
+  Rendered devise/sessions/create.js.haml (Duration: 5.8ms | Allocations: 2590)
+Completed 200 OK in 158ms (Views: 7.7ms | ActiveRecord: 1.6ms | Allocations: 6630)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:45:05 -0300
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (1.2ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.7ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 193.5ms | Allocations: 28880)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 257.1ms | Allocations: 45354)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 128.4ms | Allocations: 6759)
+undefined method `avatar' for #<Usuario:0x0000560f1dcad078>
+  Rendered layouts/_nav_bar.html.haml (Duration: 164.3ms | Allocations: 18877)
+  Rendered layouts/partials/_modals.html.haml (Duration: 25.9ms | Allocations: 9486)
+  Rendered layout layouts/application.html.haml (Duration: 835.2ms | Allocations: 129878)
+Completed 200 OK in 900ms (Views: 833.7ms | ActiveRecord: 12.7ms | Allocations: 134063)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-22 14:45:07 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:08 -0300
+Started GET "/cidades/new" for 127.0.0.1 at 2020-12-22 14:45:09 -0300
+Processing by CidadesController#new as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  Rendered cidades/_form.html.haml (Duration: 46.5ms | Allocations: 11339)
+  Rendered cidades/new.html.haml within layouts/application (Duration: 61.5ms | Allocations: 19577)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 4.3ms | Allocations: 1957)
+undefined method `avatar' for #<Usuario:0x0000560f1f760488>
+  Rendered layouts/_nav_bar.html.haml (Duration: 22.6ms | Allocations: 13055)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 136.1ms | Allocations: 65301)
+Completed 200 OK in 150ms (Views: 136.5ms | ActiveRecord: 1.5ms | Allocations: 67537)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-22 14:45:10 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:11 -0300
+Started POST "/cidades" for 127.0.0.1 at 2020-12-22 14:45:18 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"NWe5iRPYn470koo/ZRW0CJDc2b/XE99PR02RB85jQEQ5yXuy51pFBbupXglKpHWlqgrunf9u5XKuJgtseNXLcA==", "cidade"=>{"cod"=>"1324", "descricao"=>"Fortaeza", "estado_id"=>"1"}, "commit"=>"Confirmar"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+CidadesController
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mCidade Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "cidades" WHERE "cidades"."cod" = $1 LIMIT $2[0m  [["cod", "1324"], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mCidade Create (2.9ms)[0m  [1m[32mINSERT INTO "cidades" ("cod", "descricao", "estado_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cod", "1324"], ["descricao", "Fortaeza"], ["estado_id", 1], ["created_at", "2020-12-22 17:45:18.123923"], ["updated_at", "2020-12-22 17:45:18.123923"]]
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cidades_controller.rb:35:in `block in create'
+Redirected to http://localhost:4000/cidades/3
+Completed 302 Found in 28ms (ActiveRecord: 5.9ms | Allocations: 6573)
+
+
+Started GET "/cidades/3" for 127.0.0.1 at 2020-12-22 14:45:18 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCidade Load (0.9ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cidades_controller.rb:72:in `set_cidade'
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/show.html.haml within layouts/application
+  [1m[36mEstado Load (0.3ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cidades/show.html.haml:34
+  Rendered cidades/show.html.haml within layouts/application (Duration: 30.0ms | Allocations: 19102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.1ms | Allocations: 1967)
+undefined method `avatar' for #<Usuario:0x00007f8414314918>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.6ms | Allocations: 13067)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 76.7ms | Allocations: 65014)
+Completed 200 OK in 83ms (Views: 76.8ms | ActiveRecord: 1.5ms | Allocations: 67831)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-22 14:45:18 -0300
+Started GET "/usuarios/edit" for 127.0.0.1 at 2020-12-22 14:45:19 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/devise/registrations_controller.rb:123:in `authenticate_scope!'
+  Rendering layout layouts/application.html.haml
+  Rendering devise/registrations/edit.html.haml within layouts/application
+  Rendered devise/registrations/edit.html.haml within layouts/application (Duration: 34.6ms | Allocations: 12337)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.2ms | Allocations: 1965)
+undefined method `avatar' for #<Usuario:0x00007f8404c92dd8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 16.0ms | Allocations: 13066)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.haml (Duration: 93.7ms | Allocations: 58201)
+Completed 200 OK in 106ms (Views: 98.8ms | ActiveRecord: 0.6ms | Allocations: 61097)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-22 14:45:20 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:20 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:20 -0300
+Started GET "/" for 127.0.0.1 at 2020-12-22 14:45:20 -0300
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 ORDER BY "usuarios"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CidadesController#index as HTML
+CidadesController
+  Rendering layout layouts/application.html.haml
+  Rendering cidades/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "estados"."descricao", "estados"."id" FROM "estados" ORDER BY "estados"."uf" ASC[0m
+  ↳ app/helpers/estados_helper.rb:3:in `options_estados'
+  [1m[36mCidade Load (0.4ms)[0m  [1m[34mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/cidades/_list.html.haml:16
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" WHERE "estados"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/cidades/_list.html.haml:16
+  Rendered cidades/_list.html.haml (Duration: 14.3ms | Allocations: 9946)
+  Rendered cidades/index.html.haml within layouts/application (Duration: 23.5ms | Allocations: 15163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_menu.html.haml (Duration: 3.3ms | Allocations: 1967)
+undefined method `avatar' for #<Usuario:0x0000560f1f474aa8>
+  Rendered layouts/_nav_bar.html.haml (Duration: 17.4ms | Allocations: 13086)
+  Rendered layouts/partials/_modals.html.haml (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.haml (Duration: 81.5ms | Allocations: 61109)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 1.3ms | Allocations: 61585)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-12-22 14:45:21 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:21 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-12-22 14:45:51 -0300

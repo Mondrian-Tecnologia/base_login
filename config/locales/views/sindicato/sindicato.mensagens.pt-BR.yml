@@ -1,0 +1,12 @@
+pt-BR:
+  sindicato:
+    mensagens:
+      index:  
+        title: Listagem de Mensagens
+        new: Nova Mensagem
+      new: 
+        title: Cadastrar Mensagem
+      show: 
+        title: Visualizar Mensagem
+      edit: 
+        title: Editar Mensagem

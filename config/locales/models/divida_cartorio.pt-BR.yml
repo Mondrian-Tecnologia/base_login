@@ -1,0 +1,23 @@
+pt-BR:
+  activerecord:
+    models:
+      divida_cartorio: 
+        one: Desconto Administrativo
+        other: Descontos Administrativos
+    attributes:
+      divida_cartorio:
+        id: "#"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+        percentual: "Desconto (%)"
+        valor_desconto: Valor Fixo
+        observacao: Observação
+        valor: Valor 
+        valor_pago: Valor Pago
+        cartorio_id: Cartório
+
+    errors:
+      models:
+        divida_cartorio:
+          attributes:
+          validate:

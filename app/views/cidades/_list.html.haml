@@ -1,0 +1,32 @@
+- model_class = Cidade
+.row
+  .col-md.mb-4
+    .card.p-3
+      .table-responsive
+        %table.table.table-hover.table-borderless.text-center
+          %thead.thead-light
+            %tr
+              %th= model_class.human_attribute_name(:id)
+              %th= model_class.human_attribute_name(:cod)
+              %th= model_class.human_attribute_name(:uf)
+              %th= model_class.human_attribute_name(:descricao)
+              %th= model_class.human_attribute_name(:updated_at)
+              %th{colspan: 3} Opções
+          %tbody
+            - @cidades.each do |cidade|
+              %tr
+                %td= cidade.id
+                %td= cidade.cod
+                %td= cidade.uf
+                %td= cidade.descricao
+                %td= l cidade.updated_at, format: :short
+                %td
+                  -# - if policy([:sindicato, cidade]).edit?
+                  = link_to edit_cidade_path(cidade), title: t('helpers.links.edit') do
+                    = svg_icon :edit
+      .d-flex.justify-content-between
+        #left.bd-highlight
+        %center.bd-highlight.page
+          = paginate @cidades, remote: true
+          = page_entries_info @cidades
+        #right.bd-highlight

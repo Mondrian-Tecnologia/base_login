@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    log_boletos:
+      index:
+        title: Histórico de Envios aos Bancos
+      recentes:
+        title: Últimos 50 históricos de comunicação com os Bancos

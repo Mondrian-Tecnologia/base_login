@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    attributes:
+      banco:
+        id: "#"
+        codigo: "Código"
+        descricao: "Descrição"
+        ativo : "Ativo ?"
+        cobrar_ted: "Cobrar TED ?"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        banco:
+          attributes:
+          validate:

@@ -1,0 +1,19 @@
+pt-BR:
+  activerecord:
+    attributes:
+      mensagem:
+        id: "#"
+        titulo: Título
+        texto: Texto
+        popup: "Pop-up"
+        ativa: Ativa
+        data_ini: Data de Início
+        data_fim: Data do Fim
+        datas: Período
+        sidebar: Lateral Ativa
+        imagem: "Imagem do Pop-up"
+        from: "Mostra para:"
+    errors:
+      models:
+        mensagem:
+          validate:

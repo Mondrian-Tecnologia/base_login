@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    attributes:
+      configuracao:
+        id: "#"
+        descricao: "Descrição"
+        chave: "Chave"
+        valor: "Valor"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        configuracao:
+          attributes:
+          validate:

@@ -1,0 +1,17 @@
+pt-BR:
+  sindicato:
+    repasse_parceiros:
+      index:  
+        title: Relatório de Repasse Parceiros
+      imprimir_dutes:
+        title: "Detalhamento de Receitas - Data: %{data_repasse}"
+      parcial:
+        title: 'Relatório Parcial do Repasse para Parceiros de: %{data}'
+      show: 
+        title: 'Relatório Detalhado do Repasse para Parceiros #%{id} de: %{data}'
+      cartorios:
+        title: Detalhamento por Cartório
+      faturas:
+        title: Detralhamento por Faturas
+      acompanhar:
+        title: 'Acompanhar Processamento do Repasse Parceiro %{id}'

@@ -1,0 +1,13 @@
+exibirLogoColorida();
+alterarBgSkew();
+$('.bg-skew').fadeIn();
+// Altera cor do menu para preto
+$('.top-menu-item').addClass('secondary');
+
+let body = $('#body-render');
+body.hide();
+body.empty()
+body.append('<%= escape_javascript(render partial: 'sobre_nos') %>')
+body.fadeIn('slow');
+
+$(".top-menu-item").removeClass('active');

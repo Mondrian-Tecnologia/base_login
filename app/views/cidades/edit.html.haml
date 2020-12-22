@@ -1,0 +1,12 @@
+- model_class = Cidade
+
+.d-sm-flex.align-items-center.justify-content-between.mb-4
+  .h3.mb-0.mt-4.title-gray
+    = t('.title')
+.row
+  .col-md
+    = flash_message(@cidade)
+.row
+  .col-xs-12.col-md-10
+    .card.shadow.overflow-inherit
+      = render 'form'

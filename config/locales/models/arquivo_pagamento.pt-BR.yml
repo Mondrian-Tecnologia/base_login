@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    models:
+      arquivo_pagamento: 
+        one: Arquivo Pagamento
+        other: Arquivos Pagamentos
+    attributes:
+      arquivo_pagamento:
+        id: "#"
+        arquivo:    Arquivo
+        status:     Situação
+        filename:   Nome do Arquivo
+        created_at: Data de Cadastro
+        updated_at: Data de Atualização
+        total_boletos: Total Boletos
+        total_banco: Total Banco
+        count: Qtd. Pagamentos
+    errors:
+      models:
+        arquivo_pagamento:
+          attributes:
+          validate:

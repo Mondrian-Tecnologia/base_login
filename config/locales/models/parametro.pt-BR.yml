@@ -1,0 +1,24 @@
+pt-BR:
+  activerecord:
+    attributes:
+      parametro:
+        id: "#"
+        tipo: Tipo
+        ambiente: Ambiente
+        cedente: Cedente
+        documento_cedente: Documento
+        cedente_endereco: Endereço
+        agencia: Agência
+        conta_corrente: Conta Corrente
+        carteira: Carteira
+        variacao: Variação
+        aceite: Aceite
+        convenio: Convênio
+        instrucoes1: Instruções1
+        instrucoes2: Instruções2
+        instrucoes3: Instruções3
+        cod_cliente: Cód. Cliente
+        numero_cobranca: Núm. Cobrança
+        cooperativa: Cooperativa
+        created_at: "Criado em"
+        updated_at: "Alterado em"

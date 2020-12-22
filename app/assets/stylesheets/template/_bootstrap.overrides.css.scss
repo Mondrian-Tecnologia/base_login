@@ -1,0 +1,198 @@
+$bg-headers: #f5f6fa;
+$body-color: #212529;
+$primary: #2653d4;
+body { color: #666 }
+
+.nav.nav-pills.nav-justified {
+  background: white;
+  padding-right: 1rem;
+  li:first-child a { margin: 0 10% 0 0; }
+  li:last-child a { margin: 0 0 0 10%; }
+  a {
+    width: 90%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    padding: 1.3rem;
+    border-radius: 10rem;
+    margin: 0 5%;
+  }
+}
+
+.btn.btn-light, .btn.btn-default {
+  border: 1px solid #999;
+  color: $body-color;
+}
+.card.overflow-inherit {
+  overflow: inherit;
+}
+a:not([href]):hover{
+  color: #222;
+}
+a.a-card {
+  width: 100%;
+  &:hover {
+    text-decoration: none;
+    .text-gray-800 {
+      color: $primary !important;
+      transition: all 0.5s ease-in-out;
+    }
+    .shadow {
+      box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.35) !important;
+      transition: all 0.5s ease-in-out;
+    }
+    svg {
+      stroke: $primary;
+    }
+  }
+}
+
+select.upcase { text-transform: uppercase;}
+input.upcase { text-transform: uppercase;}
+label  {
+  font-weight: normal;
+  color: #086ecc;
+}
+/* CARD */
+.card {
+  //border-radius: 1.05rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 19px;
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, .04);
+  .card-header {
+    // background: $bg-headers;
+    // color: #4D4F5C;
+    font-size: .9rem;
+    font-weight: 700;
+    &.radius {
+      border-radius: 0.35rem 0.35rem 0  0;
+    }
+  }
+}
+ul.pagination {
+  text-align: center;
+  display: inline-flex;
+}
+.page-item a {
+  margin: 0;
+}
+
+/* BORDAS E HOVER DE TABLE */
+.table .thead-light th { background-color: $bg-headers}
+.table-responsive table.table-borderless {
+  tr {
+    th, td {
+      border: 0px;
+      color: #4D4F5C;
+    }
+    th { font-size: .9rem; }
+    td { font-size: .8rem; }
+    td svg {
+      width: 20px;
+      height: 20px;
+    }
+    a:hover { text-decoration: none ;}
+  }
+  thead tr th:first-child {
+    border-radius: 10px 0 0 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  thead tr th:last-child {
+    border-radius: 0 10px 10px 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
+.table-hover tbody tr:hover {
+  background-color: $bg-headers;
+  td:first-child {
+    border-radius: 10px 0 0 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  td:last-child {
+    border-radius: 0 10px 10px 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+/* STYLE CHECK AND RADIO */
+.form-control[type="radio"], .form-control[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  background: #4e73df;
+}
+input[type="radio" i]:disabled {
+  background-color: red;
+}
+.form-check-input[type="radio"] {
+  height: 18px;
+  width: 18px;
+  margin-top: 0px;
+}
+table tr td .input[type="radio"], table tr td input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+.form-check {
+  // .form-check-label { }
+  input[type="radio"], input[type="checkbox"] {
+    width: 17px; height: 17px; margin-top: 5px }
+}
+
+/* BADGE */
+.badge {
+  padding: 0.5em 0.4em;
+  font-size: 90%;
+  margin-top: -4px;
+}
+.badge-warning {
+  background-color: #c79f37
+}
+/* text-right */
+@media (max-width: 767px) {
+  .form-group.row label.text-right {
+    text-align: left !important;
+  }
+}
+
+#read_log {
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .read-log-head{
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .read-log-body {
+    font-size: 1rem;
+  }
+  .log-line {
+    text-align: center;
+  }
+}
+
+/* border top in tfoot */
+tfoot .border_foot {
+  border-top: 1px solid #ccc !important;
+}
+
+.tab-content .active .form-group div {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .sidebar .nav-item .collapse, .sidebar .nav-item .collapsing {
+    margin: 0 0rem;
+  }
+}

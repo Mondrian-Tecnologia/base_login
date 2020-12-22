@@ -1,0 +1,13 @@
+- model_class = Endereco
+.row.grid
+  .col-md-12
+    = flash_message(resource)
+    = flash_message(@cartorio)
+    = flash_message(@endereco)
+    .panel.panel-piluku
+      .panel-heading
+        %h3.panel-title
+          = t('.title', default: model_class.model_name.human.titleize, model: model_class.model_name.human.titleize)
+          %br
+          %span= t('.details')
+      = render 'form'

@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    log_protocolos:
+      index:
+        title: Listagem de Histórico de Protocolos
+      show:
+        title: Visualizar Protocolo

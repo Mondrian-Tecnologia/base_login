@@ -1,0 +1,30 @@
+pt-BR:
+  activerecord:
+    models:
+      usuario: 
+        one: Usuário
+        other: Usuários
+    attributes:
+      usuario:
+        id: "#"
+        login: "Login"
+        name: Nome Completo
+        email: "Email"
+        cpf: CPF
+        entidade_type: "Cartório"
+        password: "Senha"
+        acesso_limitado_cartorio: "Acesso Limitado"
+        cartorio_financeiro: "Financeiro"
+        cartorio_reconhecimento_firma: "Reconhecimento Firma"
+        roles: Permissões
+        role: Permissão
+        password_confirmation: "Confirmação de Senha"
+        current_password: "Senha Atual"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        usuario:
+          attributes:
+          validate:
+

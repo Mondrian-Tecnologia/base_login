@@ -1,0 +1,8 @@
+pt-BR:
+  cartorio:
+    informacao:
+      procuracoes:
+        new:
+          title: 'Cadastro de Procuração do(a) %{tipo}(a)'
+        edit:
+          title: 'Editar de Procuração do(a) %{tipo}(a)'

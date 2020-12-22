@@ -1,0 +1,12 @@
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", :'http-equiv' => "Content-Type"}
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", :'http-equiv' => "X-UA-Compatible"}
+    %meta{content: "Recibo", name: "description"}
+    = wicked_pdf_stylesheet_link_tag "recibo"
+    %title
+      Central TDPJ CE - 
+      = action_name
+  %body
+    = yield

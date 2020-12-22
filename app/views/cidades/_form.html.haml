@@ -1,0 +1,28 @@
+- model_class = Cidade
+
+= form_with model: @cidade, url: (@cidade.new_record? ? cidades_path : cidade_path(@cidade)),
+                            html: { autocomplete: :off }, validate: true do |f|
+  .card-header.text-white.bg-primary.mb-2.radius
+    .h6.text-center.mt-2
+      = t('helpers.titles.form', model: model_class.model_name.human.titleize)
+  .card-body
+    .form-group.row
+      = f.label :cod, {}, class: 'col-md-3 col-form-label text-right'
+      .col-md-4
+        = f.text_field :cod, class: 'form-control', required: true
+    .form-group.row
+      = f.label :descricao, {}, class: 'col-md-3 col-form-label text-right'
+      .col-md-8
+        = f.text_field :descricao, class: 'form-control upcase', required: true
+    .form-group.row
+      = f.label :estado_id, {}, class: 'col-md-3 col-form-label text-right'
+      .col-md-8
+        = f.select :estado_id, options_estados, {}, class: 'selectpicker', required: true,  'data-size': 7
+
+  .card-footer.bg-transparent.border-0
+    .row.justify-content-between
+      .col
+        .float-right
+          = f.submit t('.confirm', default: t("helpers.submit.confirm")), class: btn_class(:primary)
+        .float-left
+          = link_to t('.back', default: t("helpers.links.back")), cidades_path, class: btn_class(:light)

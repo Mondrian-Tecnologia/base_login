@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    attributes:
+      empresa:
+        id: "#"
+        nome: "Nome"
+        chave: "Chave"
+        descricao: "Descrição"
+        ativo: "Ativo ?"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        empresa:
+          attributes:
+          validate:

@@ -1,0 +1,29 @@
+:javascript
+  var result = {};
+  var tmp = [];
+
+  location.search
+      .substr (1)
+      .split ("&")
+      .forEach (function (item) {
+          tmp = item.split ("=");
+          result [tmp[0]] = decodeURIComponent (tmp[1]);
+      });
+
+  if (result['tab']) {
+    let tab = result['tab'];
+    
+    if ($(".anchor-tabs #" + tab).size() > 0){
+      $(".anchor-tabs .active").removeClass('active');
+      $(".anchor-tabs #" + tab).addClass('active');
+      $(".anchor-tabs ." + tab).addClass('active');
+
+      var intervalo = window.setInterval(function() {
+        window.scrollTo(0,0);
+      }, 1);
+      
+      window.setTimeout(function() {
+        clearInterval(intervalo);
+      }, 2);
+    }
+  }

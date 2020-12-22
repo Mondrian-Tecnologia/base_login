@@ -1,0 +1,30 @@
+-# - uf = Configuracao.get('uf')
+
+.container
+  .row.top-body
+    .col-lg-10.col-md-12
+      .title-page.pb-1= t('.title')
+  .row
+    .col-lg-6.col-md-12
+      .title-page.py-4
+        .h6.sobre-nos-description.pt-3
+          O sistema DUT Eletrônico foi desenvolvido pela Mondrian Tecnologia
+          para que os cartórios possam prestar à população o serviço de
+          Registro Eletrônico de Compra e Venda de Veículos, pelo qual toda e qualquer
+          forma de transferência de propriedade de veículo automotor,
+          deve ser informado eletronicamente ao Departamento de Trânsito (DETRAN).
+      .row
+        .col-md-8.col-12
+          .iniciativa-img.py-4
+            = link_to root_path, target: '_blank' do
+              = image_tag 'iniciativa/svg/mondrian-cor.svg', class: 'mondrian'
+        .col-md-4.col-12
+          .iniciativa-img.py-4
+            = link_to "http://www.anoreg.org.br/", target: '_blank' do
+              = image_tag 'iniciativa/svg/anoreg-pi-cor.svg'
+    .col-lg-1
+    .col-lg-5.col-md-12
+      %a.video-link{ data: { lity: '' }, href: 'https://youtu.be/ZCN_biefsPM' }
+        .box-video
+          .home-content__video
+            %span.video-icon

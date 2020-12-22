@@ -1,0 +1,12 @@
+pt-BR:
+  sindicato:
+    cidades:
+      index:  
+        title: Listagem de Cidades
+        new: Cadastrar Cidade
+      edit: 
+        title: 'Editar Cidade #%{id} - %{nome}'
+      new: 
+        title: Cadastrar Cidade
+      sem_rtd:
+        title: Listagem de cidades sem RTD cadastrado

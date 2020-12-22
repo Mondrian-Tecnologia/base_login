@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    gerar_repasse:
+      new:
+        title: 'Gerar Repasses'
+      acompanhar:
+        title: 'Acompanhar Processamento do Repasse'

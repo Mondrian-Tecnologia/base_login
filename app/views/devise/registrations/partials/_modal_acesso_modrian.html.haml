@@ -1,0 +1,25 @@
+#acesso_mondrian.modal.fade{role: "dialog"}
+  .modal-dialog{style: "width: 780px"}
+    .modal-content
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title ATENÇÃO
+      .modal-body{style: "padding: 20px"}
+        %p#dados_envio
+          
+          %br
+            Ao clicar em aceitar, você concorda em dar acesso aos administradores do sistemas à sua conta, visando apenas auxiliá-lo em algum procedimento.
+          %br
+            Isso só ocorrerá quando você pedir o auxílio. Esta função pode ser revogada a qualquer momento.
+          %br
+          
+      .modal-footer
+        %button.btn.btn-default.left{"data-dismiss" => "modal", :type => "button", :onclick => "negarAcesso()"} Negar
+        %button.btn.btn-primary.right{"data-dismiss" => "modal", :type => "button", :onclick => "aceitarAcesso()"} Aceitar
+:javascript
+  function aceitarAcesso() {
+    $("#usuario_acesso_mondrian_permitido").prop("checked", true);
+  }
+  function negarAcesso() {
+    $("#usuario_acesso_mondrian_permitido").prop("checked", false);
+  }         

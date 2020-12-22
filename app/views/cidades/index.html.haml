@@ -1,0 +1,40 @@
+- model_class = Cidade
+
+.d-sm-flex.align-items-center.justify-content-between.mb-4
+  .h3.mb-0.mt-4.title-gray= t('.title')
+  -# - if policy([:sindicato, Cidade]).new?
+  = link_to new_cidade_path, class: btn_class([:primary, :sm]) do
+    %i.fas.fa-plus-circle.mr-2
+    = t('.new', default: t('helpers.links.new'))
+.row
+  .col-md
+    = flash_message
+.row
+  .col-xl-8.col-lg-12.col-md-12
+    .card.shadow.overflow-inherit
+      = form_with url: nil, method: :get do
+        .card-header.py-3.d-none
+          = t(".filter", default: t('helpers.titles.search_form'))
+        .card-body
+          .form-row
+            .form-group.col-md-6
+              = label_tag :uf, model_class.human_attribute_name(:uf)
+              = select_tag :uf, options_for_select(options_estados, params[:uf]), include_blank: true, class: 'form-control'
+            .form-group.col-md-6
+              = label_tag :nome, model_class.human_attribute_name(:nome)
+              = text_field_tag :nome, params[:nome], class: 'form-control'
+          .form-row
+            .form-group.col-md-6
+              .form-group
+                = label_tag :cod, model_class.human_attribute_name(:cod)
+                = text_field_tag :cod, params[:cod], class: 'form-control'
+        .card-footer.bg-transparent.border-0
+          .row.justify-content-between
+            .col
+              .float-right
+                = submit_tag t('.confirm', default: t("helpers.submit.search")), class: btn_class(:primary)
+              .float-left
+                = link_to t("helpers.links.clear"), nil, class: btn_class(:light)
+
+#sindicato-cidades
+  =render partial: 'list'

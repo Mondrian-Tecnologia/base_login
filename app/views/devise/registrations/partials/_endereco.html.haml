@@ -1,0 +1,35 @@
+.row
+  .col-md-12
+    .panel
+      .panel-body
+        .form-heading
+          Endereço
+          %form.form.form-horizontal
+            .form-group
+              %label.col-sm-2.control-label CEP:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.cep}", :type => "text",:disabled => "disabled"}/
+            .form-group
+              %label.col-sm-2.control-label UF:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.uf}", :type => "text",:disabled => "disabled"}/
+            .form-group
+              %label.col-sm-2.control-label Logradouro:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.logradouro}", :type => "text",:disabled => "disabled"}/
+            .form-group
+              %label.col-sm-2.control-label Número:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.numero}", :type => "text",:disabled => "disabled"}/ 
+            .form-group
+              %label.col-sm-2.control-label Bairro:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.bairro}", :type => "text",:disabled => "disabled"}/
+            .form-group
+              %label.col-sm-2.control-label Cidade:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.nome_cidade}", :type => "text",:disabled => "disabled"}/
+            .form-group
+              %label.col-sm-2.control-label Complemento:
+              .col-sm-6
+                %input.form-control{:placeholder => "#{current_usuario.endereco.complemento}", :type => "text",:disabled => "disabled"}/ 

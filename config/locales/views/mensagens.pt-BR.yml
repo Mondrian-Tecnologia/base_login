@@ -1,0 +1,6 @@
+pt-BR:
+  mensagens:
+    index: 
+      title: 'Página Inicial'
+    show:
+      title: 'Mensagem do Sistema'

@@ -1,0 +1,24 @@
+pt-BR:
+  activerecord:
+    models:
+      credito_cartorio:
+        one: Crédito Administrativo
+        other: Créditos Administrativos
+    attributes:
+      credito_cartorio:
+        id: "#"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+        percentual: "Crédito (%)"
+        valor_desconto: Valor Fixo
+        observacao: Observação
+        valor: Valor
+        valor_descontos: Valor Pago
+        status: Situação
+        valor_pago: Valor Pago
+        cartorio_id: Cartório
+    errors:
+      models:
+        credito_cartorio:
+          attributes:
+          validate:

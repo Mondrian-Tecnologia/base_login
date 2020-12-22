@@ -1,0 +1,37 @@
+= flash_message
+
+-#.bg-portal-gray.bg-portal-rounded
+.container
+  .row.top-body
+    .col-lg-6.col-md-5.col-sm-12
+      .banner-title.pb-1 Bem-vindo
+      .banner-description.pb-3
+        DUT-E elimina as fraudes nas transferências de veículos,
+        com um sistema que oferece segurança e agilidade
+      = link_to 'Saiba mais', '#', class: 'btn btn-login my-3'
+    .col-lg-7.col-lg-6.col-md-7
+
+.footer-menu.d-md-block.d-none
+  .container
+    .row
+      .col-lg-6
+        .d-flex.justify-content-between
+          .menos
+            = link_to 'Acesso ao sistema', new_usuario_session_path, class: 'menu-item'
+          .menos
+            = link_to 'Consultar DUTe', root_path, class: 'menu-item'
+          .menos
+            = link_to 'Emitir Boleto', root_path, class: 'menu-item'
+          .menos
+            = link_to '#', onclick: 'menuMais()', class: 'menu-item' do
+              = svg_icon :'arrow-right', style: 'width: 32px; height: 32px;'
+          .mais
+            = link_to 'Solicitar Estorno', root_path, class: 'menu-item'
+          .mais
+            = link_to 'Cadastrar Cartório', root_path, class: 'menu-item'
+          .mais
+          .mais
+            = link_to '#', onclick: 'menuMenos()', class: 'menu-item' do
+              = svg_icon :'arrow-left', style: 'width: 32px; height: 32px'
+
+

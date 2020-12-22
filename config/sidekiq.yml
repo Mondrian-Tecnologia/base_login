@@ -1,0 +1,22 @@
+:verbose: true
+staging: 
+  :concurrency: 5
+production:
+  :concurrency: 10
+:max_retries: 20
+
+# Sidekiq will run this file through ERB when reading it so you can
+# even put in dynamic logic, like a host-specific queue.
+# http://www.mikeperham.com/2013/11/13/advanced-sidekiq-host-specific-queues/
+:queues:
+  - erp_web_critical
+  - erp_web_mailers
+  - erp_web_urgent
+  - erp_web_default
+  - erp_web_action_mailbox_routing
+  - erp_web_action_mailbox_incineration
+  - erp_web_active_storage_analysis
+  - erp_web_active_storage_purge
+  - erp_web_low
+  - erp_web
+  - erp_web_test

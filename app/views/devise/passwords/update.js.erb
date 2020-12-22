@@ -1,0 +1,11 @@
+let msg = $("#msg");
+msg.html(' ');
+msg.hide();
+<% if resource.errors.any?  %>
+  msg.html("<%= resource.try(:errors).try(:full_messages).try(:first) %>");
+<% else %>
+  window.location.replace('/')
+<% end %>
+
+msg.fadeIn();
+$(".submit-form").html('Recuperar Senha');

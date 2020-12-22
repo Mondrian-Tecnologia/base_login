@@ -1,0 +1,43 @@
+- msg = resource.errors.full_messages.join('. </br>') || notice || alert || flash[:error] || flash[:notice]
+- if msg&.present? and msg != "Sua sessão expirou, por favor, efetue portal novamente para continuar."
+  #message_modal.modal.fade
+    .modal-dialog{:role => "document"}
+      .modal-content
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+          %h3 Aviso !
+        .modal-body
+          %br
+            %p=raw msg
+        .modal-footer
+          %a.btn.btn-primary{href: "#", :'data-dismiss' => "modal"} Fechar
+  :javascript
+    $( document ).ready(function() {
+      $('#message_modal').modal();
+    });
+
+.signin_wrapper
+  .row
+    .right_block
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          %center
+            = image_tag 'logo-mono.webp', width: '100%', class: 'logo-portal'
+.signin_wrapper
+  .row
+    .right_block
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          %center
+            = link_to new_usuario_session_path do 
+              = image_tag 'logo-mono.webp', width: '100%', class: 'logo-portal'
+        = form_for resource, as: resource_name, url: confirmation_path(resource_name), method: :post, class: "col-md-12 col-sm-12 col-xs-12" do |f|
+          = f.hidden_field :reset_password_token
+          .row
+            .title-user Reenviar instruções de confirmação
+            .group-user-icon
+              %span
+                = image_tag 'icons/email.webp', style: 'width: 13px; margin-top: 5px; margin-left: 4px;'
+              = f.email_field :email, autofocus: true, required: true, class: 'form_fields col-md-12 col-lg-12', placeholder: "Insira seu Email *", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) 
+          = f.submit t(".submit"), class: 'submitBnt col-xs-12 col-sm-12 col-md-12 col-lg-12'
+

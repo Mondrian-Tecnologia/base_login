@@ -1,0 +1,26 @@
+pt-BR:
+  activerecord:
+    attributes:
+      desconto:
+        id: "#"
+        cartorio_id: Cartório
+        depositario_id: Despositário
+        sub_depositario_id: Sub Despositário
+        modalidade_id: Modalidade
+        valor: Valor
+        status: Status
+        item_repasse_id: Item Repasse
+        data_pagamento: Data do Pag.
+        motivo: Motivo
+        usuario_id: Usuário
+        entidade_id: Entidade
+        divida_id: Desconto Adm.
+        em_repasse: Em Repasse
+        created_at: Data Criação
+        updated_at: Data Atualização
+    errors:
+      models:
+        desconto:
+          attributes:
+          validate:
+

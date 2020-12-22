@@ -1,0 +1,6 @@
+pt-BR:
+  sindicato:
+    sindicatos:
+      index:
+        title: Usuários %{name}
+        new: Cadastrar Usuário

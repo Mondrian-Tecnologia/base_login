@@ -1,0 +1,29 @@
+= form_for @endereco, url: create_address_usuario_registration_path, method: :post, class: "form"  do |f|
+  .panel-body  
+    .row
+      .form-group.col-md-6
+        = f.label :cep, class: "control-label" 
+        = f.text_field :cep, value: @endereco.cep, pattern: pattern(:cep), class: "form-control"
+    .row
+      .form-group.col-md-6
+        = f.label :logradouro, class: "control-label" 
+        = f.text_field :logradouro, value: @endereco.logradouro, class: "form-control"
+      .form-group.col-md-3
+        = f.label :numero, class: "control-label" 
+        = f.number_field :numero, value: @endereco.numero, class: "form-control"
+      .form-group.col-md-3
+        = f.label :complemento, class: "control-label" 
+        = f.text_field :complemento, value: @endereco.complemento, class: "form-control"
+    .row
+      .form-group.col-md-6
+        = f.label :bairro, class: "control-label" 
+        = f.text_field :bairro, value: @endereco.bairro, class: "form-control"
+      .form-group.col-md-3
+        = f.label :nome_cidade, class: "control-label" 
+        = f.text_field :nome_cidade, value: @endereco.nome_cidade, class: "form-control"
+      .form-group.col-md-3
+        = f.label :uf, class: "control-label" 
+        = f.text_field :uf, value: @endereco.uf, class: "form-control"
+  .panel-footer
+    .float-right
+      = f.submit t('.confirm', default: t("helpers.submit.confirm")), class: "btn btn-primary btn-lg"

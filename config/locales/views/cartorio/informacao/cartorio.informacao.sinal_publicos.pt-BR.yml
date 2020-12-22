@@ -1,0 +1,8 @@
+pt-BR:
+  cartorio:
+    informacao:
+      sinal_publicos:
+        new:
+          title: 'Cadastro de Sinal Público do(a) %{tipo}(a)'
+        edit:
+          title: 'Editar de Sinal Público do(a) %{tipo}(a)'

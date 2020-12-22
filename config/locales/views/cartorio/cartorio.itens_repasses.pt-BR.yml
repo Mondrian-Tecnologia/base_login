@@ -1,0 +1,10 @@
+pt-BR:
+  cartorio:
+    itens_repasses:
+      index:
+        title: Listagem de Repasses
+        filter: Consulte pela data de criação
+      show:
+        title: "Detalhes do Repasse #%{id} do dia %{data} - %{banco}"
+      print_dutes:
+        title: "Lista de DUTes da Fatura #%{id} - Período %{data_inicial} ~ %{data_final}"

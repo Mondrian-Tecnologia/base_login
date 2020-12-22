@@ -1,0 +1,20 @@
+pt-BR:
+  activerecord:
+    models:
+      bloqueio:
+    attributes:
+      bloqueio:
+        id: "#"
+        cartorio_id: Cartório
+        motivo_bloqueio_id: Motivo do Bloqueio
+        status: Ativo ?
+        operacao: Operação
+        created_at: Data de Cadastro
+        updated_at: Data de Atualização 
+        usuario_id: Usuário
+        pontucao: Pontuação
+    errors:
+      models:
+        bloqueio:
+          attributes:
+          validate:

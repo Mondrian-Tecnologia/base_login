@@ -1,0 +1,10 @@
+pt-BR:
+  sindicato:
+    repasses:
+      index:
+        title: 'Relatório de Repasses'
+        filter: 'Consulta de Repasses por Vencimento'
+      list:
+        gerar_boleto: 'Gerar Boleto'
+      detalhes:
+        title: 'Detalhes do Repasse'

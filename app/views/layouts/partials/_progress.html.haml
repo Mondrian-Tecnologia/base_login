@@ -1,0 +1,21 @@
+.loader-meter{style: 'display: none'}
+  .container
+    .meter-message
+      .meter-title.mb-4 Atenção !
+      .meter-confirm.mb-4.pb-4
+        Ao clicar em 'CONFIRMAR', o repasse parceiros será iniciado, não podendo ser desfeito esse processo.
+        %br
+        %br
+        Caso deseje fazer uma verificação parcial dos valores, você deverá clicar em 'Relatório Parcial de Repasses'.
+        %br
+        %br
+        Você deseja de fato executar essa ação ?
+      .text-center
+        = link_to 'Cancelar', "javascript:$('.loader-meter').fadeOut();", class: btn_class(:light) + ' mr-4'
+        = link_to 'Confirmar', sindicato_repasse_parceiros_path, method: :post, class: btn_class(:primary) + ' ml-4', onclick: "carregarMeter();"
+    .meter-confirm{style: 'display: none'}
+      .logo-meter LOGO
+      .meter.orange
+        %span{style: 'width: 5%'}
+      .meter-text
+        Preparando, por favor aguarde ...

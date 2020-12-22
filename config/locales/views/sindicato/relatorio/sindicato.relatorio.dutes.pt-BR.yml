@@ -1,0 +1,25 @@
+pt-BR:
+  sindicato:
+    relatorio:
+      dutes:
+        buscar:
+          title: Consulta de DUTe's por Período
+        valores_por_periodo:
+          title: Valores por Período
+          title_data: Valores por Período %{inicio} até %{fim}
+        informados_por_cartorio:
+          title: Relatório de DUTe's por Cartório
+        index_pendentes_repasse:
+          title: Consultar DUTe's Pendentes de Repasse
+        pendentes_repasse:
+          title: Relatório de DUTe's Pendentes de Repasse
+          title_inaptos: DUTe's inaptos a entrar no Repasse
+        registro_pendente:
+          title: DUTe's Pendentes de Registro
+        imagem_pendente:
+          title: DUTes com Imagem ainda não informada
+          title_secondary: DUTes com solicitação de nova Imagem
+        detalhe_registro_pendente:
+          title: Detalhe de DUTe's Pendentes de Registro
+        sem_rtd:
+          title: Listagem de DUTes sem Cartório de RTD

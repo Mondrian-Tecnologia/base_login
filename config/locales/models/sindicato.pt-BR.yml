@@ -1,0 +1,9 @@
+pt-BR:
+  activerecord:
+    attributes:
+      sindicato:
+        id: "#"
+        cnpj: "CNPJ"
+        nome: Nome
+        created_at: Emissão
+        updated_at: "Alterado em"

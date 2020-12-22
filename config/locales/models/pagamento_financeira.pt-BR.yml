@@ -1,0 +1,21 @@
+pt-BR:
+  activerecord:
+    models:
+      pagamento_financeira: 
+        one: Pagamento
+        other: Pagamentos
+    attributes:
+      pagamento_financeira:
+        id:           "#"
+        boleto_financeira_id: Boleto
+        data: Data
+        valor: Valor
+        arquivo_pagamento_id: Arquivo de Pagamento
+        criado_por_id: Usuário
+        created_at:   "Data de Cadastro"
+        updated_at:   "Data de Atualização"
+    errors:
+      models:
+        pagamento_financeira:
+          attributes:
+          validate:

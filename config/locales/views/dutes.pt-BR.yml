@@ -1,0 +1,11 @@
+pt-BR:
+  dutes:
+    index: 
+      title: 'Consultar DUTe'
+    consultar:
+      title: 'Consultar DUTe'
+    partials:
+      show_informacao:
+        registro_indevido: Registro Indevido
+        dados_incorretos: Dados Incorretos
+        desistencia: Desistência

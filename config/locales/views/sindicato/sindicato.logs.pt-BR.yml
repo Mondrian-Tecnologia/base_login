@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    logs:
+      index:
+        title: Histórico de Envios ao DETRAN
+      recentes:
+        title: Últimos 50 históricos de comunicação com o DETRAN

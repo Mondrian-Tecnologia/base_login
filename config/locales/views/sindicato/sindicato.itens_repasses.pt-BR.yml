@@ -1,0 +1,10 @@
+pt-BR:
+  sindicato:
+    itens_repasses:
+      index:
+        title: 'Relatório de Repasses'
+        confirmar: 'Confirmar'
+      show:
+        title: 'Detalhes do Item de Repasse #%{id}'
+      relatorio:
+        title: 'Relatório de Repasses :: %{data}'

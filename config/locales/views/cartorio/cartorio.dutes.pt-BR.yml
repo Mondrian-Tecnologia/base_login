@@ -1,0 +1,23 @@
+pt-BR:
+  cartorio:
+    dutes:
+      index:  
+        title: "Consultar DUTe's"
+      show: 
+        title: "DUTe #%{id} (%{placa})"
+        title_pagamento: 'Detalhes de Pagamento'
+      acoes:
+        confirmar_retificacao: 'Para alterar selos utilize a ferramenta "Alterar Selo". <br/>Confirma o inicio da retificação da C.V. ?'
+        informar_comunicacao_venda: 'Continuar C.V.'
+        informar_dados_comprador: 'Conferir C.V.'
+        motivo_1: "Registro Indevido"
+        motivo_2: "Dados Incorretos"
+        motivo_3: "Desistência"
+      consultar_por_periodo:
+        title: "Consulta de DUTe's por Período"
+      list:
+        informar_dados_comprador: 'Continuar C.V.'
+        conferir_dados_comprador: 'Conferir C.V.'
+        confirmar_retificacao: Você deseja realizar a retificação da comunicação de venda desse DUTe ?'
+      envio_pendente:
+        title: DUTes com Envio Automatizado

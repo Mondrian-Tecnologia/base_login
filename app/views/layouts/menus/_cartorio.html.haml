@@ -1,0 +1,66 @@
+- if policy([:cartorio, Dute]).index?
+  - active = active?({ namespace: nil, controller: :dutes, action: %i[all], except: %i[consultar_por_periodo]})
+  - active = active || active?({ controller: :veiculos, action: %i[all] })
+  %li.nav-item
+    = link_to '#', class: 'nav-link collapsed', aria: { controls: "dutes" },
+                                                data: { target: "#dutes", toggle: "collapse"} do
+      = svg_sidebar :dute
+      %span DUTe's
+    #dutes.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionSidebar", class: (active ? 'show' : '')}
+      .py-0.collapse-inner
+        - if policy([:cartorio, Dute]).index?
+          = link_to 'Consultar DUTe\'s', cartorio_dutes_path, class: 'nav-link'
+        - if policy(:veiculo).index?
+          = link_to 'Consultar Veículo', veiculos_path, class: 'nav-link'
+        - if policy([:cartorio, :informacao, Dute]).informar_veiculo?
+          = link_to 'Comunicar Venda', informar_veiculo_cartorio_informacao_dutes_path, class: 'nav-link'
+        - if policy([:cartorio, :registro, Dute]).pendentes_de_registro?
+          = link_to 'Prot. à Registrar', pendentes_de_registro_cartorio_registro_dutes_path, class: 'nav-link'
+  %hr.sidebar-divider.my-0
+
+- if policy([:cartorio, Fatura]).index? || policy([:cartorio, Usuario]).index? || policy([:cartorio, Dute]).consultar_por_periodo?
+  - active = active?({ namespace: :cartorio, controller: :faturas,  action: %i[index] })
+  - active = active || active?({ namespace: :cartorio, controller: :usuarios, action: %i[index] })
+  - active = active || active?({ namespace: :cartorio, controller: :dutes,    action: %i[consultar_por_periodo]})
+  %li.nav-item
+    = link_to '#', class: 'nav-link collapsed', aria: { controls: "gerenciar" }, 
+                                                data: { target: "#gerenciar", toggle: "collapse"} do
+      = svg_sidebar :gerenciar
+      %span Gerenciar
+    #gerenciar.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionSidebar", class: (active ? 'show' : '')}
+      .py-0.collapse-inner
+        - if policy([:cartorio, Usuario]).index?
+          = link_to 'Administrar Usuários', cartorio_usuarios_path, class: 'nav-link'
+        - if policy([:cartorio, Fatura]).index?
+          = link_to 'Conf. de Faturas', cartorio_faturas_path, class: 'nav-link'
+        - if policy([:cartorio, ItemRepasse]).index?
+          = link_to 'Conf. de Repasses', cartorio_itens_repasses_path, class: 'nav-link'
+        - if policy([:cartorio, :relatorio, Dute]).pendentes_repasse?
+          = link_to 'Pend. de Repasse', pendentes_repasse_cartorio_relatorio_dutes_path, class: 'nav-link'
+        -# - if policy([:cartorio, Dute]).consultar_por_periodo?
+        -#   = link_to 'Relatório DUTes', consultar_por_periodo_cartorio_dutes_path, class: 'nav-link'
+
+  %hr.sidebar-divider.my-0
+
+- if policy([:cartorio, :home]).ferramentas?
+  %li.nav-item
+    = link_to ferramentas_cartorio_home_path, class: 'nav-link' do
+      = svg_sidebar :ferramentas
+      %span Ferramentas
+
+  %hr.sidebar-divider.my-0
+
+%li.nav-item
+  = link_to cartorio_chat_path, class: 'nav-link' do
+    = svg_sidebar :chat
+    %span Suporte
+%hr.sidebar-divider.my-0
+
+- if policy([:cartorio, @current_entidade]).edit?
+  %li.nav-item
+    = link_to edit_cartorio_cartorio_path(@current_entidade), class: 'nav-link' do
+      = svg_sidebar :cartorio
+      %span RTD & API
+  %hr.sidebar-divider.my-0
+
+

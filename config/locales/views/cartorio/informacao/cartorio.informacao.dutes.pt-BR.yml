@@ -1,0 +1,24 @@
+pt-BR:
+  cartorio:
+    informacao:
+      dutes:
+        informar_veiculo:
+          title: 'Informar Veículo da Comunicação de Venda'
+        importar_veiculo:
+          title: 'Informar Veículo da Comunicação de Venda'
+        informar_comunicacao_venda:
+          title: 'Informar Comunicação de Venda'
+        salvar_comunicacao_venda:
+          title: 'Informar Comunicação de Venda'
+        conferir_comunicacao_venda:
+          title: 'Confira os Dados da Comunicação de Venda'
+        acompanhar_envio_detran:
+          title: 'Enviando ao DETRAN'
+        informar_imagem:
+          title: 'Informar Imagem do DUTe'
+        salvar_imagem:
+          title: 'Imagem Salva'
+        informar_pendente:
+          title: 'Informar DUTe com Envio Pendente'
+        salvar_pendente:
+          title: 'Informar DUTe com Envio Pendente'

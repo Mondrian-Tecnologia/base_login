@@ -1,0 +1,25 @@
+pt-BR:
+  activerecord:
+    models:
+      credito_desconto:
+        one: Desconto de Crédito
+        other: Descontos de Créditos
+    attributes:
+      credito_desconto:
+        id: "#"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+        cartorio_id: "Cartório"
+        cartorio: "Cartório"
+        valor: Valor
+        status: Situação
+        data: Data
+        credito_cartorio_id: Crédito
+        credito_cartorio: Crédito
+        usuario_id: Usuário
+        boleto_financeira_id: Boleto
+    errors:
+      models:
+        credito_desconto:
+          attributes:
+          validate:

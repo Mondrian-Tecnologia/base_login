@@ -1,0 +1,10 @@
+kbd {
+  -moz-background-clip:border;
+  -moz-background-inline-policy:continuous;
+  -moz-background-origin:padding;
+  background:#EEEEEE none repeat scroll 0 0;
+  border:none;
+  color:#000000;
+  padding:2px 1px;
+  white-space:nowrap;
+}

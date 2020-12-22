@@ -1,0 +1,7 @@
+pt-BR:
+  sindicato:
+    configuracoes:
+      index:
+        title: Configurações do Sistema
+      edit:
+        title: 'Editar Configuração #%{id} - %{chave}'

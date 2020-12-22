@@ -1,0 +1,47 @@
+#knowledge-base .panel-block, .knowledge-base-inside .panel-block {
+    padding: 30px;
+}
+
+#knowledge-base .panel {
+  height: 100%;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: left;
+}
+
+#knowledge-base .panel-title {
+  margin-top: -7px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #363b40;
+}
+#knowledge-base  ul{
+  margin: 0;
+  padding: 0;
+}
+
+#knowledge-base .list-icon>li {
+  margin-bottom: 16px;
+  list-style: none;
+}
+#knowledge-base .list-icon>li {
+  position: relative;
+  padding-left: 32px;
+}
+
+#knowledge-base .list-icon>li>a {
+  display: block;
+  color: #616366;
+  font-size: 16px;
+  font-weight: 300;
+}
+#knowledge-base .list-icon>li>a:hover {
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s all;
+}

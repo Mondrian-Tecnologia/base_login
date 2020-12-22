@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    attributes:
+      cron:
+        id: "#"
+        usuario_id: Usuário de Cadastro
+        rotina: Rotina
+        created_at: Data de Cadastro
+    errors:
+      models:
+        cron:
+          validate:
+            uniqueness: " :: Já existe uma '%{attribute}' cadastrada que aguarda execução."

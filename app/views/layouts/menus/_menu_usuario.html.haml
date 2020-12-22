@@ -1,0 +1,147 @@
+- natureza = (params[:natureza] || "").downcase
+- if usuario_can? :admin, :usuario
+  - active_class = (natureza.eql?('td') || action_name.eql?('titulos_documentos') || controller_name.eql?('intimacoes'))
+  %li.submenu{class: (active_class ? 'active' : '')}
+    = item_menu 'Títulos e Documentos', 'icon-pessoa-fisica', :icon, titulos_documentos_home_path
+    %ul.list-unstyled{style: "display: none;"}
+      %li{style: "display: none;", class: (active_class ? 'current' : '')}
+      - if usuario_can? :index, Consulta
+        %li{class: is_active?("consultas", %w[index show], 'td', :"") + ' list-consulta'}
+          = link_to "E-Consultas", consultas_path(natureza: 'td')
+      - if usuario_can? :index, Certidao
+        %li{class: is_active?("certidoes", ["index", "show"], 'td', :"") + ' list-certidao'}
+          = link_to "E-Certidões", certidoes_path(natureza: 'td')
+      - if usuario_can? :index, Registro
+        %li{class: is_active?("registros", ['index'], 'td', :"") + ' list-registro'}
+          = link_to "E-Registros", registros_path(natureza: 'td')
+      - if usuario_can? :index, Intimacao
+        %li{class: is_active?("intimacoes", ['index', 'show'], true, :"") + ' list-intimacao'}
+          = link_to "E-Notificações", intimacoes_path
+
+  - active_class = (natureza.eql?('pj') || action_name.eql?('pessoa_juridica') || ['viabilidades', 'requerimentos'].include?(controller_name) )
+  %li.submenu{class: (active_class ? 'active' : '')}
+    = item_menu 'Pessoa Jurídica', 'icon-pessoa-juridica', :icon, pessoa_juridica_home_path
+    %ul.list-unstyled{style: "display: none;"}
+      %li{style: "display: none;", class: (active_class ? 'current' : '')}
+      - if usuario_can? :index, Consulta
+        %li{class: is_active?("consultas", %w[index show], 'pj', :"") + ' list-consulta'}
+          = link_to "E-Consultas", consultas_path(natureza: 'pj')
+      - if usuario_can? :index, Certidao
+        %li{class: is_active?("certidoes", ["index", "show"], 'pj', :"") + ' list-certidao'}
+          = link_to "E-Certidões", certidoes_path(natureza: 'pj')
+      - if usuario_can? :index, Registro
+        %li{class: is_active?("registros", ['index'], 'pj', :"") + ' list-registro'}
+          = link_to "E-Registros", registros_path(natureza: 'pj')
+      - if usuario_can? :index, Viabilidade
+        %li{class: is_active?("viabilidades", true, true, :"") + ' list-certidao'}
+          = link_to "E-CNPJ", viabilidades_path
+      - if usuario_can? :index, Requerimento
+        %li{class: is_active?("requerimentos", true, true, :"") + ' list-certidao'}
+          = link_to "Requerimentos", requerimentos_path
+
+- if usuario_can? :index, Tutorial
+  %li.submenu{class: is_active?("tutoriais", %w[index show], true, :"")}
+    = item_menu 'Recursos', 'icon-recursos', :icon
+    %ul.list-unstyled{style: "display: none;"}
+      - if usuario_can? :index, Consulta
+        %li{class: is_active?("tutoriais", %w[index show], true, :"")}
+          = link_to tutoriais_path, class: "waves-effect waves-light" do
+            Tutoriais
+      %li
+        = link_to ferramentas_home_path, class: "waves-effect waves-light" do
+          Ferramentas
+- if false
+  %li.submenu{class: is_active?("consultas", true, 'td', :"") ? 'active' : ''}
+    = item_menu 'Minhas Consultas', 'icon ion-ios-search-strong'
+    %ul.list-unstyled{style: "display: none;"}
+      - if usuario_can? :index, Consulta
+        %li{class: is_active?("consultas", %w[index show], 'td', :"")}
+          = link_to "Listar Consultas", consultas_path(natureza: 'td')
+      - if usuario_can? :'2new', Consulta
+        %li{class: is_active?("consultas", %w[new create], 'td', :"")}
+          = link_to "Realizar Consulta", new_consulta_path(natureza: 'td')
+
+  - if usuario_can? :index, Certidao or usuario_can? :'2new', Certidao
+    %li.submenu{class: is_active?("certidoes", true, 'td', :"") ? 'active' : ''}
+      = item_menu 'Certidões', 'icon ion-ios-paper'
+      %ul.list-unstyled{style: "display: none;"}
+        - if usuario_can? :'2new', Certidao
+          %li{class: is_active?("certidoes", ["new", "create"], 'td', :"")}
+            = link_to "Solicitar Certidão", new_certidao_path(natureza: 'td')
+
+  - if usuario_can? :index, Registro
+    %li.submenu
+      = item_menu 'Registro/Averbação', 'icon ion ion-edit'
+      %ul.list-unstyled{style: "display: none;"}
+        - if usuario_can? :index, Registro
+          %li{class: is_active?("registros", ['index'], 'td', :"")}
+            = link_to "Acompanhar Registros", registros_path(natureza: 'td')
+        - if usuario_can? :'2new', Registro
+          %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 1)}
+            = link_to "Registro de Documento", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 1)
+        - if usuario_can? :'2new', Registro
+          %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 2)}
+            = link_to "Averbação de Doc.", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 2)
+        /- if usuario_can? :new, Registro
+        /  %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 3)}
+        /    = link_to "Registro de PET", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 3)
+        /- if usuario_can? :new, Registro
+        /  %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 7)}
+        /    = link_to "Registro de BIKE", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 7)
+        /- if usuario_can? :new, Registro
+        /  %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 4)}
+        /    = link_to "Averbação de PET", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 4)
+        /- if usuario_can? :new, Registro
+        /  %li{class: is_active?("registros", ['new', 'create'], 'td', :"", 8)}
+        /    = link_to "Averbação de BIKE", new_tipo_registro_registro_path(natureza: 'td', tipo_registro_id: 8)
+
+
+  - if usuario_can? :index, Intimacao
+    %li.submenu{class: is_active?("intimacoes", true, true, :"") ? 'active' : ''}
+      = item_menu 'Notificações Extrajudiciais', 'icon ion ion-document'
+      %ul.list-unstyled{style: "display: none;"}
+        - if usuario_can? :'2new', Registro
+          %li{class: is_active?("intimacoes", %w[new create], true, :"")}
+            = link_to "Solicitar Notificação", new_intimacao_path
+
+
+  - if usuario_can? :'2new', Consulta
+    %li.submenu{class: is_active?("consultas", true, 'pj', :"") ? 'active' : ''}
+      = item_menu 'Minhas Consultas', 'icon ion-ios-search-strong'
+      %ul.list-unstyled{style: "display: none;"}
+        - if usuario_can? :index, Consulta
+          %li{class: is_active?("consultas", %w[index show], 'pj', :"")}
+            = link_to "Listar Consultas", consultas_path(natureza: 'pj')
+        - if usuario_can? :'2new', Consulta
+          %li{class: is_active?("consultas", %w[new create], 'pj', :"")}
+            = link_to "Realizar Consulta", new_consulta_path(natureza: 'pj')
+
+  - if usuario_can? :index, Certidao
+    %li.submenu{class: is_active?("certidoes", true, 'pj', :"") ? 'active' : ''}
+      = item_menu 'Certidões', 'icon ion-ios-paper'
+      %ul.list-unstyled{style: "display: none;"}
+        - if usuario_can? :index, Certidao
+          %li{class: is_active?("certidoes", ["index", "show"], 'pj', :"")}
+            = link_to "Certidões Solicitadas", certidoes_path(natureza: 'pj')
+        - if usuario_can? :'2new', Certidao
+          %li{class: is_active?("certidoes", ["new", "create"], 'pj', :"")}
+            = link_to "Solicitar Certidão", new_certidao_path(natureza: 'pj')
+
+
+
+  - if usuario_can? :index, Requerimento
+    %li
+      = link_to requerimentos_path, class: "waves-effect waves-light" do
+        %i.icon.ion.ion-document
+        Requerimentos
+  %li.header Recursos
+  - if usuario_can? :index, Tutorial
+    %li
+      = link_to tutoriais_path, class: "waves-effect waves-light" do
+        %i.ion-ios-videocam-outline
+        Tutoriais
+  - if false and usuario_can? :ferramentas, Pedido
+    %li
+      = link_to ferramentas_home_path, class: "waves-effect waves-light" do
+        %i.icon.ion.ion-ios-gear-outline
+        Ferramentas

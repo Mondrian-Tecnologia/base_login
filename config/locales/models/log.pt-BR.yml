@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    attributes:
+      log:
+        id: "#"
+        retorno_codigo: "Código do Retorno"
+        retorno_descricao: "Descrição do Retorno"
+        metodo: "Método"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        log:
+          attributes:
+          validate:

@@ -1,0 +1,11 @@
+pt-BR:
+  cartorio:
+    registro:
+      dutes:
+        pendentes_de_registro:
+          title: "DUTe's Pendentes de Arquivamento"
+          details: "Listagem com DUTes atualizados antes de %{hora}"
+        registrados:
+          title: "DUTe's Arquivados"
+        edit:
+          title: "Arquivar Protocolo do DUTe #%{id}"

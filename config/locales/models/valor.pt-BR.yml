@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    attributes:
+      valor:
+        id: "#"
+        valor_registro: Registro
+        valor_sistema: Sistema
+        valor_convenio: ANOREG
+        ano: Ano
+        valor_informacao: Informaçao
+        taxa_boleto: Taxa do Boleto
+        valor_ted: TED
+        valor_total: Total
+        created_at: "Criado em "
+        updated_at: "Alterado em"

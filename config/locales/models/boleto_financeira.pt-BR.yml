@@ -1,0 +1,23 @@
+
+pt-BR:
+  activerecord:
+    models:
+      boleto_financeira:
+    attributes:
+      boleto_financeira:
+        id: "#"
+        fatura_id: Fatura
+        vencimento: Data de Vencimento
+        valor: Valor
+        status: Situação
+        taxa_id: Taxa
+        data_baixa: Data da Baixa
+        codigo_barra_numerico: Código de Barras
+        linhas_digitavel: Linha Digitável
+        created_at: Data de Cadastro
+        updated_at: Data de Atualização 
+    errors:
+      models:
+        boleto_financeira:
+          attributes:
+          validate:

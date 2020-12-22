@@ -1,0 +1,13 @@
+-# - uf = Configuracao.get('uf')
+-#.bg-portal-gray.bg-portal-rounded
+.container
+  .row.top-body
+    .col-lg-6.col-md-5.col-sm-12
+      .banner-title.top-title Bem-vindo
+      .banner-description.pb-3
+        com um sistema que oferece segurança e agilidade
+      = link_to 'Acesso ao sistema', new_usuario_session_path, class: 'btn btn-login my-3 mr-4', remote: true
+      -# = link_to 'Nos conheça melhor!', sobre_nos_path, class: 'link-banner ml-2 text-white', remote: true
+    .col-xl-6.col-lg-6.col-md-7.d-lg-block.d-md-none.d-none
+      = image_tag 'notebook.webp', style: 'width: 60vw; margin-left: -14vw; position: relative;'
+}

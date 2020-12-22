@@ -1,0 +1,15 @@
+pt-BR:
+  sindicato:
+    arquivos_pagamentos:
+      form:
+        header: Dados do Cartório
+        header_images: Imagens do Cartório
+      index:  
+        title: "Arquivos de Pagamentos"
+        header_form_new: Formulário de cadastro de Arquivo de Pagamento
+        processar_arquivo: Processar Arquivo RET
+        show: Detalhamento
+      show:
+        title_pagamentos: "Detalhamento dos pagamentos"
+        title_retornos: "Detalhamento dos logs de retornos"
+        general_infos: "Dados gerais do Arquivo de Pagamento #%{id}"

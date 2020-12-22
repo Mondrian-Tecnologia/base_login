@@ -1,0 +1,17 @@
+pt-BR:
+  activerecord:
+    attributes:
+      cidade:
+        id: "#"
+        cod: "Código"
+        nome: "Descrição"
+        parent_id: "Mãe"
+        uf: "UF"
+        entrancia: "Entrância"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        cidade:
+          attributes:
+          validate:

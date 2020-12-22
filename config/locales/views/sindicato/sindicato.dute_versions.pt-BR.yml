@@ -1,0 +1,5 @@
+pt-BR:
+  sindicato:
+    dute_versions:
+      index:  
+        title: 'Listagem de Versões do DUTe #%{id}'

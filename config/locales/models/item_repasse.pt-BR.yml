@@ -1,0 +1,23 @@
+pt-BR:
+  activerecord:
+    attributes:
+      item_repasse:
+        id: "#"
+        cartorio: Cartório
+        cidade: Cidade
+        banco: Banco
+        confirmado:    "Confirmado"
+        confirmado_em: "Conf. Em"
+        valor_dutes:   "Valor DUTes"
+        valor_ted:     "Valor TED"
+        valor:         "Valor Repassado"
+        a_pagar: A Pagar (A)
+        desconto: Desconto (B)
+        ted: TED (C)
+        total_pago: Total Pago (A-B-C)
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        item_repasse:
+          attributes:

@@ -1,0 +1,5 @@
+pt-BR:
+  cartorio:
+    cartorios:
+      edit:
+        title: 'Edição de dados do Cartório #%{id}'

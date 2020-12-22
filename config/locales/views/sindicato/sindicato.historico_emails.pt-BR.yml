@@ -1,0 +1,6 @@
+pt-BR:
+  sindicato:
+    historico_emails:
+      index:  
+        title: Histórico de Emails enviados ao DETRAN
+        resolver_email: Resolvido

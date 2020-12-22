@@ -1,0 +1,14 @@
+pt-BR:
+  translation:
+    en: Inglês
+    pt-BR: Português
+  will_paginate:
+    page_gap: "..."
+    previous_label: "Próximo"
+    next_label: "Anterior"  
+  errors:
+    messages:
+      cpf_cnpj: "CPF ou CNPJ não é válido"
+      cpf: "CPF não é válido"
+      cep: 'formato informado não é válido'
+      email: 'formato informado não é válido'

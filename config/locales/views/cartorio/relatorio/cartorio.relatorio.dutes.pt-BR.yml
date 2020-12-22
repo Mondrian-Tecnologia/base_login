@@ -1,0 +1,7 @@
+pt-BR:
+  cartorio:
+    relatorio:
+      dutes:
+        pendentes_repasse:
+          title: Relatório de DUTe's Pendentes de Repasse
+          title_inaptos: DUTe's inaptos a entrar no Repasse

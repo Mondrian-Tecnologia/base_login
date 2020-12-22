@@ -1,0 +1,27 @@
+/*
+ *= require load_bootstrap.css
+ *= require material
+ ** ActionText
+ *= require trix/dist/trix
+ *= require actiontext
+ ** Base SB-admin-2
+ *= require sb-admin-2/sb-admin-2
+ **  Bootstrap Select
+ *= require bootstrap-select/bootstrap-select.min.css
+ ** Lity
+ *= require lity/lity.css
+ ** PACE Load Page
+ *= require pace/pace-theme-flash.tmpl.css
+ ** KnowledgeBase
+ *= require template/knowledge_base.css
+ ** Ajustes
+ *= require template/sidebar
+ *= require template/awesome-print
+ *= require template/nav-bar
+ *= require template/pagination
+ *= require template/tablericons
+ *= require template/progress
+ *= require template/template
+ * require template/load_page
+ *= require template/_bootstrap.overrides
+ */

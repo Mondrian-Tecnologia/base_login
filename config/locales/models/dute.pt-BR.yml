@@ -1,0 +1,237 @@
+pt-BR:
+  activerecord:
+    models:
+      dute: 
+        one: 'DUTe'
+        other: "DUTe's"
+
+    attributes:
+      dute:
+        id: "#"
+        id_desc: 'ID do DUTe'
+        tipo_conta: "Tipo de Conta"
+        placa: 'Placa'
+        chassi: 'Chassi'
+        renavam: 'RENAVAM'
+        crv: 'CRV'
+        data_crv: 'Data de Emissão do CRV'
+        marca_modelo: "Marca / Modelo"
+        cor: 'Cor'
+        enviado_ao_detran_em: 'Enviado ao DETRAN em'
+        tipo: 'Tipo'
+        cpf_cnpj: "CPF/CNPJ do Comprador"
+        cpf_cnpj_short: "CPF/CNPJ Comp"
+        cpf_vendedor: "CPF/CNPJ Vendedor" 
+        cpf_vendedor_short: "CPF/CNPJ Vend" 
+        nome: "Nome Comprador"
+        rg: "RG Comprador"
+        orgao_emissor: "Orgão Emissor RG"
+        endereco: "Endereço "
+        bairro: "Bairro "
+        cidade: "Cidade "
+        uf: "UF "
+        email: "Email Comprador"
+        cod_marca: "Cód. Marca"
+        anofab: "Ano Fabricação"
+        valor_financiado: "Valor do Veículo"
+        anomod: "Ano Modelo"
+        cod_cor: "Cód. Cor"
+        numend: "Número End. "
+        compend: "Complemento "
+        cepend: "CEP  "
+        codmunic: "Cidade do Comprador"
+        data_autentic: "Data do Rec. de Firma (Vendedor)"
+        tipo_operacao: "Tipo de Operação"
+        selo: "Selo do Vendedor"
+        selo_abrev: "Selo"
+        num_protocolo: "Núm de Protocolo"
+        data_protocolo: "Data do Protocolo"
+        erro_detran: "Retorno do DETRAN"
+        rtd: "Cartório de Registro"
+        rtd_id: "Cartório de Registro"
+        cartorio_id: "Cartório" 
+        status: "Status"
+        registrado_em: "Registrado em"
+        registrado_por: "Registrado por"
+        enviado_ao_detran_por: "Usuário de Envio ao DETRAN"
+        usuario_cadastro_id: "Usuário Informação"
+        usuario_cadastro: "Usuário do Cadastro"
+        usuario_cancelamento: "Usuário do Cancelamento"
+        motivo_cancelamento: "Motivo do Cancelamento"
+        cancelamento_comunicacao_em: "Data do Cancelamento"
+        version: "Versão"
+        chave_validacao: "Chave de Validação"
+        abonada: "Abonação"
+
+        oficio_sinal_publico_vendedor: "Ofício S.P. Vendedor"
+        tabeliao_sinal_publico_vendedor: "Tabelião S.P. Vendedor"
+        origem_sinal_publico_vendedor: "Origem S.P. Vendedor"
+        selo_sinal_publico_vendedor: "Selo S.P. Vendedor"
+        data_selo_sinal_publico_vendedor: "Data do Selo S.P. Vendedor"
+        oficio_sinal_publico_comprador: "Ofício S.P. Comprador"
+        tabeliao_sinal_publico_comprador: "Tabelião S.P. Comprador"
+        origem_sinal_publico_comprador: "Origem S.P. Comprador"
+        selo_sinal_publico_comprador: "Selo S.P. Comprador"
+        data_selo_sinal_publico_comprador: "Data do Selo S.P. Comprador"
+
+        oficio_sinal_publico_padrao: "Ofício"
+        tabeliao_sinal_publico_padrao: "Tabelião"
+        origem_sinal_publico_padrao: "Origem"
+        selo_sinal_publico_padrao: "Selo"
+        data_selo_sinal_publico_padrao: "Data do Selo"
+
+        data_registro: "Data de Registro"
+        numero_registro: "Número de Registro"
+        numero_selo_registro: "Selo Registro"
+        data_compra: "Data de Venda"
+        valor_compra: "Valor da Venda"
+        por_procuracao: "Por Procuração do Vendedor"
+        numero_procuracao: "Número da Procuração do Vendedor"
+        nome_procurador: "Nome Procurador do Vendedor"
+        cpf_procurador: "CPF Procurador do Vendedor"
+        rg_procurador: "RG Procurador do Vendedor"
+        data_procuracao: "Data da Procuração do Vendedor"
+        observacao_procuracao: "Observação Procuração do Vendedor"
+        numero_procuracao_comprador: "Número da Procuração do Comprador"
+        nome_procurador_comprador: "Nome Procurador do Comprador"
+        cpf_procurador_comprador: "CPF Procurador do Comprador"
+        rg_procurador_comprador: "RG Procurador do Comprador"
+        data_procuracao_comprador: "Data da Procuração do Comprador"
+        observacao_procuracao_comprador: "Observação Procuração do Comprador"
+        dados_cartorio_reconhecedor_firma: "Cartório que Reconheceu Firma"
+
+        numero_procuracao_padrao: "Número da Procuração"
+        nome_procurador_padrao: "Nome Procurador"
+        cpf_procurador_padrao: "CPF Procurador"
+        rg_procurador_padrao: "RG Procurador"
+        data_procuracao_padrao: "Data da Procuração"
+        observacao_procuracao_padrao: "Observação Procuração"
+
+        valor_iss: 'ISS'
+        valor_receber: 'Valor a Receber'
+        valor_registro: "Valor Registro"
+        valor_cartorio: "Val. Cartório"
+        valor_fatura: "Val. Fatura"
+        valor_a_pagar: "Val. a Pagar"
+        valor_a_receber: "Val. a Receber"
+        valor_prenotacao: "Valor Prenotação"
+        taxa_boleto: "Taxa do Boleto"
+        valor_sistema: "Valor Sistema"
+        valor_bin: "Valor BIN"
+        valor_fundo_institucional: "Valor Fundo Inst."
+        valor_sindicato: "Valor Sindicato"
+        valor_anoreg: "Valor ANOREG"
+        valor_publicidade: "Valor Pubilicidade"
+        valor_convenio: "Valor ANOREG"
+        boleto_id: "Boleto"
+        valor_cobrado: "Valor Cobrado"
+        fatura_id: "Fatura"
+        valor_informacao: 'Valor da Inform.'
+        informacao_item_repasse_id: 'Informação Item Repasse'
+        registro_item_repasse_id: 'Registro Item Repasse'
+        valor_sindivel: 'Valor Sindível'
+        nome_vendedor: "Nome Vendedor"
+        cpf_vendedor: "CPF / CNPJ do Vendedor"
+        endereco_vendedor: "Endereço " 
+        num_endereco_vendedor: "Número End. "
+        complemento_vendedor: "Complemento "
+        bairro_vendedor: "Bairro "
+        uf_vendedor: "UF "
+        cep_vendedor: "CEP "
+        municipio_vendedor: "Cidade do Vendedor"
+        cidade_vendedor: "Cidade do Vendedor"
+        ws_envio: "WebService Envio"
+        ws_retorno: "WebService Retorno"
+        ws_consulta_envio: "WebService Consulta Envio"
+        ws_consulta_retorno: "WebService Consulta Retorno"
+        usuario_cancelamento_id: "Usuário de Cancelamento"
+        divisao_financeira_realizada: "Divisão Financeira Realizada"
+        repassado_para_parceiros: "Repassado para Parceiros"
+        selo_comprador: "Selo do Comprador"
+        selo_comprador_usuario_id: "Usuário do Selo Comprador"
+        selo_certidao: "Selo da Certidão"
+        log_sessao_id: "Log Sessão"
+        imagem_file_name: "Nome do Arquivo"
+        imagem_content_type: "Tipo do Arquivo"
+        imagem_file_size: "Tamanho do Arquivo"
+        parent_id: "Aberbado de"
+        informacao_transferencia: "Informação Transferência"
+        valor_digitalizacao: "Valor da Digitalização"
+        valor_sistema_digitalizacao: "Valor do Sistema de Dig."
+        em_repasse: 'Em Repasse'
+        repasse_registro: 'Repasse Registro'
+        bloqueio_registro: 'Bloqueio Registro'
+        usuario_bloqueio_registro_id: 'Usuário que Bloqueou Registro'
+        valor_iss_registro: 'Valor ISS Reg.'
+        valor_iss_prenotacao: 'Valor ISS Prenot.'
+        valor_iss_digitalizacao: 'Valor ISS Dig.'
+        faadep_registro: 'FAADEP Reg.'
+        faadep_digitalizacao: 'FAADEP Dig.'
+        faadep_prenotacao: 'FAADEP Pren.'
+        taxa_admin: 'Taxa de Admin.'
+        data_autenticacao: "Data do Rec. de Firma (Vend)"
+        repasse_parceiro_id: 'Repasse Parceiro'
+        usuario_data_autenticacao_id: 'Usuário alterou Data Autenticação'
+        por_alvara: "Por Alvará"
+        alvara_data: "Data do Alvará"
+        alvara_comarca: "Comarca"
+        alvara_juiz: "Juiz(a)" 
+        alvara_requerente: "Requerente do Alvará"
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+        ##
+        informacao_item_repasse_created_at: 'Data Repasse Inf.'
+        registro_item_repasse_created_at: 'Data Repasse Reg.'
+        # Adicionais
+        selo_detran: 'Selo DETRAN'
+        new_selo: 'Novo Selo'
+        atualizar_selo_dute: 'Atualizar Selo DUTe ?'
+        cadastrar_selo_excecao: 'Cadastrar Selo Exceção ?'
+        situacao: 'Situação'
+        renav: "Por RENAVE ?"
+        cecaf: 'Interior (CECAF)'
+        artd: 'Capital (ARTD)'
+        total_arrecadado: "Total Arrecadado"
+        email_enviado_em: "Email Enviado Em"
+        email_motivo: "Motivo de Envio do Email" 
+        email_resolvido_em: "Email Resolvido Em"
+        curatela_data_inicial: "Data Inicial"
+        curatela_data_final: 'Data Final'
+        curatela_tipo: 'Tipo'
+        curatela_cpf: 'CPF do Curador(a)'
+        curatela_rg: 'RG do Curador(a)'
+        curatela_nome: 'Nome do Curador(a)'
+        curatela_poderes_observacoes: 'Poderes e Observações'
+        tutela_data_nascimento: 'Data de Nascimento'
+        tutela_nome: 'Nome do Tutor(a)'
+        tutela_cpf: 'CPF do Tutor(a)'
+        tutela_rg: 'RG do Tutor(a)'
+        tutela_observacoes: 'Observações'
+        data_boleto: 'Data do Boleto'
+        data_baixa: 'Data da Baixa'
+        valor_faturas: 'Valor Faturas'
+        possui_fatura: 'Possui Fatura?'
+        valor_pagamento: 'Valor Pago'
+
+    errors:
+      models:
+        dute:
+          attributes:
+            imagem_file_size:
+              in_between: "Tamanho da imagem é inválido, imagem deve ter tamanho entre %{min} e %{max}."
+            imagem:
+              in_between: "tamanho inválido."
+            tutela_cpf:
+              cpf: 'CPF do Tutor(a) não é valido'
+
+          validate:
+            dont_have_selo: "Cartório não possui selo para %{name}."
+            uniqueness_selo: "Selo %{name} '%{num_selo}', já foi utilizado no DUTe #%{id}."
+            cpf_cnpj_invalid: "O CPF/CNPJ digitado é inválido."
+            usuario_not_permission: "Usuário não tem permissão para alterar DUTe ( Boleto liberado e DUTe cancelado )."
+            invalid_status: "Para realizar está ação é necessário status %{status}"
+            cannot_access_detran: "Problemas ao acessar o sistema do Detran-CE."
+            image_not_found: 'Imagem é campo obrigatório para o envio da informação.'
+            image_invalid_format: "A Imagem (formato: '%{format}')deve estar em formato pdf ou tif e tamanho máximo de 2 Mb."
+            image_invalid_size: "A Imagem (tamanho: %{size}) deve possuir no máximo %{max_size}"
+            dute_exist: "%{id} Já existe dute para esta placa, crv, cnpj, renavam."

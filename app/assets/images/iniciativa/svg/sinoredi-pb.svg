@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="178"
+   viewBox="0 0 52.916666 47.095832"
+   version="1.1"
+   id="svg923"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="sinoredi-pb.svg">
+  <defs
+     id="defs917">
+    <clipPath
+       id="hmmua">
+      <path
+         d="M 0,147 V 0 h 165 v 147 z"
+         id="path3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="hmmua-3">
+      <path
+         d="M0 147V0h165v147z"
+         id="path3-6" />
+    </clipPath>
+    <clipPath
+       id="hmmuc">
+      <path
+         d="M230.43 144.56V2.36h164.71v142.2z"
+         id="path7" />
+    </clipPath>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2626-3"
+       id="radialGradient2862"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.10770394,0.12407494,-0.10547331,-0.09155687,7.9303997,-261.21686)"
+       cx="1203.295"
+       cy="-1381.5436"
+       fx="1203.295"
+       fy="-1381.5436"
+       r="81.047897" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2626-3">
+      <stop
+         style="stop-color:#c2c2c2;stop-opacity:1"
+         offset="0"
+         id="stop2622" />
+      <stop
+         style="stop-color:#555555;stop-opacity:1"
+         offset="1"
+         id="stop2624" />
+    </linearGradient>
+    <clipPath
+       id="hmmue">
+      <path
+         d="M460.86 145.11V1.81h164.71v143.3z"
+         id="path11" />
+    </clipPath>
+    <clipPath
+       id="hmmum">
+      <path
+         d="M460.86 275.872v-30.197h164.71v30.197z"
+         id="path27" />
+    </clipPath>
+    <clipPath
+       id="hmmug">
+      <path
+         d="M691.289 137.972V8.948H856v129.024z"
+         id="path15" />
+    </clipPath>
+    <clipPath
+       id="hmmuk">
+      <path
+         d="M239.763 285.754v-49.962h146.044v49.962z"
+         id="path23" />
+    </clipPath>
+    <clipPath
+       id="hmmui">
+      <path
+         d="M0 307.167V214.38h164.711v92.787z"
+         id="path19" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.347195"
+     inkscape:cx="48.115045"
+     inkscape:cy="31.877311"
+     inkscape:document-units="px"
+     inkscape:current-layer="g34"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="968"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="true" />
+  <metadata
+     id="metadata920">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-249.90417)">
+    <g
+       transform="matrix(1.2121274,0,0,1.2121274,0,249.85646)"
+       id="g36">
+      <g
+         clip-path="url(#hmmua)"
+         id="g34">
+        <g
+           id="g887"
+           transform="matrix(0.73923957,0,0,0.73923957,-34.237367,5.780688)">
+          <path
+             sodipodi:nodetypes="ccccccccccc"
+             inkscape:connector-curvature="0"
+             id="rect2253"
+             d="m 48.923438,19.944117 6.504793,-6.943521 v -0.04903 h -6.569526 l -0.0081,3.394325 -0.249593,0.295714 -1.621297,1.505316 -0.226001,0.324486 -0.439409,1.995643 2.066694,-0.218105 z"
+             style="opacity:1;fill:#e55a33;fill-opacity:1;stroke:none;stroke-width:0.13219148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="rect2271"
+             d="m 46.979695,18.146922 -0.226001,0.324486 1.627285,1.777539 0.347752,-0.19572 z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="cccccc"
+             inkscape:connector-curvature="0"
+             id="rect2271-6"
+             d="m 48.850585,16.345893 -0.249593,0.295714 0.03377,3.314629 0.09397,0.09699 0.194707,-0.10911 z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 52.221348,12.941478 -0.132039,0.0031 -3.238724,3.401298 0.0085,0.161059 3.262824,0.04091 0.09936,-0.137153 z"
+             id="path2292"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccccc" />
+          <path
+             style="opacity:1;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.13219148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 48.923438,19.944117 6.504793,-6.943521 v -0.04903 h -6.569526 l -0.0081,3.394325 -0.249593,0.295714 -1.621297,1.505316 -0.226001,0.324486 -0.439409,1.995643 2.066694,-0.218105 z"
+             id="path2294"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccccccccc" />
+          <path
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 46.979695,18.146922 -0.226001,0.324486 1.627285,1.777539 0.347752,-0.19572 z"
+             id="path2296"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 48.850585,16.345893 -0.249593,0.295714 0.03377,3.314629 0.09397,0.09699 0.194707,-0.10911 z"
+             id="path2298"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cccccc" />
+          <path
+             sodipodi:nodetypes="ccccccc"
+             inkscape:connector-curvature="0"
+             id="path2300"
+             d="m 52.221348,12.941478 -0.132039,0.0031 -3.238724,3.401298 0.0085,0.161059 3.262824,0.04091 0.09936,-0.137153 z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1375657;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text2304"
+             y="22.183283"
+             x="53.975574"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.64562893px;line-height:0;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#605654;fill-opacity:1;stroke:none;stroke-width:0.87342221"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.64563084px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:-0.76616329px;writing-mode:lr-tb;text-anchor:start;fill:#605654;fill-opacity:1;stroke-width:0.87342221"
+               y="22.183283"
+               x="53.975574"
+               id="tspan2302"
+               sodipodi:role="line">sinoredi</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.64562893px;line-height:0;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#605654;fill-opacity:1;stroke:none;stroke-width:0.87342221"
+             x="94.575676"
+             y="22.183283"
+             id="text851"><tspan
+               sodipodi:role="line"
+               id="tspan849"
+               x="94.575676"
+               y="22.183283"
+               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.64563084px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:-0.76616329px;writing-mode:lr-tb;text-anchor:start;fill:#605654;fill-opacity:1;stroke-width:0.87342221">ce</tspan></text>
+          <rect
+             y="18.114393"
+             x="92.722984"
+             height="1.2670727"
+             width="1.4123791"
+             id="rect853"
+             style="opacity:1;fill:#605654;fill-opacity:1;stroke:none;stroke-width:0.13096808;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text857"
+             y="26.15275"
+             x="54.216766"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.91040158px;line-height:0;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#8a8280;fill-opacity:1;stroke:none;stroke-width:0.21828014"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.91040182px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0.01964521px;writing-mode:lr-tb;text-anchor:start;fill:#8a8280;fill-opacity:1;stroke-width:0.21828014"
+               y="26.15275"
+               x="54.216766"
+               id="tspan855"
+               sodipodi:role="line">Sindicato dos Notários Registradores e</tspan><tspan
+               id="tspan859"
+               style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.91040182px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#8a8280;fill-opacity:1;stroke-width:0.21828014"
+               y="26.15275"
+               x="54.216766"
+               sodipodi:role="line" /></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.91040158px;line-height:0;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#8a8280;fill-opacity:1;stroke:none;stroke-width:0.21828014"
+             x="54.123772"
+             y="29.394661"
+             id="text865"><tspan
+               sodipodi:role="line"
+               x="54.123772"
+               y="29.394661"
+               style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.91040182px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0.01964521px;writing-mode:lr-tb;text-anchor:start;fill:#8a8280;fill-opacity:1;stroke-width:0.21828014"
+               id="tspan863">Distribuidores do Estado do Ceará</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

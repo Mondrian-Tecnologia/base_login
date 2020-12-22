@@ -1,0 +1,46 @@
+- if policy([:sindicato, Dute]).index?
+  - active = active?({ namespace: :sindicato, controller: :dutes, action: %i[all] })
+  - active = active || active?({ controller: :veiculos, action: %i[all] })
+  %li.nav-item{class: active}
+    = link_to '#', class: 'nav-link collapsed', aria: { controls: "dutes" },
+                                                data: { target: "#dutes", toggle: "collapse"} do
+      = svg_sidebar :dute
+      %span DUTe's
+    #dutes.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionSidebar", class: (active ? 'show' : '')}
+      .py-0.collapse-inner.mb-0
+        - if policy([:sindicato, Dute]).index?
+          = link_to 'Consultar DUTe\'s', sindicato_dutes_path, class: 'nav-link'
+        - if policy(:veiculo).index?
+          = link_to 'Consultar Veículo', veiculos_path, class: 'nav-link'
+  %hr.sidebar-divider.my-0
+
+- if policy([:sindicato, Cartorio]).index?
+  %li.nav-item
+    = link_to sindicato_cartorios_path, class: 'nav-link' do
+      = svg_sidebar :cartorio
+      %span Cartórios
+  %hr.sidebar-divider.my-0
+
+- if policy([:sindicato, DadoCartorario]).index? || policy([:sindicato, Cidade]).index?
+  - active = active?({ namespace: :sindicato, controller: :cidades, action: %i[index show edit update] })
+  - active = active || active?({ namespace: :sindicato, controller: :dados_cartorarios, action: %i[all] })
+  %li.nav-item{class: active}
+    = link_to '#', class: 'nav-link collapsed', aria: { controls: "gerenciar" },
+                                                data: { target: "#gerenciar", toggle: "collapse"} do
+      = svg_sidebar :gerenciar
+      %span Gerenciar
+    #gerenciar.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionSidebar", class: (active ? 'show' : '')}
+      .py-0.collapse-inner.mb-0
+        - if policy([:sindicato, Cidade]).index?
+          = link_to 'Cidades', sindicato_cidades_path, class: 'nav-link'
+        - if policy([:sindicato, DadoCartorario]).index?
+          = link_to 'Pré-Cadastro', sindicato_dados_cartorarios_path, class: 'nav-link'
+  %hr.sidebar-divider.my-0
+
+- if policy([:sindicato, :home]).ferramentas?
+  %li.nav-item
+    = link_to ferramentas_sindicato_home_path, class: 'nav-link' do
+      = svg_sidebar :ferramentas
+      %span Ferramentas
+
+  %hr.sidebar-divider.my-0

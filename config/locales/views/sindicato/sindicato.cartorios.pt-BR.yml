@@ -1,0 +1,26 @@
+pt-BR:
+  sindicato:
+    cartorios:
+      index:
+        title: Listagem de Cartórios
+      edit:
+        title: 'Edição de dados do Cartório #%{id}'
+      show:
+        title: 'Visualizar Cartório #%{id}'
+      show_bloqueios:
+        new: 'Novo Bloqueio'
+      partials:
+        acoes:
+          edit_cartorio: Editar Cartório
+          new_bloqueio: Novo Bloqueio
+          ocultar_cartorio: Ocultar
+          restaurar_cartorio: Restaurar
+          new_user: Novo Usuário
+        show_bloqueios:
+          confirmar_desbloqueio: 'Deseja excluir o BLOQUEIO desse cartório ?'
+          complete_history: Histórico Completo
+          new_bloqueio: Novo Bloqueio
+      da_vez:
+        title: Cartório do Próximo Arquivamento
+      relatorio_bancos:
+        title: Relatório de Banco dos Cartórios

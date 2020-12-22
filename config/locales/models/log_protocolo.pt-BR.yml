@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    attributes:
+      log_protocolo:
+        id:            "#"
+        placa:         Placa
+        num_protocolo: Núm de Protocolo
+        data_venda:    Data da Venda
+        created_at: "Data de Cadastro"
+        updated_at: "Data de Atualização"
+    errors:
+      models:
+        log_protocolo:
+          attributes:
+          validate:

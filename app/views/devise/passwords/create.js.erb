@@ -1,0 +1,10 @@
+let msg = $("#msg");
+msg.html(' ');
+msg.hide();
+<% if resource.errors.any?  %>
+  msg.html("<%= resource.try(:errors).try(:full_messages).try(:first) %>");
+<% else %>
+  msg.html('Instruções enviadas para o seu email, verifique sua caixa de entrada, spam e lixeira.');
+<% end %>
+msg.fadeIn();
+$(".submit-form").html('Enviar instruções por email');

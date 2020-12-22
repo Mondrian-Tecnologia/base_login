@@ -1,0 +1,9 @@
+pt-BR:
+  sindicato:
+    home:
+      ferramentas:
+        title: 'Ferramentas'
+      servicos: 
+        title: Estado dos Serviços
+      historico:
+        title: Últimos 50 históricos de comunicação com o DETRAN

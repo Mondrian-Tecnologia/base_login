@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    attributes:
+      fatura:
+        id: "#"
+        status: Situação
+        vencimento: "Vencimento"
+        cartorio_id: "Cartório"
+        valor: Valor
+        data_pag: Data do Pagamento
+        valor_pag: Valor do Pagamento
+        created_at: "Emitido em"
+        updated_at: "Alterado em"
+        data_inicial: Data Inicial
+        data_final: Data Final
+        dute_count: DUTes
+        boleto_financeira_id: Boleto ID
+    errors:
+      models:
+        fatura:
+          attributes:
+          validate:

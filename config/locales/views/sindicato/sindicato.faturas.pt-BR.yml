@@ -1,0 +1,15 @@
+pt-BR:
+  sindicato:
+    faturas:
+      index:
+        title: 'Relatório de Faturas'
+        filter: 'Consulta de Faturas por Vencimento'
+      list:
+        gerar_boleto: 'Gerar Boleto'
+      show:
+        title: "Detalhes da Fatura #%{id}- Período %{data_inicial} ~ %{data_final}"
+        header: "DUTes do cartório: %{oficio}"
+        print: 'Imprimir Boleto'
+        print_relatorio: 'Layout de Impressão'
+      print_dutes:
+        title: "Lista de DUTes da Fatura #%{id} - Período %{data_inicial} ~ %{data_final}"

@@ -1,0 +1,48 @@
+pt-BR:
+  activerecord:
+    models:
+      log_retorno: 
+        one: Log de retorno do Arquivo de Pagamento
+        other: Logs de retorno do Arquivo de Pagamento
+    attributes:
+      log_retorno:
+        id: "#"
+        arquivo_pagamento_id: Arquivo de Pagamento
+        carteira: Carteira
+        agencia_sem_dv: Agência
+        cedente_com_dv: Conta
+        nosso_numero: Nosso Número
+        ocorrencia_id: Ocorrência
+        data_ocorrencia: Data de Ocorrência
+        documento_numero: Número do Documento
+        data_vencimento: Data de Vencimento
+        valor_titulo: Valor do Título
+        valor: Valor Pago
+        valor_recebido: Valor Recebido
+        banco_recebedor: Banco
+        valor_tarifa: Valor da Tarifa
+        iof: IOF
+        motivo_ocorrencia: Motivo da Ocorrênvia
+        sequencial: Sequencial
+        created_at: Data de Casdastro
+        updated_at: Data de Atualização
+        boleto_financeira_id: Boleto Financeira 
+        codigo_registro: Código de Registro
+        codigo_ocorrencia: Código da Ocorrência 
+        agencia_com_dv: Agência
+        agencia_recebedora_com_dv: Agência Recebedora 
+        desconto_concedito: Desconto 
+        valor_abatimento: Abatimento
+        iof_desconto: IOF (desconto) 
+        juros_mora: Juros
+        outras_despesas: Outras Despesas 
+        outros_recebimento: Outros Recebimentos
+        data_credito: Data de Crédito 
+        valor_liquido: Valor Líquido
+        valor_boleto: Valor do Boleto
+    errors:
+      models:
+        log_retorno:
+          attributes:
+          validate:
+

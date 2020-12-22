@@ -1,0 +1,7 @@
+pt-BR:
+  pundit:
+    usuario:
+      chamado_policy:
+        index?:  'Acesso negado para acesso da página de Chamados.'
+        new?:    'Acesso negado para criação de Chamados.'
+        create?: 'Acesso negado para criação de Chamados.'

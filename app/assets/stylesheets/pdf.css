@@ -1,0 +1,15 @@
+* {font-size: 18px; line-height: 22px}
+table, td, tr, th { border: 1px solid #000; border-collapse: collapse; }
+
+
+
+.pdf-printer .box { border: 1px solid black; padding: 20px }
+.pdf-printer .box h1.title_registro { font-size: 32px; letter-spacing: 12px; text-align: center }
+.pdf-printer .box p { margin: 0 auto; text-align: justify; text-indent: 60px; font-size: 22px; }
+
+.pdf-printer table { width: 100%; }
+.pdf-printer table tr td, .pdf-printer table tr th { border: 1px solid #ddd; padding: 7px;}
+.pdf-printer table tr th { background: #ddd; }
+
+.pdf-printer .footer { clear: both; position: relative; margin-top: 370px; font-size: 14px; }
+

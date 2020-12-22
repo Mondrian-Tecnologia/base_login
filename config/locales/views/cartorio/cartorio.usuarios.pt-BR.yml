@@ -1,0 +1,9 @@
+pt-BR:
+  cartorio:
+    usuarios:
+      index:
+        title: Usuários do Cartório
+      new:
+        title: Novo Usuário
+      edit: 
+        title: Editar Usuário

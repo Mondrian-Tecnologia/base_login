@@ -1,0 +1,11 @@
+pt-BR:
+  sindicato:
+    credito_cartorios:
+      index:
+        title: Listagem de Crédito Administrativos
+      edit:
+        title: Editar Crédito
+      new:
+        title: Cadastrar Crédito
+      show:
+        title: "Visualizar Crédito #%{id}"

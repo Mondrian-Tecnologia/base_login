@@ -1,0 +1,35 @@
+pt-BR:
+  sindicato:
+    dutes:
+      index:  
+        title: Consultar DUTe's
+      show: 
+        title: "Detalhes do DUTe #%{id}"
+        title_pagamento: Detalhes de Pagamento
+      acoes:
+        alterar_protocolo: Alterar Protocolo
+        taxa_nao_localizada: Taxa não Localizada
+        comunicacao_venda_ativa: Comunicação de Venda Ativa
+        selo_comprador_renav: Selo do Comprador RENAV
+        selo_vendedor_desconhecido: Selo do Vendedor Desconhecido
+        selo_comprador_desconhecido: Selo do Comprador Desconhecido
+        selo_vendedor_comprador_desconhecido: Selo do Vendedor e do Comprador Desconhecido
+
+        enviar_email: Enviar Email
+        reenviar: Reenviar
+
+        cancelar: Cancelar
+        motivo_1: "Registro Indevido"
+        motivo_2: "Dados Incorretos"
+        motivo_3: "Desistência"
+        atualizar_rtd: "Atualizar RTD"
+        desistir: "Desistir"
+      buscar:
+        title: Consulta de DUTe's por Período
+      buscar_selo:
+        title: Buscar Selos Utilizados
+      historico_emails:
+        title: Histórico de Emails enviados ao DETRAN
+        resolver_email: Resolvido
+      buscar_por_protocolo:
+        title: Consultar Informações por Protocolo (DETRAN)
